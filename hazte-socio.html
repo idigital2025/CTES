@@ -121,7 +121,7 @@
     <!-- Main Content -->
     <main>
         
-        <!-- Hero Section (ESTILO QUINES SOMOS: Fondo claro, texto centrado) -->
+        <!-- Hero Section -->
         <section class="relative bg-surface-light dark:bg-surface-dark pt-12 pb-16">
             <div class="container mx-auto px-4">
                 <div class="text-center max-w-3xl mx-auto">
@@ -135,7 +135,7 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 1: POR QUÉ UNIRSE (Reincorporada arriba) -->
+        <!-- SECCIÓN 1: POR QUÉ UNIRSE -->
         <section class="py-16 bg-white dark:bg-[#1A1A1A]">
             <div class="container mx-auto px-4">
                 <div class="flex flex-col lg:flex-row items-center gap-16">
@@ -182,7 +182,7 @@
                         </ul>
                     </div>
                     
-                    <!-- Imagen con Fallback - SIN BORDE REDONDEADO NI SOMBRA -->
+                    <!-- Imagen -->
                     <div class="w-full lg:w-1/2 order-1 lg:order-2">
                         <div class="relative overflow-hidden aspect-[4/3] group">
                             <img 
@@ -198,7 +198,7 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 2: PLAN DE ACTIVIDADES (Grilla de Cards) -->
+        <!-- SECCIÓN 2: PLAN DE ACTIVIDADES (REDISEÑADO - Horizontal Layout) -->
         <section class="py-16 bg-background-light dark:bg-background-dark">
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto text-center mb-12">
@@ -210,89 +210,96 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Card 1 -->
-                    <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">podium</span>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Item 1 -->
+                    <div class="flex items-start gap-5 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">podium</span>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Seminarios Internacionales</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                            Organización de seminarios con charlas de primer nivel dictadas por destacados profesionales, transmitiendo avances e innovaciones globales del sector.
-                        </p>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">forum</span>
-                        </div>
-                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Charlas Técnicas</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                            Reuniones técnicas periódicas para presentar soluciones específicas, metodologías constructivas y casos particulares de interés general.
-                        </p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">school</span>
-                        </div>
-                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Relación con Academia</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                            Vinculación estratégica con centros de investigación e instituciones académicas para la promoción y desarrollo de nuevos estudios.
-                        </p>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all duration-300 group lg:col-span-2">
-                        <div class="flex flex-col sm:flex-row gap-4 items-start">
-                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">public</span>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Participación en ITA-AITES</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-2">
-                                    Ejercer la representatividad de Chile ante la International Tunnelling and Underground Space Association.
-                                </p>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                                    Permite participar activamente de sus actividades globales, comités de trabajo y acceder a la generación de información y conocimiento de vanguardia.
-                                </p>
-                            </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Seminarios Internacionales</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                Organización de seminarios con charlas de primer nivel dictadas por destacados profesionales, transmitiendo avances e innovaciones globales del sector.
+                            </p>
                         </div>
                     </div>
 
-                    <!-- Card 5 -->
-                    <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">hub</span>
+                    <!-- Item 2 -->
+                    <div class="flex items-start gap-5 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">forum</span>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Networking Internacional</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                            Vinculación con entidades y grupos técnicos similares de otros países para incentivar la cooperación técnica y el intercambio de experiencias.
-                        </p>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Charlas Técnicas</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                Reuniones técnicas periódicas para presentar soluciones específicas, metodologías constructivas y casos particulares de interés general.
+                            </p>
+                        </div>
                     </div>
 
-                    <!-- Card 6 -->
-                    <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">model_training</span>
+                    <!-- Item 3 -->
+                    <div class="flex items-start gap-5 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">school</span>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Capacitación</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                            Desarrollo de cursos e instancias de capacitación reconocidas por ITA-AITES para el perfeccionamiento continuo de profesionales chilenos.
-                        </p>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Relación con Academia</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                Vinculación estratégica con centros de investigación e instituciones académicas para la promoción y desarrollo de nuevos estudios.
+                            </p>
+                        </div>
                     </div>
 
-                    <!-- Card 7 -->
-                    <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">flight_takeoff</span>
+                    <!-- Item 4 -->
+                    <div class="flex items-start gap-5 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">public</span>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Misiones Tecnológicas</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                            Visitas a empresas extranjeras, centros de investigación y fábricas de insumos en Europa u otros continentes para conocer tecnología de punta.
-                        </p>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Participación en ITA-AITES</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                Representatividad de Chile ante la International Tunnelling and Underground Space Association, participando activamente en comités y generación de conocimiento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="flex items-start gap-5 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">hub</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Networking Internacional</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                Vinculación con entidades y grupos técnicos similares de otros países para incentivar la cooperación técnica y el intercambio de experiencias.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="flex items-start gap-5 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">model_training</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Capacitación</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                Desarrollo de cursos e instancias de capacitación reconocidas por ITA-AITES para el perfeccionamiento continuo de profesionales chilenos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 (Full width on large screens to balance grid) -->
+                    <div class="flex items-start gap-5 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-lg hover:border-primary/30 transition-all duration-300 group lg:col-span-2">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">flight_takeoff</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Misiones Tecnológicas</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                                Visitas a empresas extranjeras, centros de investigación y fábricas de insumos en Europa u otros continentes para conocer tecnología de punta en terreno.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
