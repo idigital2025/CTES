@@ -1,390 +1,515 @@
 <!DOCTYPE html>
-<html class="light" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Quiénes Somos - CTES Chile</title>
-<meta content="Conozca a CTES Chile, el Comité de Túneles y Espacios Subterráneos. Descubra nuestra misión, visión, directorio y nuestra representación oficial de ITA-AITES en el desarrollo de la ingeniería subterránea nacional." name="description"/>
-<meta content="CTES Chile, túneles, espacios subterráneos, ingeniería, ITA-AITES, CDT, construcción subterránea" name="keywords"/>
-<meta content="Quiénes Somos - CTES Chile" property="og:title"/>
-<meta content="Liderando la ingeniería de túneles en Chile. Conozca nuestra historia, objetivos y al equipo detrás de CTES." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="es_CL" property="og:locale"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#318061",
-              "primary-dark": "#26634b",
-              "background-light": "#ffffff",
-              "background-dark": "#101622",
-              "surface-light": "#f8f9fa",
-              "surface-dark": "#1a202c",
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Quiénes Somos - CTES Chile</title>
+    <meta content="Quiénes Somos - CTES Chile. Comité de Túneles y Espacios Subterráneos de Chile." name="description"/>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#318061", // Institutional Green
+                        "primary-dark": "#256049",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#121212",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1E1E1E",
+                        "text-light": "#333333",
+                        "text-dark": "#E0E0E0",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
             },
-            fontFamily: {
-              "display": ["Inter", "sans-serif"]
-            },
-            borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "3xl": "2.5rem", "4xl": "3rem", "full": "9999px" },
-          },
-        },
-      }
+        };
     </script>
-<style type="text/tailwindcss">
-      @layer utilities {
-        .btn-primary {
-          @apply bg-primary hover:bg-primary-dark text-white rounded-full px-8 py-3 font-bold text-sm transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40;
-        }
-        .card-hover {
-          @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5;
-        }
-        .section-padding {
-          @apply py-20 px-4 lg:px-10;
-        }
-        .title-line {
-            @apply w-20 h-1.5 bg-primary rounded-full mb-8;
-        }
-      }
-    </style>
 </head>
-<body class="bg-white dark:bg-background-dark text-[#111318] dark:text-white font-display overflow-x-hidden">
-<div class="relative flex w-full flex-col bg-white dark:bg-surface-dark sticky top-0 z-50 shadow-sm">
-<div class="bg-[#f8f9fa] dark:bg-[#1a202c] border-b border-gray-200 dark:border-gray-800 w-full hidden md:block">
-<div class="max-w-[1280px] mx-auto px-4 lg:px-10 h-10 flex items-center justify-between text-xs font-medium text-[#616f89] dark:text-gray-400">
-<span>CTES Chile, representante oficial de la ITA-AITES</span>
-<div class="flex items-center gap-6">
-<a class="flex items-center gap-1.5 hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/mi-cuenta">
-<span class="material-symbols-outlined text-[16px]">person</span> Mi cuenta
-                    </a>
-<a class="flex items-center gap-1.5 hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/ayuda">
-<span class="material-symbols-outlined text-[16px]">help</span> Ayuda
-                    </a>
-<a class="hover:text-primary transition-colors" href="#">ES / EN</a>
-<a class="flex items-center gap-1.5 hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/contacto">
-<span class="material-symbols-outlined text-[16px]">call</span> Contacto
-                    </a>
+<body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200">
+
+<!-- =========================================
+     START HEADER (Copiar esto para header.php)
+     ========================================= -->
+<div class="bg-gray-50 dark:bg-surface-dark border-b border-gray-200 dark:border-gray-800 py-2">
+    <div class="container mx-auto px-4 flex justify-between items-center text-sm text-gray-600 dark:text-gray-400">
+        <span class="hidden md:inline">CTES Chile, representante oficial de la ITA-AITES</span>
+        <div class="flex items-center space-x-6 ml-auto">
+            <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px] mr-1">person</span> Mi cuenta</a>
+            <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px] mr-1">help</span> Ayuda</a>
+            <span class="cursor-pointer hover:text-primary transition-colors">ES / EN</span>
+            <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px] mr-1">phone</span> Contacto</a>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-<header class="bg-white dark:bg-surface-dark border-b border-[#e5e7eb] dark:border-gray-800 w-full">
-<div class="max-w-[1280px] mx-auto px-4 lg:px-10 py-4 flex items-center justify-between">
-<a class="flex items-center gap-3 group" href="https://github.com/idigital2025/CTES/index">
-<img alt="CTES Chile Logo" class="h-10 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX2wBtVJXOQjpvM5iIf5-wVOGCo-fXq1YeiiD7sBnYemwEzEMSTgCmlSs0pr7MwqJyisknCrepRvtQwkQdFHVTar_kyK-GqWXbYgMJHVozd0YcXZgfD4wB38nCZk15g-Llr3iyHQ5Dv3TMGs08KyGnItg3W9y49Q2DpuI4OCJJm34gXFnxVJDsCsDppzOXIZ6TnHsk9bBKw-c1Rzd11XL-3X5YGao5w1VIc0VTu0iJ8EUZm9Pi3AUzffGHkyv3hpg6_TyeLdEVs-EQ"/>
-<h2 class="sr-only">CTES Chile</h2>
-</a>
-<nav class="hidden xl:flex items-center gap-8">
-<a class="text-[#111318] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/index">Inicio</a>
-<a class="text-primary text-sm font-bold" href="https://github.com/idigital2025/CTES/quienes-somos">Quiénes Somos</a>
-<a class="text-[#111318] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/socios">Socios</a>
-<a class="text-[#111318] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/socios-jovenes">Socios Jóvenes</a>
-<a class="text-[#111318] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/noticias">Noticias</a>
-<a class="text-[#111318] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/biblioteca">Biblioteca</a>
-<a class="text-[#111318] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/eventos">Calendario</a>
-</nav>
-<div class="flex items-center gap-4">
-<a class="hidden md:flex bg-primary hover:bg-primary-dark text-white text-sm font-bold px-8 py-3 rounded-full transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40" href="https://github.com/idigital2025/CTES/hazte-socio">
-                        Hazte Socio
-                    </a>
-<button class="xl:hidden text-gray-700 dark:text-white p-2">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
+
+<header class="bg-surface-light dark:bg-surface-dark shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="https://idigital2025.github.io/CTES/">
+                    <img alt="CTES Chile Logo" class="h-12 w-auto object-contain dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
+                </a>
+            </div>
+            
+            <!-- Navegación Desktop -->
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="https://idigital2025.github.io/CTES/">Inicio</a>
+                <a class="text-primary font-bold transition-colors" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a>
+                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="#">Socios</a>
+                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="#">Socios Jóvenes</a>
+                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="#">Noticias</a>
+                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a>
+                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="#">Calendario</a>
+            </nav>
+            
+            <!-- Botón CTA Header -->
+            <div class="hidden lg:block">
+                <a class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-sm" href="https://idigital2025.github.io/CTES/hazte-socio">
+                    Hazte Socio
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+                <button class="text-gray-700 dark:text-gray-300 hover:text-primary">
+                    <span class="material-symbols-outlined text-2xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </div>
 </header>
-</div>
-<div class="relative w-full">
-<div class="absolute inset-0 bg-cover bg-center" data-alt="Underground tunnel construction site with dramatic lighting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeMazZ7Uk1Tvk7qh3qLcXPay-MYC4iT7l2HTbG0eD_IPnCiTAh3kJVGNsehD3r6ICApSETwTnvuHDmRBq3olN45WJdL7rrmud-Knmw6LvtsUMkgImpbLMEJOI8TFFo2WdOsipw-ta5BIPzeklkKY1EsS7RU8g9CTAJli50D9dmq1VP8kUKcvMZkjg6rUfnu6yoVi8MLFyJT7KI5wUqYj3tf_F6CxN6JLfU0rrBGeOeVTT8jJ--zG0t0zj7O1XcEbqB-S1B86mEWNzg");'></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40"></div>
-<div class="relative layout-container flex flex-col justify-end min-h-[420px] pb-20">
-<div class="px-4 lg:px-40 flex justify-center">
-<div class="max-w-[1280px] w-full">
-<div class="flex flex-col gap-6 max-w-3xl">
-<span class="text-white font-bold tracking-wider uppercase text-xs md:text-sm bg-primary w-fit px-4 py-1.5 rounded-full shadow-lg border border-primary-dark">Institucional</span>
-<h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05]">Quiénes Somos</h1>
-<div class="w-20 h-1.5 bg-primary rounded-full"></div>
-<p class="text-gray-200 text-xl md:text-2xl font-medium mt-2 leading-relaxed max-w-2xl">
-                            Conectando la ingeniería chilena de túneles con los estándares globales de excelencia.
-                        </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="layout-container flex justify-center section-padding">
-<div class="layout-content-container flex flex-col max-w-[1280px] w-full gap-24">
-<section class="grid md:grid-cols-2 gap-16 items-center">
-<div class="flex flex-col gap-8">
-<div>
-<h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-4">Qué es CTES Chile</h2>
-<h3 class="text-[#111318] dark:text-white text-4xl md:text-5xl font-bold leading-relaxed tracking-tight mb-6">
-                            Referente técnico en túneles y espacios subterráneos
-                        </h3>
-<div class="title-line"></div>
-<div class="space-y-6 text-[#616f89] dark:text-gray-300 text-lg leading-relaxed font-medium">
-<p>
-                                El Comité de Túneles y Espacios Subterráneos de Chile (CTES) es la organización técnica referente que agrupa a profesionales, académicos y empresas líderes del sector de infraestructura subterránea en el país.
-                            </p>
-<p>
-                                Operando bajo el alero de la <strong>Corporación de Desarrollo Tecnológico (CDT)</strong>, nuestra labor fundamental es promover el desarrollo tecnológico, la investigación avanzada y la implementación de buenas prácticas, asegurando que cada proyecto en Chile cumpla con estándares internacionales de sostenibilidad y seguridad.
-                            </p>
-</div>
-</div>
-</div>
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary/10 rounded-[2.5rem] -z-10 transform rotate-3 group-hover:rotate-1 transition-transform duration-500"></div>
-<div class="rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3] bg-cover bg-center relative" data-alt="Engineers discussing plans inside a modern tunnel" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5bBLiuFSxuUlV9O0zk8tTya8H-K5v9BYgDI0_9imqBob7aDH-7UTbnJm2IO0tIRi4SNPm4yXbG_1Y5yIY_rqwNBfAGVtF_oe7s977sCPFVasv6oNL7gN1746xyjROSDcIxeqQnvwbWlutiIf4lV_l27ipGabAr4XEX2zPcZBdw_4Ezpv3ppiE5iv_lLH1C_IklGc2vl6fu3xas2qVnEPP5cto-Jpb26dMMumezOFx7tdyY7SLNnaQNAbavI5PjJaNh693NomkeXEf");'>
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-<div class="absolute bottom-8 left-8 right-8">
-<div class="flex items-center gap-4 text-white">
-<div class="bg-white/20 p-3 rounded-full backdrop-blur-md border border-white/20">
-<span class="material-symbols-outlined text-2xl">engineering</span>
-</div>
-<span class="font-bold text-xl">Excelencia Técnica</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="flex flex-col gap-10">
-<div class="grid md:grid-cols-3 gap-8">
-<div class="card-hover bg-white dark:bg-surface-dark p-10 rounded-[2rem] border border-[#e5e7eb] dark:border-gray-700">
-<div class="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-8">
-<span class="material-symbols-outlined text-[36px]">flag</span>
-</div>
-<h4 class="text-2xl font-bold text-[#111318] dark:text-white mb-4">Nuestra Misión</h4>
-<p class="text-[#616f89] dark:text-gray-400 text-base leading-relaxed">
-                            Promover el uso y desarrollo responsable de los túneles y espacios subterráneos en Chile, difundiendo conocimientos técnicos y experiencias a nivel nacional e internacional para el beneficio de la sociedad.
-                        </p>
-</div>
-<div class="card-hover bg-white dark:bg-surface-dark p-10 rounded-[2rem] border border-[#e5e7eb] dark:border-gray-700">
-<div class="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-8">
-<span class="material-symbols-outlined text-[36px]">visibility</span>
-</div>
-<h4 class="text-2xl font-bold text-[#111318] dark:text-white mb-4">Nuestra Visión</h4>
-<p class="text-[#616f89] dark:text-gray-400 text-base leading-relaxed">
-                            Ser el referente técnico indiscutido y el punto de encuentro principal para la comunidad de túneles en Chile, liderando la innovación y sostenibilidad en infraestructura subterránea.
-                        </p>
-</div>
-<div class="card-hover bg-white dark:bg-surface-dark p-10 rounded-[2rem] border border-[#e5e7eb] dark:border-gray-700">
-<div class="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-8">
-<span class="material-symbols-outlined text-[36px]">track_changes</span>
-</div>
-<h4 class="text-2xl font-bold text-[#111318] dark:text-white mb-4">Objetivos</h4>
-<p class="text-[#616f89] dark:text-gray-400 text-base leading-relaxed">
-                            Fomentar la capacitación continua, generar redes de contacto sólidas, representar a Chile ante la ITA-AITES y contribuir activamente a las políticas públicas del sector.
-                        </p>
-</div>
-</div>
-</section>
-<section class="relative overflow-hidden rounded-[3rem] bg-[#101622] text-white p-10 md:p-16 border border-gray-800 shadow-2xl">
-<div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-[#101622] to-[#1a253a]"></div>
-<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4"></div>
-<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
-<div class="flex-1 space-y-8">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-xs font-bold tracking-wide uppercase text-white border border-white/10">
-<span class="material-symbols-outlined text-sm">public</span>
-                            Afiliación Internacional
-                        </div>
-<div>
-<h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Representación ITA-AITES</h3>
-<div class="w-20 h-1.5 bg-primary rounded-full mb-6"></div>
-<p class="text-gray-400 text-lg md:text-xl max-w-xl leading-relaxed">
-                                CTES Chile es el representante oficial de la <strong>International Tunnelling and Underground Space Association (ITA-AITES)</strong> en el país. Esta alianza estratégica nos permite conectar a la ingeniería chilena con los avances globales más recientes y participar en la toma de decisiones a nivel mundial.
-                            </p>
-</div>
-<a class="inline-flex items-center gap-3 text-white font-bold bg-[#2d3748] hover:bg-[#394559] transition-all pl-6 pr-2 py-3 rounded-full group shadow-lg" href="https://github.com/idigital2025/CTES/ita-aites" rel="noopener noreferrer">
-                            Visitar sitio oficial ITA-AITES
-                            <div class="bg-primary text-white rounded-full p-1.5 group-hover:bg-primary-dark transition-colors">
-<span class="material-symbols-outlined text-sm block">arrow_forward</span>
-</div>
-</a>
-</div>
-<div class="flex-shrink-0 bg-white text-black p-10 rounded-[2.5rem] shadow-2xl w-full max-w-[320px] flex items-center justify-center transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
-<img alt="ITA AITES Logo" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI2Wl_hFfkeK0lMRmts2vVt5WLb0YKD5SpOE698vktlRLRlKLrcMqyDEKylVORyvMpbsA0kR8KtblgdJRoCwFyV175ZixbB-Bq67_43gRzrugutxTLxIkfbLyHGOl36iXtiIBnjBStr2zXOx3JxWCxbnJm3imf8enXbYSvDt9OiyIr_3XMhvBhxvw8QfeLf_ZY1jXgWjbbswM-wqOV--5e21BaEC5dY_GjjwDgZKoLtkOhnzvYDzwYzFz-nPunuBa2ivm4b3AeVScX"/>
-</div>
-</div>
-</section>
-<section>
-<div class="text-center mb-16">
-<h2 class="text-[#111318] dark:text-white text-4xl font-bold leading-tight tracking-tight mb-4">Directorio CTES Chile</h2>
-<div class="w-20 h-1.5 bg-primary rounded-full mx-auto mb-6"></div>
-<p class="text-[#616f89] dark:text-gray-400 text-lg max-w-2xl mx-auto">
-                        Nuestro equipo de liderazgo y expertos del sector que guían nuestra visión, con el respaldo y gobernanza de la Corporación de Desarrollo Tecnológico (CDT).
+<!-- =========================================
+     END HEADER
+     ========================================= -->
+
+
+<main>
+    <!-- Hero Section -->
+    <section class="relative bg-surface-light dark:bg-surface-dark pt-12 pb-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="uppercase tracking-wider text-primary text-sm font-bold mb-2 block">Nuestra Identidad</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Quiénes somos</h1>
+                <div class="h-1 w-20 bg-primary mx-auto rounded-full mb-8"></div>
+                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Somos el Comité de Túneles y Espacios Subterráneos de Chile, una organización técnica dedicada a promover el uso responsable y eficiente del espacio subterráneo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué es CTES Chile -->
+    <section class="py-16 bg-white dark:bg-[#1A1A1A]">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="w-full lg:w-1/2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video group">
+                        <img alt="Ingeniería de túneles" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0dAKdq_011tTRdYQdQbxYQToBF_RmSo4AE4UEHq9YU_erL0t4Z5TXKYpB_4-pOJljmIIME2kFwep4oaTZHqZxgd4qp4DEikh9lwz-aCSvDKZTUxsoRywccUO5-_0xBjzxrNvbwR8fYL_apPrtU5ckl7AKg8NfIi7eJpYoVHfGLoavkrW1L0Tq6guISfIj2VY0Fjs6wxmQaQak24YYDuUUM6KaMeci8FSLHvAcP2ftkWuDRfd2yFdDfObqW-KnttfEOwg29tLuPxWn"/>
+                        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300"></div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-primary after:rounded-full">
+                        ¿Qué es CTES Chile?
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        CTES Chile es la Corporación de Túneles y Espacios Subterráneos de Chile, una entidad de carácter técnico y permanente que reúne a empresas, instituciones y profesionales vinculados a la ingeniería de túneles y obras subterráneas.
                     </p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="group flex flex-col items-center text-center p-8 bg-white dark:bg-surface-dark rounded-[2.5rem] border border-[#e5e7eb] dark:border-gray-800 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
-<div class="size-32 rounded-full mb-6 shadow-lg ring-4 ring-transparent group-hover:ring-primary/20 transition-all overflow-hidden">
-<img alt="Andrés Marín" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdhhJSYk35Q_MWDBDM7pYifioTOV18J2X_FFppKPy6RO2-equOsFoO4Cr45GH1CgPOtULa4Uo-lMHc7vw4Bfd6Kk0DD9zvsdpAqxkpRhRwM0mXsFYZuZJmi8Gycyyp6E41eQHWMVG3um4uzdhHyO-J4DqQ-ua8Zi1GO8ITjprz7LUOSxVals0OZlcEHG2lm7LIAJZNC2icA5bV9hboI6aB0oigVFt6tOyuTu-ML3E5qvoHk872-eLRMuyPytPevksQFPs-vRx34889"/>
-</div>
-<h4 class="text-xl font-bold text-[#111318] dark:text-white mb-1">Andrés Marín</h4>
-<span class="text-primary text-xs font-bold mb-4 bg-primary/5 px-3 py-1 rounded-full uppercase tracking-wide">Presidente</span>
-<p class="text-[#616f89] dark:text-gray-400 text-sm leading-relaxed px-2">Ingeniero Civil con amplia experiencia en minería subterránea.</p>
-</div>
-<div class="group flex flex-col items-center text-center p-8 bg-white dark:bg-surface-dark rounded-[2.5rem] border border-[#e5e7eb] dark:border-gray-800 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
-<div class="size-32 rounded-full mb-6 shadow-lg ring-4 ring-transparent group-hover:ring-primary/20 transition-all overflow-hidden">
-<img alt="Daniela Rojas" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuC_dBbUU0G6DPW8Lt3RF_N3jJ2avaOzTuuntHb0fDa95RuJZDEDAHkyjBo7xGJz9jEMUA5ss7lZwR3DiTv8GA5qMIlqL2JZ3mLpkK1EBTqb3MJaA8WG2hXvKbKHaF27tqsFsWQmuwMkp7IaqXdLhje5rwNZS_aaJzlhfAQcORPwTePDVy8GjnG8hJkSIs6o0aWRlR0MDvEpoQ2Yuj-QO6DNNiDWF1xF9Oiqt7v4ukygu14bUKxtjEkwEMdlDmKs65Dcxr07utRSsq"/>
-</div>
-<h4 class="text-xl font-bold text-[#111318] dark:text-white mb-1">Daniela Rojas</h4>
-<span class="text-primary text-xs font-bold mb-4 bg-primary/5 px-3 py-1 rounded-full uppercase tracking-wide">Vicepresidenta</span>
-<p class="text-[#616f89] dark:text-gray-400 text-sm leading-relaxed px-2">Especialista en geotecnia y obras subterráneas urbanas.</p>
-</div>
-<div class="group flex flex-col items-center text-center p-8 bg-white dark:bg-surface-dark rounded-[2.5rem] border border-[#e5e7eb] dark:border-gray-800 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
-<div class="size-32 rounded-full mb-6 shadow-lg ring-4 ring-transparent group-hover:ring-primary/20 transition-all overflow-hidden">
-<img alt="Carlos Méndez" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-GGzRvvWko7Ex3hUBq3Bt3BZfWHAJ3kJDlCvcX06eVVV-IW2P-klv3xxlSnmwpDq8XC9PON-o7mXByTGop3MBoGV0kxrC_1jxpsmmdkfu_ny__jobdsCoX88uMqgLmUp-l-HynW_JJkSbP4iAWxyUeqhXg_pF5DBZEIqWDu_rNPs0E5yJ5P_gacfrckB3thE35dlmuF3JTA8g_lod3RY9TcKqvJ8n4M2pQ6QrAP0_K1UQ0ZvREPmlL1cgcr6JkMjrVfGxKHZGgeWO"/>
-</div>
-<h4 class="text-xl font-bold text-[#111318] dark:text-white mb-1">Carlos Méndez</h4>
-<span class="text-primary text-xs font-bold mb-4 bg-primary/5 px-3 py-1 rounded-full uppercase tracking-wide">Director Ejecutivo</span>
-<p class="text-[#616f89] dark:text-gray-400 text-sm leading-relaxed px-2">Consultor Senior en infraestructura de transporte.</p>
-</div>
-<div class="group flex flex-col items-center text-center p-8 bg-white dark:bg-surface-dark rounded-[2.5rem] border border-[#e5e7eb] dark:border-gray-800 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
-<div class="size-32 rounded-full mb-6 shadow-lg ring-4 ring-transparent group-hover:ring-primary/20 transition-all overflow-hidden">
-<img alt="Sofía Vergara" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBII0mAQOlKf7DlkRwbnzR7X-wHuK-QNrCXBgiNExOM_Y6pmiKW5i4xu-lHXn5ufXA1R8Wuvy8-BsRqRNigR3OLOQdHRcZMiMRQEuILYSOvpmYPBx8Q2666BQwQ3NbrnWeqx8fmy6jnRD5VRWOjOYPpS5lt4GVBjP5LZlYiY0Hw6qW1Nh5G2Pg_oo6_Yqe9AcBWN6J6Y0AgAug2iJaYKJqW31I6kDbZdmorgneV1X1lE55jG2wZOm0BfpjwNlR5L770WrWVCltsAz3a"/>
-</div>
-<h4 class="text-xl font-bold text-[#111318] dark:text-white mb-1">Sofía Vergara</h4>
-<span class="text-primary text-xs font-bold mb-4 bg-primary/5 px-3 py-1 rounded-full uppercase tracking-wide">Past President</span>
-<p class="text-[#616f89] dark:text-gray-400 text-sm leading-relaxed px-2">Gestión de proyectos y administración de contratos.</p>
-</div>
-</div>
-</section>
-<section class="bg-[#f8f9fa] dark:bg-surface-dark rounded-[3rem] p-10 md:p-16 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
-<div class="relative z-10">
-<h3 class="text-[#111318] dark:text-white text-3xl font-bold mb-4">Documentos Fundacionales y Transparencia</h3>
-<div class="w-16 h-1 bg-primary rounded-full mb-10"></div>
-<div class="flex flex-col gap-4">
-<div class="flex items-center justify-between p-6 bg-white dark:bg-background-dark rounded-[1.5rem] border border-transparent hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5 transition-all group cursor-pointer">
-<div class="flex items-center gap-6">
-<div class="size-14 rounded-full bg-[#ecfdf5] dark:bg-primary/20 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined">description</span>
-</div>
-<div>
-<p class="text-[#111318] dark:text-white font-bold text-lg">Estatutos CTES Chile</p>
-<p class="text-[#616f89] dark:text-gray-400 text-sm mt-1 font-medium">PDF • Documento oficial</p>
-</div>
-</div>
-<button class="size-12 rounded-full flex items-center justify-center text-[#616f89] dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-<span class="material-symbols-outlined">download</span>
-</button>
-</div>
-<div class="flex items-center justify-between p-6 bg-white dark:bg-background-dark rounded-[1.5rem] border border-transparent hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5 transition-all group cursor-pointer">
-<div class="flex items-center gap-6">
-<div class="size-14 rounded-full bg-[#ecfdf5] dark:bg-primary/20 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined">gavel</span>
-</div>
-<div>
-<p class="text-[#111318] dark:text-white font-bold text-lg">Reglamento Interno y Código de Ética</p>
-<p class="text-[#616f89] dark:text-gray-400 text-sm mt-1 font-medium">PDF • Normativa vigente</p>
-</div>
-</div>
-<button class="size-12 rounded-full flex items-center justify-center text-[#616f89] dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-<span class="material-symbols-outlined">download</span>
-</button>
-</div>
-<div class="flex items-center justify-between p-6 bg-white dark:bg-background-dark rounded-[1.5rem] border border-transparent hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5 transition-all group cursor-pointer">
-<div class="flex items-center gap-6">
-<div class="size-14 rounded-full bg-[#ecfdf5] dark:bg-primary/20 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined">account_balance</span>
-</div>
-<div>
-<p class="text-[#111318] dark:text-white font-bold text-lg">Memoria y Balance Anual</p>
-<p class="text-[#616f89] dark:text-gray-400 text-sm mt-1 font-medium">PDF • Transparencia</p>
-</div>
-</div>
-<button class="size-12 rounded-full flex items-center justify-center text-[#616f89] dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-<span class="material-symbols-outlined">download</span>
-</button>
-</div>
-</div>
-</div>
-</section>
-<section class="grid md:grid-cols-2 gap-8">
-<div class="bg-primary rounded-[3rem] p-10 md:p-14 text-white flex flex-col items-start justify-between min-h-[320px] relative overflow-hidden group shadow-xl shadow-primary/20">
-<div class="absolute -right-8 -top-8 size-64 bg-white/10 rounded-full group-hover:scale-110 transition-transform duration-700 blur-3xl"></div>
-<div class="absolute -left-12 -bottom-12 size-64 bg-black/10 rounded-full group-hover:scale-110 transition-transform duration-700 blur-3xl"></div>
-<div class="relative z-10 w-full">
-<div class="bg-white/20 w-fit p-3 rounded-2xl mb-8 backdrop-blur-sm">
-<span class="material-symbols-outlined text-3xl">group_add</span>
-</div>
-<h3 class="text-3xl font-bold mb-3">Hazte Socio</h3>
-<p class="text-green-50 mb-8 max-w-sm font-medium text-lg">Únete a la red más importante de profesionales de túneles en Chile y accede a beneficios exclusivos.</p>
-</div>
-<a class="relative z-10 bg-white text-primary px-10 py-4 rounded-full font-bold text-sm hover:bg-gray-50 transition-colors shadow-lg" href="https://github.com/idigital2025/CTES/hazte-socio">
-                        Solicitar Inscripción
-                    </a>
-</div>
-<div class="bg-white dark:bg-surface-dark border border-[#e5e7eb] dark:border-gray-800 rounded-[3rem] p-10 md:p-14 text-[#111318] dark:text-white flex flex-col items-start justify-between min-h-[320px] relative overflow-hidden group hover:border-primary/30 transition-all shadow-sm hover:shadow-2xl hover:shadow-primary/5">
-<div class="relative z-10 w-full">
-<div class="bg-gray-100 dark:bg-gray-800 w-fit p-3 rounded-2xl mb-8 group-hover:bg-primary/10 group-hover:text-primary transition-colors duration-300">
-<span class="material-symbols-outlined text-3xl">menu_book</span>
-</div>
-<h3 class="text-3xl font-bold mb-3">Explora la Biblioteca</h3>
-<p class="text-[#616f89] dark:text-gray-400 mb-8 max-w-sm text-lg">Accede a una vasta colección de papers, presentaciones y normativa técnica del sector.</p>
-</div>
-<a class="relative z-10 border-2 border-[#111318] dark:border-white text-[#111318] dark:text-white px-10 py-3.5 rounded-full font-bold text-sm hover:bg-[#111318] hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://github.com/idigital2025/CTES/biblioteca">
-                        Ver Documentos
-                    </a>
-</div>
-</section>
-</div>
-</div>
-<footer class="bg-white dark:bg-surface-dark py-20 border-t border-gray-100 dark:border-gray-800">
-<div class="layout-container flex justify-center px-4 lg:px-40">
-<div class="w-full max-w-[1280px]">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-20 mb-16">
-<div class="col-span-1">
-<div class="flex items-center gap-3 mb-6">
-<img alt="CTES Chile" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr2hj-2Mk6Aia8PXFNrk_MqQTvzd8510J2o3T4X1Trrc7XMIcJEdB09C7H9FfDCGUD_aqhOkW0y45NdUVghSB7knVn7p-vCQGdzTCMmSrVeJIEO8dwM93gIMEBbBhKTAT4ytG-ZGQfMLxLJ3l3YS-DJHgVBOg7HM54DofjCzukGeWlZK9OsJvwyrEGW4-KCCc6lJiQIMuPgUfuhzZgKOPMgRokj6H1kV5ICq6hDIkxX9SeLNrZNch1fpqsgL7nUlcrbM_XMoBrxRXI"/>
-<span class="sr-only">CTES Chile</span>
-</div>
-<p class="text-[#616f89] dark:text-gray-400 text-sm leading-relaxed mb-6">
-                            Representante ITA-AITES en Chile
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        La corporación convoca a consultoras, constructoras, proveedores, mandantes, académicos y especialistas del sector, con el propósito de articular conocimiento, canalizar experiencias y promover el desarrollo técnico, la innovación y las buenas prácticas en infraestructura subterránea.
+                    </p>
+                    <div class="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg">
+                        <p class="text-gray-700 dark:text-gray-200 font-medium">
+                            CTES Chile es una organización abierta y convocante, orientada a fortalecer la industria de manera colaborativa, contribuyendo al desarrollo sustentable del país y al avance técnico del rubro.
                         </p>
-<div class="flex gap-4">
-<a class="text-gray-400 hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/linkedin"><span class="material-symbols-outlined">share</span></a>
-<a class="text-gray-400 hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/youtube"><span class="material-symbols-outlined">smart_display</span></a>
-<a class="text-gray-400 hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/instagram"><span class="material-symbols-outlined">photo_camera</span></a>
-</div>
-</div>
-<div class="col-span-1">
-<h5 class="font-bold text-[#111318] dark:text-white mb-6">Navegación</h5>
-<ul class="space-y-4 text-sm text-[#616f89] dark:text-gray-400">
-<li><a class="hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/index">Inicio</a></li>
-<li><a class="hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/quienes-somos">Quiénes Somos</a></li>
-<li><a class="hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/socios">Socios</a></li>
-<li><a class="hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/socios-jovenes">Socios Jóvenes</a></li>
-<li><a class="hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/hazte-socio">Hazte Socio</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h5 class="font-bold text-[#111318] dark:text-white mb-6">Recursos</h5>
-<ul class="space-y-4 text-sm text-[#616f89] dark:text-gray-400">
-<li><a class="hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/noticias">Noticias</a></li>
-<li><a class="hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/biblioteca">Biblioteca</a></li>
-<li><a class="hover:text-primary transition-colors" href="https://github.com/idigital2025/CTES/eventos">Calendario</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h5 class="font-bold text-[#111318] dark:text-white mb-6">Contacto</h5>
-<ul class="space-y-4 text-sm text-[#616f89] dark:text-gray-400">
-<li>+56 9 752 77109</li>
-<li>cteschile@ctes.cl</li>
-<li>ES / EN</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-[#9ca3af]">
-<div class="flex gap-6">
-<a class="hover:text-[#111318] dark:hover:text-white transition-colors" href="https://github.com/idigital2025/CTES/politica-privacidad">Política de privacidad</a>
-<span class="text-gray-300">|</span>
-<a class="hover:text-[#111318] dark:hover:text-white transition-colors" href="https://github.com/idigital2025/CTES/terminos-condiciones">Términos y condiciones</a>
-</div>
-<p>© 2025 CTES Chile. Todos los derechos reservados.</p>
-</div>
-</div>
-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Objetivos (UX Improved Grid) -->
+    <section class="py-16 bg-background-light dark:bg-background-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full">
+                Misión, Visión y Objetivos
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Misión -->
+                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">flag</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Misión</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        Promover el desarrollo de la industria de túneles y espacios subterráneos en Chile, vinculando a todos los grupos de interés del sector.
+                    </p>
+                </div>
+                
+                <!-- Visión -->
+                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">visibility</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Visión</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        Constituirse en el principal referente técnico y punto de encuentro de la industria de túneles y espacios subterráneos en Chile.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Objetivos (Full Width for better readability of long list) -->
+            <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 group w-full">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex flex-shrink-0 items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">track_changes</span>
+                    </div>
+                    <div class="w-full">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 mt-2">Objetivos</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Articular y transferir conocimiento e información técnica en el ámbito de túneles y espacios subterráneos.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Generar instancias de difusión y capacitación técnica en túneles y obras subterráneas.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Difundir la innovación, el conocimiento y las buenas prácticas del sector.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Promover la vinculación con entidades nacionales e internacionales relacionadas con la industria.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Participar activamente en la Asociación Internacional de Túneles y Espacios Subterráneos ITA–AITES.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Fomentar el desarrollo permanente y sustentable del país mediante infraestructura subterránea, en armonía con el medio ambiente.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm md:col-span-2">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Colaborar con universidades, centros tecnológicos y de investigación, mandantes y otras organizaciones para mejorar la ingeniería, construcción, operación, mantención y seguridad de las obras subterráneas.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Representación Internacional -->
+    <section class="py-16 bg-primary relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <!-- Abstract decorative shapes -->
+        <div class="absolute -right-20 -top-20 w-96 h-96 rounded-full border-8 border-white opacity-5"></div>
+        <div class="absolute -left-20 -bottom-20 w-72 h-72 rounded-full border-4 border-white opacity-5"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="text-white max-w-3xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-3xl">public</span>
+                        <h2 class="text-3xl font-bold">Representación internacional ITA–AITES</h2>
+                    </div>
+                    <p class="text-white/90 mb-6 leading-relaxed text-lg">
+                        CTES Chile representa oficialmente a Chile ante la International Tunnelling and Underground Space Association (ITA–AITES), organización internacional que reúne a más de 70 países y a las principales empresas e instituciones de la industria tunelera a nivel mundial.
+                    </p>
+                    <p class="text-white/80 mb-8 leading-relaxed">
+                        Esta representación permite a CTES Chile y a sus socios acceder a información técnica de primer nivel, documentos especializados, actividades de difusión, conferencias internacionales y redes de colaboración global.
+                    </p>
+                    <a class="inline-flex items-center bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg" href="https://ita-aites.org" rel="noopener noreferrer" target="_blank">
+                        Conoce más sobre ITA–AITES
+                        <span class="material-symbols-outlined ml-2 text-sm">open_in_new</span>
+                    </a>
+                </div>
+                
+                <!-- Logo Card -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl w-full max-w-sm flex items-center justify-center transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                    <img src="img/ita-library-logo-1584700926.jpg" alt="Logo ITA-AITES" class="w-full h-auto object-contain" onerror="this.src='https://placehold.co/300x150?text=ITA-AITES+Logo'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directorio -->
+    <section class="py-20 bg-surface-light dark:bg-surface-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full">
+                    Directorio CTES Chile 2023 – 2026
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                    El Directorio de CTES Chile está conformado por profesionales con amplia trayectoria en la industria de túneles y obras subterráneas, responsables de liderar la gestión estratégica e institucional de la corporación.
+                </p>
+            </div>
+
+            <!-- Grid Directorio (Contenido existente mantenido) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Presidente -->
+                <div class="bg-white dark:bg-[#252525] rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow group h-full">
+                    <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-primary mb-4 shadow-md">
+                        <img alt="Gustavo Estay" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPo7JvL02CDhcBr1SCL_qtFPp3THtIcw7EKRWnqPtk-bSPNrIZ67VWTPG9iecxCC5IY4GHqXWAfpiWTkdQhZeGeUwXjGmUaEont_KcHMk_1BoLbQGs3olN0pXngqVdeKkpyEzQT9FERP3PtqtTjs8kRpI0WqiD0Dzncva8uJnpy4odg_rglhdtcaXSsd6v8xcEsbyQwvZd20-q0XT4wMgHXQFWEfJ8atjaxMJNE0HVmpVR7WwaGBE8TMxTOIIJNOKaqAYYEpSASCKk"/>
+                    </div>
+                    <span class="bg-primary/10 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase mb-3">Presidente</span>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Gustavo Estay</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 font-medium mb-4">Presidente CTES Chile</p>
+                    <div class="flex gap-3 mt-auto justify-center">
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="mailto:presidente@ctes.cl"><span class="material-symbols-outlined text-xl">email</span></a>
+                        <a class="text-gray-400 hover:text-[#0077b5] transition-colors" href="#"><span class="material-symbols-outlined text-xl">link</span></a>
+                    </div>
+                </div>
+                
+                <!-- Director 1 -->
+                <div class="bg-white dark:bg-[#252525] rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow group h-full">
+                    <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 mb-4 group-hover:border-primary transition-colors">
+                        <img alt="Armando Olavarría" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyrxWir3Gboze2O3WcxNovryULGZAQx-n9MlLLrit3hJOn49voHgYnqrd-4X0zEhIrn7Zd-SDDteDKweCeRgNzPt5b2zL2133G5qvzCRJVAW4mX2e7-KRUsliE6Ca_aGx4HClvC_sgnR9iPxc9NyXeHYOAKn-5kMXL8-YzhoWpOeu9jgQzr-0xurmDSXokZLhAnFqSbCAbsQUxedoJZhoo-hK7EE33rMOLNSxpNFp4qH1XpY6xo-mibkwBfPc0iooJqAzsUEarK5dl"/>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Armando Olavarría</h4>
+                    <p class="text-sm text-primary font-medium mb-4">Director</p>
+                    <div class="flex gap-3 mt-auto justify-center">
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">email</span></a>
+                    </div>
+                </div>
+                <!-- Director 2 -->
+                <div class="bg-white dark:bg-[#252525] rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow group h-full">
+                    <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 mb-4 group-hover:border-primary transition-colors">
+                        <img alt="Matías Egaña" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBian3lgbLE5gm5M7j40o1lZvSUKXRnaM8uReWprTLe6CMrECB4XwoN1_qBPmfjYtVqbyos5RvTa3eu80B5OGqA9TgYWgYogpJ2d7Y1Fgu6VNQFNbbdi6-upBHICRz5RNLPYrgs5RCA69GubfA7Cqw4BXozax_XoEd6hQndz7Ho7Qc4uBE8vMwMyzd8zwljWElMSs5GPmBskS4dsVkQhhuXRarRap6b9E-_A2Qf0445-AXIlMyYHgSx126H92vB00uAb4kkUSQII35X"/>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Matías Egaña</h4>
+                    <p class="text-sm text-primary font-medium mb-4">Director</p>
+                    <div class="flex gap-3 mt-auto justify-center">
+                         <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">email</span></a>
+                    </div>
+                </div>
+                <!-- Director 3 -->
+                <div class="bg-white dark:bg-[#252525] rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow group h-full">
+                    <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 mb-4 group-hover:border-primary transition-colors">
+                        <img alt="Ana Cooper" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ69avNuH7zGpouniOrzV57CEp-rHdKojqBsZ9IVftpwhyGDB_mUibnWUlY7eOUriW3R-Hr74QsbG9zJxlV8tnG3gZ3UfhyLgGJr3K_o4DNgtpVsmKNaTqoSpLHLGYUgQau4iORi-0VBZp5igav8X8g5pona-jvspuoD28fPODZU9onYkos78wQF-lw4sLhmG7lL5LdfH1nizjVQEL6ZVpaWPeVkRw2ho0dR3ZpZWF_iZ_L1liGtUq3-bUuO9BDuhxhnUF_vLKk_y2"/>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Ana Cooper</h4>
+                    <p class="text-sm text-primary font-medium mb-4">Directora</p>
+                    <div class="flex gap-3 mt-auto justify-center">
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">email</span></a>
+                    </div>
+                </div>
+                <!-- Director 4 -->
+                <div class="bg-white dark:bg-[#252525] rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow group h-full">
+                    <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 mb-4 group-hover:border-primary transition-colors">
+                        <img alt="Pablo Gándara" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLBs0x7037nsFik48OMSZbQWdKpGLeAUzJmlCUo6kwhYUczCkiAnfBET_Z7WARLtmPXkTtpYHO8bKISZ2I24tjL5gxEhzUzRDj9cYAsd-tPrQ-qQvCA5JdJHNLwiWqf6NX29-Tu7uolil--gV1esfzi_CgBE0j00hIqAz14Bl_HZ0tHfgMjDu-52fZGeicxgFK-61MqoulEGUFzasEvXwwdSm93LuIEfVKEuKSiejHo66mslYa6bHT-wn_KEAEZv3oT7NPzo33GcYN"/>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Pablo Gándara</h4>
+                    <p class="text-sm text-primary font-medium mb-4">Director</p>
+                    <div class="flex gap-3 mt-auto justify-center">
+                         <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">email</span></a>
+                    </div>
+                </div>
+                <!-- Director 5 -->
+                <div class="bg-white dark:bg-[#252525] rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow group h-full">
+                    <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 mb-4 group-hover:border-primary transition-colors">
+                        <img alt="René Álvarez" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaK4no3kzFMfv9mX--2kQgn_xb5Vb2OHlJLg2CDvjDlk04YjlePt4QtF3hDcfG_FdEI_Ke6aM3Z4roDk4tgGw7nSnkFMTLwE3vOhImx_zQnHfll0vhz9OaLYXd5mqe6XL2AhYwJMkewtkXYm2eMYtzT9v4gONxiovB5GAkAHAwtSWF4qTbBDzk-jTnxv296DRrJkDjEhGveJuk57vdCgVVxFwc5fzt588Vfz-Z-nW6sBMtfHNaNnsH1TwzKm2cY9FdDfZhOvh4HFSi"/>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">René Álvarez</h4>
+                    <p class="text-sm text-primary font-medium mb-4">Director</p>
+                    <div class="flex gap-3 mt-auto justify-center">
+                         <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">email</span></a>
+                    </div>
+                </div>
+                <!-- Director 6 -->
+                <div class="bg-white dark:bg-[#252525] rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow group h-full">
+                    <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 mb-4 group-hover:border-primary transition-colors">
+                        <img alt="Henry Martínez" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq_OR5dzQgNEdD6QX1PpXa4SCZBi-v55RL1X5q1ukpS4dN3zTX8jR-nM24JOdLnqdPkULFKVlHl8trnxEhud-59Pl6gbtAZkf5jXO-E6qNGF9MTDTTJgz3afB8E6PPp4tC_z7S4s94Rb08X0UWs7ZvV4jNdO8IC8Zo5Thk2KPYobS31mFnNBG-K3upFYp7aN9Mn-h0rgcVM09m_IXcLbmiFMBonaZqQOXoUzX2c0TI3D5Z80QrM-7qKM-TLmv0Z8XGaI5xeyXErlwg"/>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Henry Martínez</h4>
+                    <p class="text-sm text-primary font-medium mb-4">Director</p>
+                    <div class="flex gap-3 mt-auto justify-center">
+                         <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">email</span></a>
+                    </div>
+                </div>
+                <!-- Director 7 -->
+                <div class="bg-white dark:bg-[#252525] rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow group h-full">
+                    <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 mb-4 group-hover:border-primary transition-colors">
+                        <img alt="Luis Uribe" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLZFmvwUpyd2AhxYtP2xcBXO2rbvbMDKadTEJNMRpEqt3CcA0O4bhSn4-9I7LtI3zc5oCOsaaZdOadmhH3Tt0BT7hm-BtxUqFQ6QmbsxLS_ZpcTods_bjmScDI9eftodL0p6LlFnL9T6mA_ACD9uEricgQLA-Zf-dpCHNnqNUaI5y5Pp6xVcR0IJzD2BF-1xrjhYM2xUR8E7QXzpkPo1RsuJlabj50oDxgCDZbmHqAtRwSiUUbap-FtP34ns6_ERAUrkh_tSxkTEZk"/>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Luis Uribe</h4>
+                    <p class="text-sm text-primary font-medium mb-4">Director</p>
+                    <div class="flex gap-3 mt-auto justify-center">
+                         <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">email</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentos Fundacionales (Rediseñado) -->
+    <section class="py-16 bg-background-light dark:bg-background-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 border-l-4 border-primary pl-4">
+                Documentos fundacionales y transparencia
+            </h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12 bg-white dark:bg-[#252525] p-8 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800">
+                <!-- Información Izquierda -->
+                <div class="w-full lg:w-1/2">
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        CTES Chile pone a disposición documentos clave que respaldan su funcionamiento institucional y compromiso con la transparencia. Estos documentos pueden ser consultados desde la Biblioteca o el área correspondiente del sitio.
+                    </p>
+                    <h4 class="font-bold text-gray-900 dark:text-white mb-4">Documentos disponibles:</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                            <span class="material-symbols-outlined text-primary mr-2 text-lg">description</span>
+                            Estatutos de la Corporación
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                            <span class="material-symbols-outlined text-primary mr-2 text-lg">gavel</span>
+                            Reglamentos internos
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                            <span class="material-symbols-outlined text-primary mr-2 text-lg">history_edu</span>
+                            Actas relevantes
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                            <span class="material-symbols-outlined text-primary mr-2 text-lg">account_balance</span>
+                            Balances y estados financieros
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Botones Derecha -->
+                <div class="w-full lg:w-1/2 flex flex-col justify-center gap-4">
+                    <a class="group flex items-center p-4 bg-gray-50 dark:bg-surface-dark rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-200 dark:border-gray-700 hover:border-primary/50" href="#">
+                        <div class="w-10 h-10 rounded-lg bg-red-100 dark:bg-red-900/20 text-red-600 dark:text-red-400 flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined">picture_as_pdf</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors">Estatutos CTES Chile</h4>
+                            <p class="text-xs text-gray-500 dark:text-gray-400">PDF - Descarga directa</p>
+                        </div>
+                        <span class="material-symbols-outlined ml-auto text-gray-400 group-hover:text-primary">download</span>
+                    </a>
+                    <a class="group flex items-center p-4 bg-gray-50 dark:bg-surface-dark rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-200 dark:border-gray-700 hover:border-primary/50" href="#">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined">article</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors">Memoria Anual 2024</h4>
+                            <p class="text-xs text-gray-500 dark:text-gray-400">PDF - Resumen de actividades</p>
+                        </div>
+                        <span class="material-symbols-outlined ml-auto text-gray-400 group-hover:text-primary">download</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sé parte de CTES (CTA Footer) -->
+    <section class="py-20 bg-gray-50 dark:bg-[#151515] border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Sé parte de CTES Chile</h2>
+            <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10 text-lg leading-relaxed">
+                CTES Chile es una red técnica y colaborativa que impulsa el desarrollo de la ingeniería subterránea en el país. Ser parte de la corporación es acceder a conocimiento especializado, redes profesionales y oportunidades de participación activa en el sector.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-bold shadow-lg transform hover:-translate-y-1 transition-all duration-200" href="https://idigital2025.github.io/CTES/hazte-socio">
+                    Hazte socio
+                </a>
+                <a class="bg-white dark:bg-surface-dark text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600 hover:border-primary hover:text-primary dark:hover:text-primary px-8 py-3 rounded-full font-bold shadow-sm transform hover:-translate-y-1 transition-all duration-200" href="https://idigital2025.github.io/CTES/biblioteca">
+                    Explora la biblioteca
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- =========================================
+     START FOOTER (Copiar esto para footer.php)
+     ========================================= -->
+<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Columna 1: Info -->
+            <div>
+                <div class="w-32 mb-6">
+                    <img alt="CTES Chile Logo" class="h-10 w-auto object-contain dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">
+                    Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.
+                </p>
+                <div class="flex space-x-4">
+                    <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+                    <a class="text-gray-400 hover:text-primary transition-colors" href="#">YouTube</a>
+                    <a class="text-gray-400 hover:text-primary transition-colors" href="#">LinkedIn</a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div>
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Navegación</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/">Inicio</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Socios</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Socios Jóvenes</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte Socio</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Recursos -->
+            <div>
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+                    <li><a class="hover:text-primary transition-colors" href="#">Noticias</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Calendario</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Contacto -->
+            <div>
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Contacto</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+                    <li class="flex items-start"><span class="material-symbols-outlined text-base mr-2 mt-0.5">phone</span> +56 9 752 77109</li>
+                    <li class="flex items-start"><span class="material-symbols-outlined text-base mr-2 mt-0.5">email</span> cteschile@ctes.cl</li>
+                    <li class="flex items-start"><span class="material-symbols-outlined text-base mr-2 mt-0.5">language</span> ES / EN</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 dark:text-gray-500">
+            <div class="flex space-x-6 mb-4 md:mb-0">
+                <a class="hover:text-primary transition-colors" href="#">Política de privacidad</a>
+                <span class="border-l border-gray-300 dark:border-gray-700 h-3 my-auto"></span>
+                <a class="hover:text-primary transition-colors" href="#">Términos y condiciones</a>
+            </div>
+            <p>© 2025 CTES Chile. Todos los derechos reservados.</p>
+        </div>
+    </div>
 </footer>
-</body></html>
+<!-- =========================================
+     END FOOTER
+     ========================================= -->
+
+</body>
+</html>
