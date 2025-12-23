@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -39,64 +39,64 @@
             },
         };
     </script>
+    <style>
+    body { font-family: "Inter", sans-serif }
+    ::-webkit-scrollbar { width: 8px }
+    ::-webkit-scrollbar-track { background: #f1f1f1 }
+    ::-webkit-scrollbar-thumb { background: #888; border-radius: 4px }
+    .dark ::-webkit-scrollbar-track { background: #1f2937 }
+    .dark ::-webkit-scrollbar-thumb { background: #4b5563 }
+    </style>
 </head>
 <body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200">
 
-<!-- =========================================
-     START HEADER (Copiar esto para header.php)
-     ========================================= -->
-<div class="bg-gray-50 dark:bg-surface-dark border-b border-gray-200 dark:border-gray-800 py-2">
-    <div class="container mx-auto px-4 flex justify-between items-center text-sm text-gray-600 dark:text-gray-400">
-        <span class="hidden md:inline">CTES Chile, representante oficial de la ITA-AITES</span>
-        <div class="flex items-center space-x-6 ml-auto">
-            <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px] mr-1">person</span> Mi cuenta</a>
-            <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px] mr-1">help</span> Ayuda</a>
-            <span class="cursor-pointer hover:text-primary transition-colors">ES / EN</span>
-            <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px] mr-1">phone</span> Contacto</a>
+<!-- CONTENEDOR STICKY PARA CINTILLO Y HEADER -->
+<div class="sticky top-0 z-50 w-full">
+    <!-- CINTILLO -->
+    <div class="bg-background-light dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-xs py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <span class="text-gray-500 dark:text-gray-400 hidden md:inline">CTES Chile, representante oficial de la ITA-AITES</span>
+            <div class="flex items-center space-x-6 ml-auto md:ml-0 text-gray-600 dark:text-gray-300">
+                <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">person</span> Mi cuenta</a>
+                <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">help</span> Ayuda</a>
+                <span class="cursor-pointer hover:text-primary transition-colors">ES / EN</span>
+                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1">phone</span> Contacto</a>
+            </div>
         </div>
     </div>
-</div>
 
-<header class="bg-surface-light dark:bg-surface-dark shadow-sm sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4">
-        <div class="flex items-center justify-between">
-            <!-- Logo -->
-            <div class="flex-shrink-0">
-                <a href="https://idigital2025.github.io/CTES/">
-                    <img alt="CTES Chile Logo" class="h-12 w-auto object-contain dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
-                </a>
-            </div>
-            
-            <!-- Navegación Desktop -->
-            <nav class="hidden lg:flex items-center space-x-8">
-                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="https://idigital2025.github.io/CTES/">Inicio</a>
-                <a class="text-primary font-bold transition-colors" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a>
-                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="#">Socios</a>
-                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="#">Socios Jóvenes</a>
-                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="#">Noticias</a>
-                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a>
-                <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors" href="#">Calendario</a>
-            </nav>
-            
-            <!-- Botón CTA Header -->
-            <div class="hidden lg:block">
-                <a class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-sm" href="https://idigital2025.github.io/CTES/hazte-socio">
-                    Hazte Socio
-                </a>
-            </div>
-            
-            <!-- Mobile Menu Button -->
-            <div class="lg:hidden">
-                <button class="text-gray-700 dark:text-gray-300 hover:text-primary">
-                    <span class="material-symbols-outlined text-2xl">menu</span>
-                </button>
+    <!-- HEADER -->
+    <header class="bg-surface-light dark:bg-surface-dark shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex-shrink-0">
+                    <a href="https://idigital2025.github.io/CTES/">
+                        <img alt="CTES Chile Logo" class="h-12 w-auto object-contain dark:bg-white dark:rounded-md dark:p-1" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
+                    </a>
+                </div>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/">Inicio</a>
+                    <a class="text-primary font-bold transition-colors text-sm" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios">Socios</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/noticias">Noticias</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/eventos">Calendario</a>
+                </nav>
+                <div class="hidden lg:block">
+                    <a class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-sm text-sm" href="https://idigital2025.github.io/CTES/hazte-socio">
+                        Hazte Socio
+                    </a>
+                </div>
+                <div class="lg:hidden">
+                    <button class="text-gray-700 dark:text-gray-300 hover:text-primary">
+                        <span class="material-symbols-outlined text-2xl">menu</span>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-</header>
-<!-- =========================================
-     END HEADER
-     ========================================= -->
+    </header>
+</div>
 
 
 <main>
@@ -119,7 +119,6 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="w-full lg:w-1/2">
-                    <!-- Se eliminaron clases: rounded-2xl y shadow-xl -->
                     <div class="relative overflow-hidden aspect-video group">
                         <img alt="Ingeniería de túneles" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0dAKdq_011tTRdYQdQbxYQToBF_RmSo4AE4UEHq9YU_erL0t4Z5TXKYpB_4-pOJljmIIME2kFwep4oaTZHqZxgd4qp4DEikh9lwz-aCSvDKZTUxsoRywccUO5-_0xBjzxrNvbwR8fYL_apPrtU5ckl7AKg8NfIi7eJpYoVHfGLoavkrW1L0Tq6guISfIj2VY0Fjs6wxmQaQak24YYDuUUM6KaMeci8FSLHvAcP2ftkWuDRfd2yFdDfObqW-KnttfEOwg29tLuPxWn"/>
                         <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300"></div>
@@ -145,85 +144,9 @@
         </div>
     </section>
 
-    <!-- Misión, Visión y Objetivos (UX Improved Grid) -->
-    <section class="py-16 bg-background-light dark:bg-background-dark">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full">
-                Misión, Visión y Objetivos
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <!-- Misión -->
-                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 group">
-                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">flag</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Misión</h3>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                        Promover el desarrollo de la industria de túneles y espacios subterráneos en Chile, vinculando a todos los grupos de interés del sector.
-                    </p>
-                </div>
-                
-                <!-- Visión -->
-                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 group">
-                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">visibility</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Visión</h3>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                        Constituirse en el principal referente técnico y punto de encuentro de la industria de túneles y espacios subterráneos en Chile.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Objetivos (Full Width for better readability of long list) -->
-            <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 group w-full">
-                <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 bg-primary/10 rounded-full flex flex-shrink-0 items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">track_changes</span>
-                    </div>
-                    <div class="w-full">
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 mt-2">Objetivos</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
-                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
-                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
-                                Articular y transferir conocimiento e información técnica en el ámbito de túneles y espacios subterráneos.
-                            </li>
-                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
-                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
-                                Generar instancias de difusión y capacitación técnica en túneles y obras subterráneas.
-                            </li>
-                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
-                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
-                                Difundir la innovación, el conocimiento y las buenas prácticas del sector.
-                            </li>
-                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
-                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
-                                Promover la vinculación con entidades nacionales e internacionales relacionadas con la industria.
-                            </li>
-                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
-                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
-                                Participar activamente en la Asociación Internacional de Túneles y Espacios Subterráneos ITA–AITES.
-                            </li>
-                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
-                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
-                                Fomentar el desarrollo permanente y sustentable del país mediante infraestructura subterránea, en armonía con el medio ambiente.
-                            </li>
-                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm md:col-span-2">
-                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
-                                Colaborar con universidades, centros tecnológicos y de investigación, mandantes y otras organizaciones para mejorar la ingeniería, construcción, operación, mantención y seguridad de las obras subterráneas.
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Representación Internacional -->
+    <!-- Representación Internacional (MOVIDA ARRIBA) -->
     <section class="py-16 bg-primary relative overflow-hidden">
         <div class="absolute inset-0 bg-black opacity-10"></div>
-        <!-- Abstract decorative shapes -->
         <div class="absolute -right-20 -top-20 w-96 h-96 rounded-full border-8 border-white opacity-5"></div>
         <div class="absolute -left-20 -bottom-20 w-72 h-72 rounded-full border-4 border-white opacity-5"></div>
 
@@ -254,7 +177,7 @@
         </div>
     </section>
 
-    <!-- Directorio -->
+    <!-- Directorio (MOVIDA ARRIBA) -->
     <section class="py-20 bg-surface-light dark:bg-surface-dark">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -266,7 +189,6 @@
                 </p>
             </div>
 
-            <!-- Grid Directorio (Contenido existente mantenido) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <!-- Presidente -->
                 <div class="bg-white dark:bg-[#252525] rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow group h-full">
@@ -363,6 +285,81 @@
         </div>
     </section>
 
+    <!-- Misión, Visión y Objetivos (UX Improved Grid) -->
+    <section class="py-16 bg-background-light dark:bg-background-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full">
+                Misión, Visión y Objetivos
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Misión -->
+                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">flag</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Misión</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        Promover el desarrollo de la industria de túneles y espacios subterráneos en Chile, vinculando a todos los grupos de interés del sector.
+                    </p>
+                </div>
+                
+                <!-- Visión -->
+                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">visibility</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Visión</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        Constituirse en el principal referente técnico y punto de encuentro de la industria de túneles y espacios subterráneos en Chile.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Objetivos (Full Width for better readability of long list) -->
+            <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 group w-full">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex flex-shrink-0 items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">track_changes</span>
+                    </div>
+                    <div class="w-full">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 mt-2">Objetivos</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Articular y transferir conocimiento e información técnica en el ámbito de túneles y espacios subterráneos.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Generar instancias de difusión y capacitación técnica en túneles y obras subterráneas.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Difundir la innovación, el conocimiento y las buenas prácticas del sector.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Promover la vinculación con entidades nacionales e internacionales relacionadas con la industria.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Participar activamente en la Asociación Internacional de Túneles y Espacios Subterráneos ITA–AITES.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Fomentar el desarrollo permanente y sustentable del país mediante infraestructura subterránea, en armonía con el medio ambiente.
+                            </li>
+                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm md:col-span-2">
+                                <span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5">check_circle</span>
+                                Colaborar con universidades, centros tecnológicos y de investigación, mandantes y otras organizaciones para mejorar la ingeniería, construcción, operación, mantención y seguridad de las obras subterráneas.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Documentos Fundacionales (Rediseñado) -->
     <section class="py-16 bg-background-light dark:bg-background-dark">
         <div class="container mx-auto px-4">
@@ -444,13 +441,10 @@
 </main>
 
 
-<!-- =========================================
-     START FOOTER (Copiar esto para footer.php)
-     ========================================= -->
+<!-- FOOTER -->
 <footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <!-- Columna 1: Info -->
             <div>
                 <div class="w-32 mb-6">
                     <img alt="CTES Chile Logo" class="h-10 w-auto object-contain dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
@@ -459,45 +453,49 @@
                     Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.
                 </p>
                 <div class="flex space-x-4">
-                    <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
-                    <a class="text-gray-400 hover:text-primary transition-colors" href="#">YouTube</a>
-                    <a class="text-gray-400 hover:text-primary transition-colors" href="#">LinkedIn</a>
+                    <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
                 </div>
             </div>
-
-            <!-- Columna 2: Navegación -->
             <div>
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Navegación</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                     <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/">Inicio</a></li>
                     <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Socios</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Socios Jóvenes</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/socios">Socios</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a></li>
                     <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte Socio</a></li>
                 </ul>
             </div>
-
-            <!-- Columna 3: Recursos -->
             <div>
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="#">Noticias</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/noticias">Noticias</a></li>
                     <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Calendario</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/eventos">Calendario</a></li>
                 </ul>
             </div>
-
-            <!-- Columna 4: Contacto -->
             <div>
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Contacto</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li class="flex items-start"><span class="material-symbols-outlined text-base mr-2 mt-0.5">phone</span> +56 9 752 77109</li>
-                    <li class="flex items-start"><span class="material-symbols-outlined text-base mr-2 mt-0.5">email</span> cteschile@ctes.cl</li>
+                    <li class="flex items-start">
+                        <a href="tel:+56975277109" class="hover:text-primary flex items-center">
+                            <span class="material-symbols-outlined text-base mr-2 mt-0.5">phone</span> +56 9 752 77109
+                        </a>
+                    </li>
+                    <li class="flex items-start">
+                        <a href="mailto:cteschile@ctes.cl" class="hover:text-primary flex items-center">
+                            <span class="material-symbols-outlined text-base mr-2 mt-0.5">email</span> cteschile@ctes.cl
+                        </a>
+                    </li>
                     <li class="flex items-start"><span class="material-symbols-outlined text-base mr-2 mt-0.5">language</span> ES / EN</li>
                 </ul>
             </div>
         </div>
-
         <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 dark:text-gray-500">
             <div class="flex space-x-6 mb-4 md:mb-0">
                 <a class="hover:text-primary transition-colors" href="#">Política de privacidad</a>
@@ -508,9 +506,40 @@
         </div>
     </div>
 </footer>
-<!-- =========================================
-     END FOOTER
-     ========================================= -->
+
+<!-- Botones flotantes -->
+<div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+    <!-- Botón Subir (Scroll Top) -->
+    <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/56975277109" target="_blank" class="bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-all w-12 h-12 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+</div>
+
+<script>
+    // Script para botón "Volver arriba"
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollToTopBtn.classList.remove("hidden");
+            scrollToTopBtn.classList.add("flex");
+        } else {
+            scrollToTopBtn.classList.add("hidden");
+            scrollToTopBtn.classList.remove("flex");
+        }
+    };
+
+    scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 
 </body>
 </html>
