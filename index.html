@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es"><head>
+<html lang="es" class="scroll-smooth">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>CTES Chile Homepage - Biblioteca Tecnológica</title>
@@ -7,110 +8,108 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#318061",
-                        "primary-dark": "#256049",
-                        "background-light": "#F9FAFB",
-                        "background-dark": "#111827",
-                        "surface-light": "#FFFFFF",
-                        "surface-dark": "#1F2937",
-                        "text-light": "#374151",
-                        "text-dark": "#D1D5DB",
-                    },
-                    fontFamily: {
-                        display: ["Inter", "sans-serif"],
-                        body: ["Inter", "sans-serif"],
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.375rem",
-                    },
-                    boxShadow: {
-                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-                        'glow': '0 0 15px rgba(49, 128, 97, 0.3)',
-                    },
-                    animation: {
-                        'scroll': 'scroll 60s linear infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                    },
-                    keyframes: {
-                        scroll: {
-                            '0%': { transform: 'translateX(0)' },
-                            '100%': { transform: 'translateX(-50%)' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
-                },
-            },
-        };
-    </script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#318061",
+                    "primary-dark": "#256049",
+                    "background-light": "#F9FAFB",
+                    "background-dark": "#111827",
+                    "surface-light": "#FFFFFF",
+                    "surface-dark": "#1F2937",
+                    "text-light": "#374151",
+                    "text-dark": "#D1D5DB",
+                },
+                fontFamily: {
+                    display: ["Inter", "sans-serif"],
+                    body: ["Inter", "sans-serif"],
+                },
+                borderRadius: {
+                    DEFAULT: "0.375rem",
+                },
+                boxShadow: {
+                    'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                    'glow': '0 0 15px rgba(49, 128, 97, 0.3)',
+                },
+                animation: {
+                    'scroll': 'scroll 60s linear infinite',
+                    'float': 'float 6s ease-in-out infinite',
+                    'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                },
+                keyframes: {
+                    scroll: {
+                        '0%': { transform: 'translateX(0)' },
+                        '100%': { transform: 'translateX(-50%)' },
+                    },
+                    float: {
+                        '0%, 100%': { transform: 'translateY(0)' },
+                        '50%': { transform: 'translateY(-10px)' },
+                    }
+                }
+            },
+        },
+    };
+</script>
 <style>
-body {
-    font-family: "Inter", sans-serif
-}::-webkit-scrollbar {
-    width: 8px
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px
-}
-.dark ::-webkit-scrollbar-track {
-    background: #1f2937
-}
-.dark ::-webkit-scrollbar-thumb {
-    background: #4b5563
-}
+body { font-family: "Inter", sans-serif }
+::-webkit-scrollbar { width: 8px }
+::-webkit-scrollbar-track { background: #f1f1f1 }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 4px }
+.dark ::-webkit-scrollbar-track { background: #1f2937 }
+.dark ::-webkit-scrollbar-thumb { background: #4b5563 }
 </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200">
-<div class="bg-background-light dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-xs py-2">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-<span class="text-gray-500 dark:text-gray-400">CTES Chile, representante oficial de la ITA-AITES</span>
-<div class="flex items-center space-x-6 text-gray-600 dark:text-gray-300">
-<a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">person</span> Mi cuenta</a>
-<a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">help</span> Ayuda</a>
-<a class="hover:text-primary transition-colors" href="#">ES / EN</a>
-<a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">phone</span> Contacto</a>
+
+<!-- CONTENEDOR STICKY PARA CINTILLO Y HEADER -->
+<div class="sticky top-0 z-50 w-full">
+    <!-- CINTILLO -->
+    <div class="bg-background-light dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-xs py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <span class="text-gray-500 dark:text-gray-400">CTES Chile, representante oficial de la ITA-AITES</span>
+            <div class="flex items-center space-x-6 text-gray-600 dark:text-gray-300">
+                <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">person</span> Mi cuenta</a>
+                <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">help</span> Ayuda</a>
+                <a class="hover:text-primary transition-colors" href="#">ES / EN</a>
+                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1">phone</span> Contacto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="bg-surface-light dark:bg-surface-dark shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="https://idigital2025.github.io/CTES/">
+                        <img alt="CTES Chile Logo" class="h-16 w-auto object-contain dark:bg-white dark:rounded-md dark:p-1" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
+                    </a>
+                </div>
+                <nav class="hidden lg:flex space-x-6">
+                    <a class="text-primary font-medium text-sm" href="https://idigital2025.github.io/CTES/">Inicio</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="https://idigital2025.github.io/CTES/socios">Socios</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="https://idigital2025.github.io/CTES/noticias">Noticias</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="https://idigital2025.github.io/CTES/eventos">Calendario</a>
+                </nav>
+                <div class="hidden lg:flex">
+                    <a class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full text-sm font-medium transition-colors" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte Socio</a>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button class="text-gray-600 dark:text-gray-300 hover:text-primary focus:outline-none">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 </div>
-</div>
-</div>
-<header class="bg-surface-light dark:bg-surface-dark shadow-sm sticky top-0 z-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
-<div class="flex-shrink-0 flex items-center">
-<!-- LOGO HEADER -->
-<img alt="CTES Chile Logo" class="h-16 w-auto object-contain dark:bg-white dark:rounded-md dark:p-1" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
-</div>
-<nav class="hidden lg:flex space-x-6">
-<a class="text-primary font-medium text-sm" href="https://idigital2025.github.io/CTES/">Inicio</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Socios</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Socios Jóvenes</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Noticias</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Biblioteca</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Calendario</a>
-</nav>
-<div class="hidden lg:flex">
-<a class="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-full text-sm font-medium transition-colors" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte Socio</a>
-</div>
-<div class="lg:hidden flex items-center">
-<button class="text-gray-600 dark:text-gray-300 hover:text-primary focus:outline-none">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</div>
-</header>
+
+<!-- Resto del contenido (Hero, Noticias, etc) se mantiene igual -->
 <div class="bg-gray-100 dark:bg-gray-800">
 <div class="flex flex-col lg:flex-row min-h-[500px]">
 <div class="w-full lg:w-1/2 relative h-64 lg:h-auto order-2 lg:order-1">
@@ -123,7 +122,7 @@ body {
 <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">Codelco y Anglo American consolidan alianza</h1>
 <div class="w-24 h-1.5 bg-primary mb-6 rounded-full"></div>
 <p class="text-gray-600 dark:text-gray-400 mb-8 text-lg leading-relaxed">Ambas compañías acuerdan operar de forma conjunta dos de los mayores yacimientos de cobre del mundo, buscando eficiencias operativas y sustentabilidad en sus futuros desarrollos subterráneos.</p>
-<a class="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-white font-medium px-8 py-3 rounded-full transition-colors text-base shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" href="#">Leer más <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span></a>
+<a class="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 rounded-full transition-colors text-base shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" href="#">Leer más <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span></a>
 </div>
 </div>
 </div>
@@ -198,9 +197,7 @@ body {
 </div>
 </div>
 <div class="mt-10 text-center">
-<a class="inline-block bg-primary hover:bg-primary-dark text-white text-sm font-medium px-6 py-3 rounded-full transition-colors" href="#">
-                    Ver todas las noticias <span class="material-symbols-outlined text-sm align-middle ml-1">arrow_forward</span>
-</a>
+<a class="inline-flex items-center bg-primary hover:bg-primary-dark text-white text-sm font-medium px-6 py-3 rounded-full transition-colors" href="#">Ver todas las noticias <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span></a>
 </div>
 </div>
 </section>
@@ -211,7 +208,7 @@ body {
 <h2 class="text-2xl lg:text-3xl font-bold text-white mb-2">INGENIERÍA SUBTERRÁNEA CON PROPÓSITO</h2>
 <div class="w-16 h-1 bg-white mb-6"></div>
 <p class="text-white mb-6 leading-relaxed">CTES Chile es la Corporación que reúne a empresas, instituciones y profesionales para promover el desarrollo técnico, la innovación y las buenas prácticas en obras subterráneas. Representamos a Chile ante la ITA-AITES y trabajamos por un futuro más eficiente y sostenible bajo tierra.</p>
-<a class="inline-flex items-center bg-white text-[#212020] hover:bg-gray-100 font-medium px-5 py-2 rounded-full transition-all" href="https://idigital2025.github.io/CTES/quienes-somos">Conoce más sobre CTES <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span></a>
+<a class="inline-flex items-center bg-white text-[#212020] hover:bg-gray-100 font-medium px-6 py-2.5 rounded-full transition-all" href="https://idigital2025.github.io/CTES/quienes-somos">Conoce más sobre CTES <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span></a>
 </div>
 <div class="lg:w-1/2">
 <div class="relative rounded-2xl overflow-hidden shadow-2xl h-52 lg:h-64 w-full">
@@ -262,7 +259,7 @@ body {
 </div>
 <input class="block w-full pl-10 pr-3 py-3 border border-gray-200 dark:border-gray-700 rounded-xl leading-5 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary sm:text-sm transition-all" placeholder="Buscar documentos, normas o videos..." type="text"/>
 </div>
-<button class="flex-shrink-0 bg-gradient-to-r from-primary to-green-600 text-white px-5 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group/ai">
+<button class="flex-shrink-0 bg-gradient-to-r from-primary to-green-600 text-white px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group/ai">
 <span class="material-symbols-outlined text-xl">smart_toy</span>
 <span class="hidden sm:inline">Preguntar al Agente AI</span>
 </button>
@@ -447,9 +444,7 @@ body {
 </div>
 </div>
 <div class="mt-10 text-center">
-<a class="inline-block bg-primary hover:bg-primary-dark text-white text-sm font-medium px-6 py-3 rounded-full transition-colors flex items-center justify-center mx-auto w-fit" href="#">
-<span class="material-symbols-outlined text-sm mr-2">calendar_today</span> Ver calendario completo
-                </a>
+<a class="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-white text-sm font-medium px-6 py-3 rounded-full transition-colors mx-auto w-fit" href="#"><span class="material-symbols-outlined text-sm mr-2">calendar_today</span> Ver calendario completo</a>
 </div>
 </div>
 </section>
@@ -491,12 +486,8 @@ body {
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-<a class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full text-sm font-medium transition-colors inline-flex items-center justify-center" href="https://idigital2025.github.io/CTES/hazte-socio">
-                    Hazte socio ahora <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
-</a>
-<a class="bg-white dark:bg-gray-700 text-gray-700 dark:text-white border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-600 px-8 py-3 rounded-full text-sm font-medium transition-colors inline-flex items-center justify-center" href="#">
-                    Conoce los beneficios <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
-</a>
+<a class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full text-sm font-medium transition-colors inline-flex items-center justify-center" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte socio ahora <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span></a>
+<a class="bg-white dark:bg-gray-700 text-gray-700 dark:text-white border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-600 px-6 py-3 rounded-full text-sm font-medium transition-colors inline-flex items-center justify-center" href="#">Conoce los beneficios <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span></a>
 </div>
 </div>
 </section>
@@ -507,7 +498,7 @@ body {
 <form class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
 <input class="px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400 w-full sm:w-1/3" placeholder="Nombre" type="text"/>
 <input class="px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400 w-full sm:w-1/3" placeholder="Correo electrónico" type="email"/>
-<button class="bg-gray-900 text-white font-bold px-8 py-3 rounded-full hover:bg-black transition-colors" type="button">Suscribirme</button>
+<button class="bg-gray-900 text-white font-bold px-6 py-3 rounded-full hover:bg-black transition-colors" type="button">Suscribirme</button>
 </form>
 </div>
 </div>
@@ -539,7 +530,7 @@ body {
 <textarea class="w-full border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md shadow-sm focus:ring-primary focus:border-primary text-sm p-3" placeholder="Cuéntanos en qué podemos ayudarte..." rows="4"></textarea>
 </div>
 <div class="md:col-span-2 text-center mt-4">
-<button class="bg-primary hover:bg-primary-dark text-white font-medium px-10 py-3 rounded-full transition-colors w-full sm:w-auto" type="button">Enviar mensaje</button>
+<button class="bg-primary hover:bg-primary-dark text-white font-medium px-8 py-3 rounded-full transition-colors w-full sm:w-auto" type="button">Enviar mensaje</button>
 </div>
 </form>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
@@ -557,11 +548,13 @@ body {
 <span class="material-symbols-outlined text-primary text-3xl mb-2">share</span>
 <h3 class="font-bold text-gray-900 dark:text-white">Redes sociales</h3>
 <div class="flex justify-center items-center gap-3 mt-1 text-sm text-gray-500 dark:text-gray-400">
-<a class="hover:text-primary transition-colors" href="#">Compartir</a>
+<a class="hover:text-primary transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+</a>
 <span class="text-gray-300">|</span>
-<a class="hover:text-primary transition-colors" href="#">YouTube</a>
-<span class="text-gray-300">|</span>
-<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+</a>
 </div>
 </div>
 </div>
@@ -575,34 +568,47 @@ body {
 <img alt="CTES Logo" class="h-10 w-auto mb-4 object-contain dark:bg-white dark:rounded-md dark:p-1" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-4">Representante ITA-AITES en Chile</p>
 <div class="flex space-x-3 text-sm text-gray-400">
-<a class="hover:text-primary transition-colors" href="#">Compartir</a>
-<a class="hover:text-primary transition-colors" href="#">YouTube</a>
-<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+</a>
+<a class="hover:text-primary transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+</a>
 </div>
 </div>
 <div>
 <h4 class="font-bold text-gray-900 dark:text-white mb-4">Navegación</h4>
 <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li><a class="hover:text-primary" href="https://idigital2025.github.io/CTES/">Inicio</a></li>
+<li><a class="hover:text-primary" href="https://idigital2025.github.io/CTES/index">Inicio</a></li>
 <li><a class="hover:text-primary" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a></li>
-<li><a class="hover:text-primary" href="#">Socios</a></li>
-<li><a class="hover:text-primary" href="#">Socios Jóvenes</a></li>
+<li><a class="hover:text-primary" href="https://idigital2025.github.io/CTES/socios">Socios</a></li>
+<li><a class="hover:text-primary" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a></li>
 <li><a class="hover:text-primary" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte Socio</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-bold text-gray-900 dark:text-white mb-4">Recursos</h4>
 <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li><a class="hover:text-primary" href="#">Noticias</a></li>
-<li><a class="hover:text-primary" href="#">Biblioteca</a></li>
-<li><a class="hover:text-primary" href="#">Calendario</a></li>
+<li><a class="hover:text-primary" href="https://idigital2025.github.io/CTES/noticias">Noticias</a></li>
+<li><a class="hover:text-primary" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a></li>
+<li><a class="hover:text-primary" href="https://idigital2025.github.io/CTES/eventos">Calendario</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-bold text-gray-900 dark:text-white mb-4">Contacto</h4>
 <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li><a class="hover:text-primary" href="tel:+56975277109">+56 9 752 77109</a></li>
-<li><a class="hover:text-primary" href="mailto:cteschile@ctes.cl">cteschile@ctes.cl</a></li>
+<li>
+    <a class="hover:text-primary flex items-center gap-2" href="tel:+56975277109">
+        <span class="material-symbols-outlined text-base">phone</span>
+        +56 9 752 77109
+    </a>
+</li>
+<li>
+    <a class="hover:text-primary flex items-center gap-2" href="mailto:cteschile@ctes.cl">
+        <span class="material-symbols-outlined text-base">mail</span>
+        cteschile@ctes.cl
+    </a>
+</li>
 <li class="mt-4"><a class="hover:text-primary" href="#">ES / EN</a></li>
 </ul>
 </div>
@@ -619,4 +625,44 @@ body {
 </div>
 </div>
 </footer>
+<!-- Botones flotantes -->
+<div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+    <!-- Botón Agente AI (Solo en Home) -->
+    <a href="#" class="bg-gradient-to-r from-primary to-[#256049] text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all border border-white/20 group relative flex items-center justify-center w-12 h-12 hover:w-auto hover:px-4 overflow-hidden">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <span class="hidden group-hover:inline ml-2 text-sm font-bold whitespace-nowrap">Agente AI</span>
+    </a>
+
+    <!-- Botón Subir (Scroll Top) -->
+    <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/56975277109" target="_blank" class="bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-all w-12 h-12 flex items-center justify-center">
+        <!-- Icono WhatsApp SVG simple -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+</div>
+
+<script>
+    // Script para botón "Volver arriba"
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollToTopBtn.classList.remove("hidden");
+            scrollToTopBtn.classList.add("flex");
+        } else {
+            scrollToTopBtn.classList.add("hidden");
+            scrollToTopBtn.classList.remove("flex");
+        }
+    };
+
+    scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 </body></html>
