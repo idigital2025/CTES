@@ -253,7 +253,7 @@
         </section>
 
         <!-- Socios Gold (Carousel) -->
-        <section class="py-16 bg-background-light dark:bg-background-dark">
+        <section class="py-16 bg-[#E9F0EA] dark:bg-background-dark">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Socios Gold</h2>
@@ -284,7 +284,7 @@
 
                             goldPartners.forEach(partner => {
                                 document.write(`
-                                    <div class="min-w-[280px] md:min-w-[300px] bg-white dark:bg-surface-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col snap-start">
+                                    <div class="snap-start min-w-[280px] md:min-w-[300px] bg-white dark:bg-surface-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
                                         <div class="h-16 flex items-center justify-start mb-4">
                                             <img src="img/logos/${partner.logo}" alt="${partner.name}" class="h-10 w-auto object-contain dark:brightness-200" onerror="this.src='https://placehold.co/120x50?text=${partner.name.substring(0,3)}'">
                                         </div>
@@ -307,10 +307,10 @@
 
                     <!-- Navigation Arrows Below -->
                     <div class="flex justify-center gap-4 mt-2">
-                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 p-3 rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('gold-carousel', -1)">
+                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 w-12 h-12 flex items-center justify-center rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('gold-carousel', -1)">
                             <span class="material-symbols-outlined">chevron_left</span>
                         </button>
-                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 p-3 rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('gold-carousel', 1)">
+                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 w-12 h-12 flex items-center justify-center rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('gold-carousel', 1)">
                             <span class="material-symbols-outlined">chevron_right</span>
                         </button>
                     </div>
@@ -342,7 +342,7 @@
 
                             asociados.forEach(name => {
                                 document.write(`
-                                    <div class="min-w-[260px] bg-background-light dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col snap-start items-center text-center">
+                                    <div class="snap-start min-w-[260px] bg-background-light dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center">
                                         <div class="w-16 h-16 bg-green-50 dark:bg-green-900/20 rounded-full flex items-center justify-center mb-4 text-primary">
                                             <span class="material-symbols-outlined text-4xl">person</span>
                                         </div>
@@ -363,10 +363,10 @@
 
                     <!-- Navigation Arrows Below -->
                     <div class="flex justify-center gap-4 mt-2">
-                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 p-3 rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('asociados-carousel', -1)">
+                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 w-12 h-12 flex items-center justify-center rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('asociados-carousel', -1)">
                             <span class="material-symbols-outlined">chevron_left</span>
                         </button>
-                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 p-3 rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('asociados-carousel', 1)">
+                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 w-12 h-12 flex items-center justify-center rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('asociados-carousel', 1)">
                             <span class="material-symbols-outlined">chevron_right</span>
                         </button>
                     </div>
@@ -396,7 +396,7 @@
 
                             afiliados.forEach(name => {
                                 document.write(`
-                                    <div class="min-w-[260px] bg-white dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col snap-start items-center text-center">
+                                    <div class="snap-start min-w-[260px] bg-white dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center">
                                         <div class="w-16 h-16 bg-green-50 dark:bg-green-900/20 rounded-full flex items-center justify-center mb-4 text-primary">
                                             <span class="material-symbols-outlined text-4xl">person</span>
                                         </div>
@@ -417,10 +417,10 @@
 
                     <!-- Navigation Arrows Below -->
                     <div class="flex justify-center gap-4 mt-2">
-                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 p-3 rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('afiliados-carousel', -1)">
+                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 w-12 h-12 flex items-center justify-center rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('afiliados-carousel', -1)">
                             <span class="material-symbols-outlined">chevron_left</span>
                         </button>
-                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 p-3 rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('afiliados-carousel', 1)">
+                        <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 w-12 h-12 flex items-center justify-center rounded-full text-gray-600 dark:text-gray-300 hover:text-primary hover:border-primary transition-all" onclick="scrollCarousel('afiliados-carousel', 1)">
                             <span class="material-symbols-outlined">chevron_right</span>
                         </button>
                     </div>
