@@ -123,10 +123,10 @@
             
             <!-- Filtros Funcionales -->
             <div class="flex flex-wrap gap-2 mb-10 justify-center">
-                <button onclick="filterNews('all')" class="filter-btn active px-5 py-2 bg-primary text-white rounded-full text-sm font-medium transition-all shadow-md hover:shadow-lg">Todas</button>
-                <button onclick="filterNews('eventos')" class="filter-btn px-5 py-2 bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium hover:text-primary hover:border-primary transition-all">Eventos</button>
-                <button onclick="filterNews('proyectos')" class="filter-btn px-5 py-2 bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium hover:text-primary hover:border-primary transition-all">Proyectos</button>
-                <button onclick="filterNews('actualidad')" class="filter-btn px-5 py-2 bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium hover:text-primary hover:border-primary transition-all">Actualidad</button>
+                <button onclick="filterNews('all', this)" class="filter-btn active px-5 py-2 bg-primary text-white rounded-full text-sm font-medium transition-all shadow-md hover:shadow-lg">Todas</button>
+                <button onclick="filterNews('eventos', this)" class="filter-btn px-5 py-2 bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium hover:text-primary hover:border-primary transition-all">Eventos</button>
+                <button onclick="filterNews('proyectos', this)" class="filter-btn px-5 py-2 bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium hover:text-primary hover:border-primary transition-all">Proyectos</button>
+                <button onclick="filterNews('actualidad', this)" class="filter-btn px-5 py-2 bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium hover:text-primary hover:border-primary transition-all">Actualidad</button>
             </div>
 
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -134,7 +134,8 @@
                 <!-- Noticia 1: Evento -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="eventos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Encuentro de Camaradería" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/camaraderia.jpg" onerror="this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1600&auto=format&fit=crop'"/>
+                        <!-- FIX: Added this.onerror=null to prevent infinite loop -->
+                        <img alt="Encuentro de Camaradería" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/camaraderia.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Evento</span>
                         </div>
@@ -156,9 +157,9 @@
                 </article>
 
                 <!-- Noticia 2: Proyectos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Minería Subterránea" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/codelco.jpg" onerror="this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Minería Subterránea" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/codelco.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Minería</span>
                         </div>
@@ -180,9 +181,9 @@
                 </article>
 
                 <!-- Noticia 3: Actualidad -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="actualidad">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="actualidad">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Túnel Panamá" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/panama.jpg" onerror="this.src='https://images.unsplash.com/photo-1590496793929-3647c60a29d2?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Túnel Panamá" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/panama.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1590496793929-3647c60a29d2?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Internacional</span>
                         </div>
@@ -206,7 +207,7 @@
                 <!-- Noticia 4: Proyectos -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Autopista Orbital" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/autopista.jpg" onerror="this.src='https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Autopista Orbital" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/autopista.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Infraestructura</span>
                         </div>
@@ -230,7 +231,7 @@
                 <!-- Noticia 5: Actualidad -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="actualidad">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Visita Técnica Sandvik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/sandvik.jpg" onerror="this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Visita Técnica Sandvik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/sandvik.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Actividad Socios</span>
                         </div>
@@ -254,7 +255,7 @@
                 <!-- Noticia 6: Proyectos -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Metro Línea 9" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/linea9.jpg" onerror="this.src='https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Metro Línea 9" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/linea9.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Transporte</span>
                         </div>
@@ -278,7 +279,7 @@
                 <!-- Noticia 7: Eventos -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="eventos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Jornada Megaproyectos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/megaproyectos.jpg" onerror="this.src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Jornada Megaproyectos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/megaproyectos.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Evento</span>
                         </div>
@@ -302,7 +303,7 @@
                 <!-- Noticia 8: Proyectos -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Tren Alameda Melipilla" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/tren.jpg" onerror="this.src='https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Tren Alameda Melipilla" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/tren.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Licitación</span>
                         </div>
@@ -326,7 +327,7 @@
                 <!-- Noticia 9: Actualidad -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="actualidad">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Diálogo Técnico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/dialogo.jpg" onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Diálogo Técnico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/dialogo.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Institucional</span>
                         </div>
@@ -350,7 +351,7 @@
                 <!-- Noticia 10: Proyectos -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Túneles Lo Prado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/ruta68.jpg" onerror="this.src='https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Túneles Lo Prado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/ruta68.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Infraestructura</span>
                         </div>
@@ -374,7 +375,7 @@
                 <!-- Noticia 11: Proyectos -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Túnel CMP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/cmp.jpg" onerror="this.src='https://images.unsplash.com/photo-1579547621113-e4bb2a19bdd6?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Túnel CMP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/cmp.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1579547621113-e4bb2a19bdd6?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Minería</span>
                         </div>
@@ -398,7 +399,7 @@
                 <!-- Noticia 12: Eventos -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="eventos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Summit 2025" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/summit2025.jpg" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Summit 2025" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/summit2025.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Evento</span>
                         </div>
@@ -422,7 +423,7 @@
                 <!-- Noticia 13: Eventos -->
                 <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="eventos">
                     <div class="relative h-52 overflow-hidden">
-                        <img alt="Summit Asistentes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/summit-publico.jpg" onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1600&auto=format&fit=crop'"/>
+                        <img alt="Summit Asistentes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/summit-publico.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Comunidad</span>
                         </div>
@@ -550,16 +551,19 @@
     });
 
     // Script para Filtro de Noticias
-    function filterNews(category) {
+    function filterNews(category, btn) {
+        // Reset botones
         const buttons = document.querySelectorAll('.filter-btn');
-        buttons.forEach(btn => {
-            btn.classList.remove('bg-primary', 'text-white');
-            btn.classList.add('bg-white', 'text-gray-600', 'border', 'border-gray-200');
+        buttons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-white', 'shadow-md');
+            b.classList.add('bg-white', 'text-gray-600', 'border', 'border-gray-200');
         });
         
-        event.target.classList.remove('bg-white', 'text-gray-600', 'border', 'border-gray-200');
-        event.target.classList.add('bg-primary', 'text-white');
+        // Activar botón actual
+        btn.classList.remove('bg-white', 'text-gray-600', 'border', 'border-gray-200');
+        btn.classList.add('bg-primary', 'text-white', 'shadow-md');
 
+        // Filtrar cards
         const articles = document.querySelectorAll('.news-card');
         articles.forEach(article => {
             if (category === 'all' || article.dataset.category === category) {
