@@ -252,13 +252,14 @@
         </div>
     </section>
 
-    <!-- Carta del Presidente -->
+    <!-- Carta del Director (ACTUALIZADA) -->
     <section class="py-16 bg-white dark:bg-[#1A1A1A]">
         <div class="container mx-auto px-4">
             <div class="flex flex-col-reverse lg:flex-row items-center gap-12">
                 <div class="w-full lg:w-1/2">
-                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-primary after:rounded-full">
-                        Carta del Presidente
+                    <!-- Eliminada la línea decorativa ::after -->
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                        Carta del Director
                     </h2>
                     <div class="prose dark:prose-invert text-gray-600 dark:text-gray-300">
                         <p class="mb-4">
@@ -275,13 +276,14 @@
                         </p>
                         <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-800">
                             <h4 class="font-bold text-gray-900 dark:text-white">Gustavo Estay</h4>
-                            <p class="text-primary text-sm">Presidente CTES Chile</p>
+                            <p class="text-primary text-sm">Director CTES Chile</p>
                         </div>
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2">
                     <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] group">
-                        <img src="img/presidente-carta.jpg" alt="Presidente CTES en oficina" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1600&auto=format&fit=crop'"/>
+                        <!-- Ajuste object-top para evitar cortes -->
+                        <img src="img/presidente-carta.jpg" alt="Presidente CTES en oficina" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-300"></div>
                     </div>
                 </div>
@@ -301,7 +303,7 @@
                 </p>
             </div>
 
-            <!-- Grid Directorio -->
+            <!-- Grid Directorio (ACTUALIZADO: ICONOS FIJOS + DESCRIPCIÓN HOVER) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 
                 <!-- Presidente -->
