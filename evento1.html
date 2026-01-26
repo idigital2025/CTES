@@ -48,6 +48,13 @@
         .btn-primary {
           @apply bg-primary hover:bg-primary-dark text-white rounded-full px-8 py-3 font-bold text-sm transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 inline-flex justify-center items-center;
         }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
       }
     </style>
 </head>
@@ -82,7 +89,8 @@
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios">Socios</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/noticias">Noticias</a>
+                    <!-- CAMBIO: Noticias -> Artículos -->
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/noticias">Artículos</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a>
                     <a class="text-primary font-bold transition-colors text-sm" href="https://idigital2025.github.io/CTES/calendario">Calendario</a>
                 </nav>
@@ -134,14 +142,26 @@
                 
                 <!-- Columna Izquierda: Contenido Principal -->
                 <div class="lg:col-span-2">
-                    <div class="mb-8">
+                    <div class="mb-6">
                         <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3 inline-block">Seminario</span>
                         <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">Seminario BIM en túneles: Desafíos y oportunidades</h1>
-                        <div class="w-16 h-1 bg-primary rounded-full mb-4"></div>
-                        <p class="text-gray-500 dark:text-gray-400 text-lg">Un encuentro técnico especializado para analizar el estado del arte y la implementación de metodologías digitales en proyectos subterráneos.</p>
+                        
+                        <!-- NUEVO: Iconos de compartir -->
+                        <div class="flex items-center gap-3 pt-2">
+                            <span class="text-xs text-gray-500 uppercase font-bold tracking-wider">Compartir:</span>
+                            <a href="#" class="text-gray-400 hover:text-[#0077b5] transition-colors" title="Compartir en LinkedIn">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-[#1877F2] transition-colors" title="Compartir en Facebook">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                            </a>
+                            <button onclick="document.execCommand('copy')" class="text-gray-400 hover:text-primary transition-colors" title="Copiar enlace">
+                                <span class="material-symbols-outlined text-2xl">link</span>
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="relative w-full h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden mb-10 shadow-soft">
+                    <div class="relative w-full h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden mb-8 shadow-soft">
                         <img alt="Seminario BIM" class="w-full h-full object-cover" src="img/eventos/bim.jpg" onerror="this.src='https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 right-4">
                             <span class="bg-white/90 backdrop-blur-sm text-primary text-xs font-bold px-3 py-1.5 rounded-full shadow-md uppercase tracking-wide flex items-center">
@@ -151,6 +171,9 @@
                         </div>
                     </div>
 
+                    <div class="w-16 h-1 bg-primary rounded-full mb-8"></div>
+                    <p class="text-gray-500 dark:text-gray-400 text-lg mb-10 leading-relaxed">Un encuentro técnico especializado para analizar el estado del arte y la implementación de metodologías digitales en proyectos subterráneos.</p>
+
                     <div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 mb-12">
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                             <span class="material-symbols-outlined mr-2 text-primary">description</span>
@@ -159,9 +182,62 @@
                         <p class="mb-4 leading-relaxed">
                             La implementación de la metodología Building Information Modeling (BIM) en el diseño y construcción de túneles representa uno de los mayores desafíos tecnológicos de la última década. Este seminario reúne a expertos nacionales e internacionales para discutir las normativas vigentes, casos de éxito y las barreras de entrada en el mercado chileno.
                         </p>
-                        <p class="leading-relaxed">
-                            Durante la jornada, exploraremos cómo la digitalización está transformando la gestión de activos subterráneos, desde la etapa de pre-factibilidad hasta la operación y mantenimiento, permitiendo optimizar costos y mejorar la seguridad en obra.
-                        </p>
+                    </div>
+
+                    <!-- NUEVO: Sección de Video -->
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                            <span class="material-symbols-outlined mr-2 text-primary">smart_display</span>
+                            Video Promocional
+                        </h3>
+                        <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video del evento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- NUEVO: Galería de Imágenes (Carrusel 1 foto) -->
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                            <span class="material-symbols-outlined mr-2 text-primary">photo_library</span>
+                            Galería del Evento
+                        </h3>
+                        
+                        <div class="relative group/gallery">
+                            <!-- Botón Anterior -->
+                            <button onclick="scrollGallery(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-black/50 hover:bg-white text-gray-800 dark:text-white p-3 rounded-full shadow-lg z-10 backdrop-blur-sm transition-all hover:scale-110">
+                                <span class="material-symbols-outlined">chevron_left</span>
+                            </button>
+
+                            <!-- Contenedor Scroll -->
+                            <div id="gallery-container" class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar rounded-2xl shadow-lg h-96">
+                                <!-- Foto 1 -->
+                                <div class="snap-center min-w-full h-full relative">
+                                    <img src="img/gallery/galeria1.jpg" alt="Foto evento 1" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1600&auto=format&fit=crop'">
+                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                        <p class="text-white text-sm">Auditorio principal durante la charla inaugural</p>
+                                    </div>
+                                </div>
+                                <!-- Foto 2 -->
+                                <div class="snap-center min-w-full h-full relative">
+                                    <img src="img/gallery/galeria2.jpg" alt="Foto evento 2" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1600&auto=format&fit=crop'">
+                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                        <p class="text-white text-sm">Networking entre socios y expositores</p>
+                                    </div>
+                                </div>
+                                <!-- Foto 3 -->
+                                <div class="snap-center min-w-full h-full relative">
+                                    <img src="img/gallery/galeria3.jpg" alt="Foto evento 3" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1558008258-3256797b43f3?q=80&w=1600&auto=format&fit=crop'">
+                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                        <p class="text-white text-sm">Visita técnica a las obras de la Línea 7</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Botón Siguiente -->
+                            <button onclick="scrollGallery(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-black/50 hover:bg-white text-gray-800 dark:text-white p-3 rounded-full shadow-lg z-10 backdrop-blur-sm transition-all hover:scale-110">
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </button>
+                        </div>
                     </div>
 
                     <div class="mb-12">
@@ -189,25 +265,6 @@
                                     <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Presentación a cargo de Planbim Corfo sobre los avances normativos.</p>
                                 </div>
                             </div>
-                            <!-- Item Programa -->
-                            <div class="flex flex-col md:flex-row gap-3 md:gap-8 border-b border-gray-100 dark:border-gray-700 py-6">
-                                <div class="shrink-0 md:w-36">
-                                    <span class="inline-block bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold px-3 py-1 rounded-md">10:15 - 11:30</span>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Panel: Desafíos en la interoperabilidad de software</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Discusión abierta con proveedores tecnológicos y mandantes.</p>
-                                </div>
-                            </div>
-                            <!-- Item Programa -->
-                            <div class="flex flex-col md:flex-row gap-3 md:gap-8 pt-6">
-                                <div class="shrink-0 md:w-36">
-                                    <span class="inline-block bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold px-3 py-1 rounded-md">11:30 - 13:00</span>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Casos de Estudio: Línea 7 Metro de Santiago</h4>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -233,14 +290,6 @@
                                 <h5 class="font-bold text-gray-900 dark:text-white text-sm">Carlos Rodriguez</h5>
                                 <p class="text-xs text-gray-500 mt-1">Jefe de Ingeniería, Metro S.A.</p>
                             </div>
-                            <!-- Expositor 3 -->
-                            <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-700 text-center group hover:shadow-md transition-shadow">
-                                <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-3 border-2 border-primary/20 group-hover:border-primary transition-colors">
-                                    <img src="img/speakers/thomas.jpg" alt="Dr. Thomas Keller" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150x150?text=TK'"/>
-                                </div>
-                                <h5 class="font-bold text-gray-900 dark:text-white text-sm">Dr. Thomas Keller</h5>
-                                <p class="text-xs text-gray-500 mt-1">Consultor Internacional, ITA-AITES</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -263,25 +312,12 @@
                             
                             <div class="flex items-start group">
                                 <div class="bg-green-50 dark:bg-green-900/20 p-2.5 rounded-lg mr-4 shrink-0 group-hover:bg-primary/20 transition-colors">
-                                    <span class="material-symbols-outlined text-primary">schedule</span>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Horario</p>
-                                    <p class="text-sm font-semibold text-gray-900 dark:text-white mt-0.5">09:00 - 17:00 hrs</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start group">
-                                <div class="bg-green-50 dark:bg-green-900/20 p-2.5 rounded-lg mr-4 shrink-0 group-hover:bg-primary/20 transition-colors">
                                     <span class="material-symbols-outlined text-primary">place</span>
                                 </div>
                                 <div>
                                     <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Ubicación</p>
                                     <p class="text-sm font-semibold text-gray-900 dark:text-white mt-0.5">Hotel Intercontinental</p>
                                     <p class="text-xs text-gray-500">Av. Vitacura 2885, Santiago</p>
-                                    <a class="text-xs text-primary font-medium hover:underline mt-1 inline-flex items-center" href="#">
-                                        Ver mapa <span class="material-symbols-outlined text-[10px] ml-0.5">open_in_new</span>
-                                    </a>
                                 </div>
                             </div>
 
@@ -293,16 +329,6 @@
                                     <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Valor</p>
                                     <p class="text-sm font-semibold text-gray-900 dark:text-white mt-0.5">Socios CTES: Gratuito</p>
                                     <p class="text-sm text-gray-600 dark:text-gray-400">Público General: $45.000</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start group">
-                                <div class="bg-green-50 dark:bg-green-900/20 p-2.5 rounded-lg mr-4 shrink-0 group-hover:bg-primary/20 transition-colors">
-                                    <span class="material-symbols-outlined text-primary">corporate_fare</span>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Organiza</p>
-                                    <p class="text-sm font-semibold text-gray-900 dark:text-white mt-0.5">CTES Chile & CDT</p>
                                 </div>
                             </div>
                         </div>
@@ -361,7 +387,8 @@
             <div>
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/noticias">Noticias</a></li>
+                    <!-- CAMBIO: Noticias -> Artículos -->
+                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/noticias">Artículos</a></li>
                     <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a></li>
                     <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/eventos">Calendario</a></li>
                 </ul>
@@ -426,6 +453,14 @@
     scrollToTopBtn.addEventListener("click", function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    // Script para Galería (Scroll 1 item a la vez)
+    function scrollGallery(direction) {
+        const container = document.getElementById('gallery-container');
+        if (!container) return;
+        const itemWidth = container.offsetWidth; // 1 foto toma el 100% del ancho
+        container.scrollBy({ left: direction * itemWidth, behavior: 'smooth' });
+    }
 </script>
 
 </body>
