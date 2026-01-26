@@ -495,6 +495,10 @@
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                     <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">phone</span> +56 9 752 77109</li>
                     <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">email</span> cteschile@ctes.cl</li>
+                    <li class="flex items-start leading-tight">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5">location_on</span> 
+                        <span>Av. Dirección por completar, 12345, Comuna, Santiago de Chile</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -504,7 +508,7 @@
     </div>
 </footer>
 
-<!-- BOTONES FLOTANTES (REINCORPORADOS) -->
+<!-- BOTONES FLOTANTES -->
 <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
     <!-- Botón Subir -->
     <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center">
@@ -517,10 +521,7 @@
 </div>
 
 <script>
-    // Referencia al botón
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-    // Función de scroll con comprobación de existencia (Null check)
     window.onscroll = function() {
         if (scrollToTopBtn) {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -532,8 +533,6 @@
             }
         }
     };
-
-    // Evento click con comprobación de existencia
     scrollToTopBtn?.addEventListener("click", function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
