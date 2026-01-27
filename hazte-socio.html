@@ -6,14 +6,12 @@
     <title>Hazte socio CTES Chile | Membresías y beneficios en ingeniería subterránea</title>
     <meta content="Únete a CTES Chile y forma parte de la red técnica de túneles y espacios subterráneos. Conoce beneficios, categorías de membresía y proceso de afiliación." name="description"/>
     
-    <!-- Fuentes e Iconos -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- 1. HEAD: FUENTES E ICONOS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     
-    <!-- 1. Cargar Tailwind CSS CDN -->
+    <!-- 2. HEAD: CONFIGURACIÓN TAILWIND Y ESTILOS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
-    <!-- 2. Configuración de Tailwind -->
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -42,7 +40,7 @@
     <style type="text/tailwindcss">
       @layer utilities {
         .btn-primary {
-          @apply bg-primary hover:bg-primary-dark text-white rounded-full px-8 py-3 font-bold text-sm transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 inline-flex justify-center items-center;
+          @apply bg-primary hover:bg-primary-dark text-white rounded-full px-6 py-2.5 font-medium transition-all shadow-sm text-sm inline-flex items-center justify-center;
         }
         .section-padding {
           @apply py-20 px-4 lg:px-10;
@@ -58,9 +56,11 @@
 </head>
 <body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200 flex flex-col min-h-screen">
 
-<!-- HEADER STICKY -->
+<!-- =========================================================================
+     COMPONENTE: HEADER (ACTUALIZADO)
+     ========================================================================= -->
 <div class="sticky top-0 z-50 w-full">
-    <!-- CINTILLO -->
+    <!-- CINTILLO SUPERIOR -->
     <div class="bg-background-light dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-xs py-2">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <span class="text-gray-500 dark:text-gray-400 hidden md:inline">CTES Chile, representante oficial de la ITA-AITES</span>
@@ -68,17 +68,17 @@
                 <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">person</span> Mi cuenta</a>
                 <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">help</span> Ayuda</a>
                 <span class="cursor-pointer hover:text-primary transition-colors">ES / EN</span>
-                <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">phone</span> Contacto</a>
+                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1">phone</span> Contacto</a>
             </div>
         </div>
     </div>
 
-    <!-- HEADER -->
+    <!-- NAVEGACIÓN PRINCIPAL -->
     <header class="bg-surface-light dark:bg-surface-dark shadow-sm">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex-shrink-0">
-                    <a href="#">
+                    <a href="index.html">
                         <img alt="CTES Chile Logo" class="h-12 w-auto object-contain dark:bg-white dark:rounded-md dark:p-1" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
                     </a>
                 </div>
@@ -92,10 +92,11 @@
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="#">Calendario</a>
                 </nav>
                 <div class="hidden lg:block">
-                    <a class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-sm text-sm" href="#postulacion">
+                    <a class="btn-primary" href="hazte-socio.html">
                         Hazte Socio
                     </a>
                 </div>
+                <!-- Botón Móvil -->
                 <div class="lg:hidden">
                     <button class="text-gray-700 dark:text-gray-300 hover:text-primary">
                         <span class="material-symbols-outlined text-2xl">menu</span>
@@ -190,17 +191,6 @@
                     <div>
                         <h4 class="font-bold text-gray-900 dark:text-white mb-1">Catastro de Túneles</h4>
                         <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Información detallada y fichas técnicas georeferenciadas de los túneles del país.</p>
-                    </div>
-                </div>
-
-                <!-- Item: Desayunos -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
-                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">coffee</span>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Desayunos Técnicos</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Encuentros exclusivos con destacados profesionales para discutir temas de vanguardia.</p>
                     </div>
                 </div>
 
@@ -326,7 +316,7 @@
                 </div>
 
                 <!-- Item Destacado: Misiones Tecnológicas -->
-                <div class="flex items-start gap-5 p-8 bg-primary/5 dark:bg-surface-dark border border-primary/20 dark:border-gray-800 rounded-2xl hover:shadow-lg hover:border-primary transition-all duration-300 group md:col-span-2">
+                <div class="flex items-start gap-5 p-8 bg-primary/5 dark:bg-surface-dark border border-primary/20 dark:border-gray-800 rounded-2xl hover:shadow-lg hover:border-primary transition-all duration-300 group md:col-span-2 lg:col-span-3">
                     <div class="w-14 h-14 bg-primary text-white rounded-xl flex-shrink-0 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined text-3xl">flight_takeoff</span>
                     </div>
@@ -391,7 +381,7 @@
         </div>
     </section>
 
-    <!-- Formulario -->
+    <!-- Formulario de Postulación -->
     <section id="postulacion" class="py-16 bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800">
         <div class="container mx-auto px-4">
             <div class="grid lg:grid-cols-12 gap-12 items-start">
@@ -402,13 +392,16 @@
                     <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
                         Completa el formulario y da el primer paso para integrarte a la red técnica de túneles y espacios subterráneos de Chile.
                     </p>
-                    <div class="p-8 bg-primary rounded-2xl text-white shadow-lg">
-                        <span class="material-symbols-outlined text-4xl mb-4">contact_support</span>
-                        <h4 class="text-xl font-bold mb-2">¿Tienes dudas?</h4>
-                        <a class="underline font-bold" href="mailto:cteschile@ctes.cl">cteschile@ctes.cl</a>
+                    
+                    <div class="p-8 bg-primary rounded-2xl text-white shadow-lg relative overflow-hidden">
+                        <span class="material-symbols-outlined text-4xl mb-4 relative z-10">contact_support</span>
+                        <h4 class="text-xl font-bold mb-2 relative z-10">¿Tienes dudas?</h4>
+                        <p class="text-white/90 mb-6 text-sm relative z-10">Escríbenos directamente para orientación personalizada.</p>
+                        <a class="relative z-10 inline-flex items-center gap-2 underline font-bold" href="mailto:cteschile@ctes.cl">cteschile@ctes.cl</a>
                     </div>
                 </div>
                 
+                <!-- Formulario -->
                 <div class="lg:col-span-8 bg-white dark:bg-surface-dark p-8 md:p-10 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm">
                     <form class="space-y-5">
                         <div class="grid md:grid-cols-2 gap-5">
@@ -421,6 +414,7 @@
                                 <input class="input-field" placeholder="Tu cargo actual" type="text"/>
                             </div>
                         </div>
+
                         <div class="grid md:grid-cols-2 gap-5">
                             <div>
                                 <label class="label-style">Razón Social</label>
@@ -431,6 +425,7 @@
                                 <input class="input-field" placeholder="12.345.678-K" type="text"/>
                             </div>
                         </div>
+                        
                         <div class="grid md:grid-cols-2 gap-5">
                             <div>
                                 <label class="label-style">Email profesional</label>
@@ -441,6 +436,7 @@
                                 <input class="input-field" placeholder="+56 9 XXXX XXXX" type="tel"/>
                             </div>
                         </div>
+
                         <div class="space-y-2">
                             <label class="label-style">Selecciona una categoría</label>
                             <select class="input-field">
@@ -451,12 +447,14 @@
                                 <option>Individual (Profesional)</option>
                             </select>
                         </div>
+                        
                         <div class="space-y-2">
                             <label class="label-style">Mensaje opcional</label>
-                            <textarea class="input-field min-h-[100px]" placeholder="Comentarios adicionales..."></textarea>
+                            <textarea class="input-field min-h-[100px]" placeholder="Consultas o comentarios adicionales..."></textarea>
                         </div>
+                        
                         <div class="pt-4">
-                            <button type="button" class="bg-primary hover:bg-primary-dark text-white rounded-full px-12 py-4 font-bold shadow-md w-full">
+                            <button type="button" class="bg-primary hover:bg-primary-dark text-white rounded-full px-12 py-4 font-bold shadow-md hover:shadow-lg transition-all w-full">
                                 Enviar postulación
                             </button>
                         </div>
@@ -467,54 +465,77 @@
     </section>
 </main>
 
-<!-- FOOTER -->
-<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+<!-- =========================================================================
+     COMPONENTE: FOOTER (DIRECCIÓN BARCELONA 2077)
+     ========================================================================= -->
+<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Columna 1: Info Corporativa -->
             <div>
-                <img alt="CTES Chile Logo" class="h-10 w-auto mb-6" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">Representante ITA-AITES en Chile.</p>
+                <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.
+                </p>
             </div>
+            
+            <!-- Columna 2: Navegación -->
             <div>
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Navegación</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                     <li><a class="hover:text-primary transition-colors" href="#">Inicio</a></li>
                     <li><a class="hover:text-primary transition-colors" href="#">Quiénes Somos</a></li>
                     <li><a class="hover:text-primary transition-colors" href="#">Artículos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Hazte Socio</a></li>
                 </ul>
             </div>
+            
+            <!-- Columna 3: Recursos -->
             <div>
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                     <li><a class="hover:text-primary transition-colors" href="#">Biblioteca</a></li>
                     <li><a class="hover:text-primary transition-colors" href="#">Calendario</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Eventos</a></li>
                 </ul>
             </div>
+            
+            <!-- Columna 4: Contacto y Dirección -->
             <div>
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Contacto</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">phone</span> +56 9 752 77109</li>
-                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">email</span> cteschile@ctes.cl</li>
-                    <li class="flex items-start leading-tight">
-                        <span class="material-symbols-outlined text-base mr-2 mt-0.5">location_on</span> 
-                        <span>Av. Dirección por completar, 12345, Comuna, Santiago de Chile</span>
+                    <li class="flex items-center">
+                        <span class="material-symbols-outlined text-base mr-2">phone</span> 
+                        +56 9 752 77109
+                    </li>
+                    <li class="flex items-center">
+                        <span class="material-symbols-outlined text-base mr-2">email</span> 
+                        cteschile@ctes.cl
+                    </li>
+                    <li class="flex items-start leading-tight pt-2 border-t border-gray-200 dark:border-gray-700 mt-2">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">location_on</span> 
+                        <span>Barcelona 2077, Providencia, Santiago de Chile</span>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex justify-between items-center text-xs text-gray-500">
+        
+        <!-- Barra Inferior de Copyright -->
+        <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <div class="flex space-x-6 mb-4 md:mb-0">
+                <a class="hover:text-primary transition-colors" href="#">Política de privacidad</a>
+                <a class="hover:text-primary transition-colors" href="#">Términos y condiciones</a>
+            </div>
             <p>© 2025 CTES Chile. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
 
-<!-- BOTONES FLOTANTES -->
+<!-- Botones flotantes -->
 <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
-    <!-- Botón Subir -->
     <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center">
         <span class="material-symbols-outlined">arrow_upward</span>
     </button>
-    <!-- Botón WhatsApp -->
     <a href="https://wa.me/56975277109" target="_blank" class="bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-all w-12 h-12 flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
     </a>
