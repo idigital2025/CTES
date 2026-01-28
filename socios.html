@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     
-    <!-- 1. Cargar Tailwind CSS CDN primero -->
+    <!-- 1. Cargar Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     
-    <!-- 2. Configuración de Tailwind después -->
+    <!-- 2. Configuración de Tailwind -->
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -52,15 +52,16 @@
             scrollbar-width: none;
         }
         .logo-container {
-            @apply h-20 flex items-center justify-center mb-6 border-b border-gray-100 dark:border-gray-700 pb-4 w-full;
+            @apply h-24 flex items-center justify-center mb-6 border-b border-gray-100 dark:border-gray-700 pb-4 w-full;
         }
       }
+      body { font-family: "Inter", sans-serif }
     </style>
 </head>
-<body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200 flex flex-col min-h-screen">
+<body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200 flex flex-col min-h-screen text-left">
 
 <!-- HEADER -->
-<div class="sticky top-0 z-50 w-full">
+<div class="sticky top-0 z-50 w-full text-left">
     <div class="bg-background-light dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-xs py-2">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <span class="text-gray-500 dark:text-gray-400 hidden md:inline">CTES Chile, representante oficial de la ITA-AITES</span>
@@ -68,14 +69,14 @@
                 <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">person</span> Mi cuenta</a>
                 <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">help</span> Ayuda</a>
                 <span class="cursor-pointer hover:text-primary transition-colors">ES / EN</span>
-                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1">phone</span> Contacto</a>
+                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1 font-bold">phone</span> Contacto</a>
             </div>
         </div>
     </div>
 
     <header class="bg-surface-light dark:bg-surface-dark shadow-sm">
         <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between text-left">
                 <div class="flex-shrink-0">
                     <a href="index.html">
                         <img alt="CTES Chile Logo" class="h-12 w-auto object-contain dark:bg-white dark:rounded-md dark:p-1" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
@@ -91,240 +92,291 @@
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="eventos.html">Calendario</a>
                 </nav>
                 <div class="hidden lg:block">
-                    <a class="btn-primary" href="hazte-socio.html">Hazte Socio</a>
+                    <a class="btn-primary" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte Socio</a>
                 </div>
-                <div class="lg:hidden">
-                    <button class="text-gray-700 dark:text-gray-300 hover:text-primary">
-                        <span class="material-symbols-outlined text-2xl">menu</span>
-                    </button>
+                <div class="lg:hidden text-gray-700 dark:text-gray-300">
+                    <span class="material-symbols-outlined text-2xl cursor-pointer">menu</span>
                 </div>
             </div>
         </div>
     </header>
 </div>
 
-<main>
+<main class="text-left">
     <!-- Hero Section -->
-    <section class="relative bg-surface-light dark:bg-surface-dark pt-12 pb-16">
+    <section class="relative bg-surface-light dark:bg-surface-dark pt-12 pb-16 text-center">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto">
                 <span class="uppercase tracking-wider text-primary text-sm font-bold mb-2 block">Nuestra Red</span>
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Socios CTES Chile</h1>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 uppercase">Socios CTES Chile</h1>
                 <div class="h-1 w-20 bg-primary mx-auto rounded-full mb-8"></div>
-                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center">
                     Nuestros socios representan un ecosistema diverso que aporta experiencia técnica, innovación y colaboración a la industria nacional e internacional de túneles y espacios subterráneos.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Socios Premium -->
+    <!-- SOCIOS PREMIUM -->
     <section class="py-20 bg-primary dark:bg-primary-dark relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
-        <div class="container mx-auto px-4 relative z-10">
+        <div class="container mx-auto px-4 relative z-10 text-left">
             <div class="text-center mb-16">
-                <div class="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-bold uppercase mb-4 backdrop-blur-sm border border-white/20">Categoría destacada</div>
-                <h2 class="text-3xl font-bold text-white mb-4">Socios Premium</h2>
+                <div class="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-bold uppercase mb-4 backdrop-blur-sm border border-white/20 tracking-widest">Categoría destacada</div>
+                <h2 class="text-3xl font-bold text-white mb-4 uppercase">Socios Premium</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- EUROHINCA -->
-                <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1">
+                <!-- CATANOOR -->
+                <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1 text-left">
                     <div class="logo-container">
-                        <img src="img/logos/eurohinca.png" alt="EUROHINCA" class="h-12 w-auto object-contain dark:brightness-200" onerror="this.src='https://placehold.co/200x80?text=EUROHINCA'">
+                        <img src="img/logos/catanoor.png" alt="CATANOOR" class="h-20 w-auto object-contain" onerror="this.src='https://placehold.co/400x160?text=CATANOOR'">
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">EUROHINCA</h3>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Especializada en la ejecución de microtúneles mediante tuneladoras teledirigidas.</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase">CATANOOR LIMITADA</h3>
+                    <p class="text-primary text-xs font-bold mb-4 uppercase italic">Construcción y servicios de ingeniería</p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
+                        Empresa dedicada a la venta al por mayor de maquinaria y equipos electrónicos, incluyendo soluciones de telecomunicaciones y tecnología aplicada. Complementa su oferta con servicios de consultoría de gestión y arriendo de maquinaria sin operarios, apoyando proyectos de infraestructura e ingeniería especializada.
+                    </p>
                     <div class="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-800 justify-center">
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" title="Sitio Web"><span class="material-symbols-outlined">language</span></a>
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined">link</span></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined font-bold">language</span></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined font-bold">link</span></a>
                     </div>
                 </div>
 
-                <!-- CATANOOR -->
-                <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1">
+                <!-- EUROHINCA -->
+                <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1 text-left">
                     <div class="logo-container">
-                        <img src="img/logos/catanoor.png" alt="CATANOOR" class="h-12 w-auto object-contain dark:brightness-200" onerror="this.src='https://placehold.co/200x80?text=CATANOOR'">
+                        <img src="img/logos/eurohinca.png" alt="EUROHINCA" class="h-20 w-auto object-contain" onerror="this.src='https://placehold.co/400x160?text=EUROHINCA'">
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Catanoor Limitada</h3>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Líder en sistemas de proximidad para minería e industria pesada.</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase text-left">EUROHINCA CHILE SpA</h3>
+                    <p class="text-primary text-xs font-bold mb-4 uppercase italic text-left">Ejecución de microtúneles y túneles</p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow text-left">
+                        Especialista en la ejecución de microtúneles sin zanja mediante tuneladoras teledirigidas, aplicada a obras subterráneas, redes de saneamiento, emisarios submarinos y cruces bajo infraestructuras existentes. Constituida en 1996, ha ejecutado más de 120 km de túneles a nivel internacional.
+                    </p>
                     <div class="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-800 justify-center">
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" title="Sitio Web"><span class="material-symbols-outlined">language</span></a>
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined">link</span></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined font-bold">language</span></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined font-bold">link</span></a>
                     </div>
                 </div>
 
                 <!-- GEOSINERGIA -->
-                <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1">
+                <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1 text-left">
                     <div class="logo-container">
-                        <img src="img/logos/geosinergia.png" alt="GEOSINERGIA" class="h-12 w-auto object-contain dark:brightness-200" onerror="this.src='https://placehold.co/200x80?text=GEOSINERGIA'">
+                        <img src="img/logos/geosinergia.png" alt="GEOSINERGIA" class="h-20 w-auto object-contain" onerror="this.src='https://placehold.co/400x160?text=GEOSINERGIA'">
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Geosinergia</h3>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Monitoreo y control de variables críticas para estabilidad de infraestructuras.</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase text-left">GEOSINERGIA INGENIERÍA</h3>
+                    <p class="text-primary text-xs font-bold mb-4 uppercase italic text-left">Ingeniería ambiental y geotécnica</p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow text-left">
+                        Empresa chilena con más de 20 años de experiencia en monitoreo geotécnico y estructural, enfocada en garantizar la estabilidad de proyectos mineros, obras civiles y proyectos especiales.
+                    </p>
                     <div class="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-800 justify-center">
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" title="Sitio Web"><span class="material-symbols-outlined">language</span></a>
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined">link</span></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined font-bold">language</span></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined font-bold">link</span></a>
+                    </div>
+                </div>
+
+                <!-- IMEL -->
+                <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1 text-left">
+                    <div class="logo-container">
+                        <img src="img/logos/imel.png" alt="IMEL" class="h-20 w-auto object-contain" onerror="this.src='https://placehold.co/400x160?text=IMEL'">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase text-left">IMEL</h3>
+                    <p class="text-primary text-xs font-bold mb-4 uppercase italic text-left">Manufactura de productos de acero</p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow text-left">
+                        IMEL nace en 1946 como fabricante de soluciones en acero para la industria eléctrica. Desde 1975 ha sostenido un crecimiento constante incorporando nuevas tecnologías.
+                    </p>
+                    <div class="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-800 justify-center">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined font-bold">language</span></a>
+                    </div>
+                </div>
+
+                <!-- SANDVIK -->
+                <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1 text-left text-left text-left">
+                    <div class="logo-container">
+                        <img src="img/logos/sandvik.png" alt="SANDVIK" class="h-20 w-auto object-contain" onerror="this.src='https://placehold.co/400x160?text=SANDVIK'">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase text-left text-left">SANDVIK</h3>
+                    <p class="text-primary text-xs font-bold mb-4 uppercase italic text-left text-left">Ingeniería y soluciones tecnológicas</p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow text-left text-left">
+                        Grupo global de ingeniería de alta tecnología que desarrolla soluciones orientadas a minería, infraestructura y manufactura.
+                    </p>
+                    <div class="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-800 justify-center">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined font-bold text-left text-left">language</span></a>
+                    </div>
+                </div>
+
+                <!-- BESSAC -->
+                <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1 text-left text-left text-left text-left">
+                    <div class="logo-container text-left text-left">
+                        <img src="img/logos/bessac.png" alt="BESSAC" class="h-20 w-auto object-contain text-left text-left" onerror="this.src='https://placehold.co/400x160?text=BESSAC'">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase text-left text-left text-left">BESSAC</h3>
+                    <p class="text-primary text-xs font-bold mb-4 uppercase italic text-left text-left text-left">Diseño y construcción de túneles</p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow text-left text-left text-left">
+                        Empresa líder en obras subterráneas, especializada en túneles para agua, saneamiento y galerías técnicas.
+                    </p>
+                    <div class="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-800 justify-center">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined font-bold text-left text-left text-left">language</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Socios Gold (Carousel) -->
-    <section class="py-16 bg-[#E9F0EA] dark:bg-background-dark">
+    <!-- SOCIOS GOLD -->
+    <section class="py-20 bg-[#E9F0EA] dark:bg-background-dark text-left">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
+            <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4 uppercase">Socios Gold</h2>
                 <div class="w-16 h-1 bg-primary mx-auto rounded-full mb-6"></div>
             </div>
 
-            <div class="relative group/carousel">
-                <div id="gold-carousel" class="flex overflow-x-auto gap-6 pb-12 pt-4 px-4 hide-scrollbar snap-x snap-mandatory">
-                    <script>
-                        const goldPartners = [
-                            { id: "geoblast", name: "GEOBLAST", url: "#" },
-                            { id: "herrenknecht", name: "HERRENKNECHT", url: "#" },
-                            { id: "masterdrilling", name: "MASTER DRILLING", url: "#" },
-                            { id: "cyd", name: "CYD INGENIERÍA", url: "#" },
-                            { id: "solerpalau", name: "SOLER & PALAU", url: "#" },
-                            { id: "mc", name: "MC-BAUCHEMIE", url: "#" },
-                            { id: "prodalam", name: "PRODALAM", url: "#" },
-                            { id: "aza", name: "AZA", url: "#" },
-                            { id: "mapei", name: "MAPEI", url: "#" },
-                            { id: "ntn", name: "Norwegian Tunnelling", url: "#" }
-                        ];
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <script>
+                    const goldPartners = [
+                        { id: "geoblast", name: "GEOBLAST", desc: "Optimización de procesos para minería mediante innovación y sostenibilidad." },
+                        { id: "herrenknecht", name: "HERRENKNECHT", desc: "Líder mundial en sistemas mecanizados de tunelaje." },
+                        { id: "masterdrilling", name: "MASTER DRILLING", desc: "Soluciones mecanizadas de perforación para minería e infraestructura." },
+                        { id: "cyd", name: "CYD INGENIERÍA", desc: "Ingeniería de proyectos de infraestructura pública y privada." },
+                        { id: "solerpalau", name: "SOLER & PALAU", desc: "Especialistas en soluciones de ventilación industrial." },
+                        { id: "mc", name: "MC-BAUCHEMIE", desc: "Productos químicos y tecnologías avanzadas para la construcción." },
+                        { id: "prodalam", name: "PRODALAM", desc: "Soluciones industriales en alambres, cercos y refuerzos de hormigón." },
+                        { id: "aza", name: "AZA", desc: "Empresa líder en economía circular y producción de acero sustentable." },
+                        { id: "mapei", name: "MAPEI", desc: "Fabricante global de productos químicos para la construcción." },
+                        { id: "ntn", name: "NORWEGIAN TUNNELLING NETWORK", desc: "Red noruega de empresas e instituciones especializadas en tunelización." }
+                    ];
 
-                        goldPartners.forEach(p => {
-                            document.write(`
-                                <div class="snap-start min-w-[280px] bg-white dark:bg-surface-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all flex flex-col">
-                                    <div class="h-20 flex items-center justify-center mb-4">
-                                        <img src="img/logos/${p.id}.png" alt="${p.name}" class="max-h-12 w-auto object-contain dark:brightness-200" onerror="this.src='https://placehold.co/150x60?text=${p.id}'">
-                                    </div>
-                                    <h3 class="text-center font-bold text-gray-900 dark:text-white mb-4 uppercase text-sm">${p.name}</h3>
-                                    <div class="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-800 mt-auto justify-center">
-                                        <a href="${p.url}" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined">language</span></a>
-                                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><span class="material-symbols-outlined">link</span></a>
-                                    </div>
+                    goldPartners.forEach(p => {
+                        document.write(`
+                            <div class="bg-white dark:bg-surface-dark rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all flex flex-col text-left">
+                                <div class="h-20 flex items-center justify-start mb-4">
+                                    <img src="img/logos/${p.id}.png" alt="${p.name}" class="h-12 w-auto object-contain" onerror="this.src='https://placehold.co/300x120?text=${p.id}'">
                                 </div>
-                            `);
-                        });
-                    </script>
-                </div>
-                <!-- Flechas de navegación -->
-                <div class="flex justify-center gap-4 mt-2">
-                    <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 w-12 h-12 flex items-center justify-center rounded-full text-gray-600 dark:text-gray-300 hover:text-primary transition-all" onclick="scrollCarousel('gold-carousel', -1)"><span class="material-symbols-outlined">chevron_left</span></button>
-                    <button class="bg-white dark:bg-surface-dark shadow-md border border-gray-200 dark:border-gray-700 w-12 h-12 flex items-center justify-center rounded-full text-gray-600 dark:text-gray-300 hover:text-primary transition-all" onclick="scrollCarousel('gold-carousel', 1)"><span class="material-symbols-outlined">chevron_right</span></button>
-                </div>
+                                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 uppercase text-left">${p.name}</h3>
+                                <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed mb-4 flex-grow text-left">${p.desc}</p>
+                                <div class="flex gap-4 pt-4 border-t border-gray-50 dark:border-gray-800 mt-auto justify-start text-left">
+                                    <a href="#" class="text-gray-400 hover:text-primary transition-colors text-left"><span class="material-symbols-outlined text-base font-bold text-left">language</span></a>
+                                </div>
+                            </div>
+                        `);
+                    });
+                </script>
             </div>
         </div>
     </section>
 
-    <!-- Socios Asociados -->
-    <section class="py-16 bg-white dark:bg-[#1A1A1A]">
+    <!-- ASOCIADOS (Cards Simplificadas) -->
+    <section class="py-16 bg-white dark:bg-[#1A1A1A] text-left">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">Socios Asociados</h2>
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 uppercase">Asociados</h2>
                 <div class="w-16 h-1 bg-primary mx-auto rounded-full mb-6"></div>
             </div>
             
-            <div class="relative group/carousel">
-                <div id="asociados-carousel" class="flex overflow-x-auto gap-6 pb-12 pt-4 px-4 hide-scrollbar snap-x snap-mandatory">
-                    <script>
-                        const asociadosList = [
-                            { id: "acciona", name: "ACCIONA" },
-                            { id: "avo2", name: "VESPUCIO ORIENTE II" },
-                            { id: "barchip", name: "BARCHIP" },
-                            { id: "ingeroc", name: "INGEROC" },
-                            { id: "gardilcic", name: "CONSTRUCTORA GARDILCIC" },
-                            { id: "dynal", name: "DYNAL" },
-                            { id: "efe", name: "EFE Trenes de Chile" },
-                            { id: "geoconsult", name: "GC Geoconsult" },
-                            { id: "etex", name: "ETEX" },
-                            { id: "geobrugg", name: "GEOBRUGG" },
-                            { id: "iot", name: "IOT Automation" },
-                            { id: "systra", name: "Systra Subterra" },
-                            { id: "jri", name: "JRI Ingeniería" },
-                            { id: "ohla", name: "OHLA" },
-                            { id: "rq", name: "R&Q Ingeniería" },
-                            { id: "ossa", name: "OSSA Obras Subterráneas" },
-                            { id: "robbins", name: "Robbins" },
-                            { id: "metro", name: "Metro de Santiago" },
-                            { id: "securiton", name: "Securiton" },
-                            { id: "furukawa", name: "Furukawa Electric" },
-                            { id: "dmc", name: "DMC Mining Services" }
-                        ];
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <script>
+                    const asociadosList = [
+                        { id: "acciona", name: "ACCIONA" }, { id: "barchip", name: "BARCHIP" }, { id: "gardilcic", name: "GARDILCIC" },
+                        { id: "dmc", name: "DMC MINING" }, { id: "geoconsult", name: "GEOCONSULT" }, { id: "geobrugg", name: "GEOBRUGG" },
+                        { id: "ingeroc", name: "INGEROC" }, { id: "jri", name: "JRI INGENIERÍA" }, { id: "lombardi", name: "LOMBARDI" },
+                        { id: "masterbuilders", name: "MASTER BUILDERS" }, { id: "metro", name: "METRO" }, { id: "ossa", name: "OSSA" },
+                        { id: "pmp", name: "PMP" }, { id: "rq", name: "R&Q INGENIERÍA" }, { id: "securiton", name: "SECURITON" },
+                        { id: "skava", name: "SKAVA" }, { id: "systra", name: "SYSTRA" }, { id: "zublin", name: "ZUBLIN" },
+                        { id: "crcc", name: "CRCC" }
+                    ];
 
-                        asociadosList.forEach(p => {
-                            document.write(`
-                                <div class="snap-start min-w-[240px] bg-background-light dark:bg-surface-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm flex flex-col items-center text-center group">
-                                    <div class="h-20 flex items-center justify-center mb-4 grayscale group-hover:grayscale-0 transition-all">
-                                        <img src="img/logos/${p.id}.png" alt="${p.name}" class="max-h-12 w-auto object-contain dark:brightness-200" onerror="this.src='https://placehold.co/150x60?text=${p.id}'">
-                                    </div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white mb-2 text-xs uppercase tracking-tight h-8 flex items-center justify-center">${p.name}</h4>
-                                    <div class="flex gap-3 mt-auto justify-center pt-3 border-t border-gray-100 dark:border-gray-700 w-full opacity-0 group-hover:opacity-100 transition-opacity">
-                                        <span class="material-symbols-outlined text-gray-400 text-base cursor-pointer">language</span>
-                                        <span class="material-symbols-outlined text-gray-400 text-base cursor-pointer">link</span>
-                                    </div>
+                    asociadosList.forEach(p => {
+                        document.write(`
+                            <div class="bg-background-light dark:bg-surface-dark rounded-xl p-4 border border-gray-100 dark:border-gray-800 flex flex-col items-center text-center group hover:border-primary/50 transition-colors text-left text-left text-left">
+                                <div class="h-12 flex items-center justify-center mb-3 grayscale group-hover:grayscale-0 transition-all text-left text-left">
+                                    <img src="img/logos/${p.id}.png" alt="${p.name}" class="h-10 w-auto object-contain text-left text-left" onerror="this.src='https://placehold.co/100x40?text=${p.id}'">
                                 </div>
-                            `);
-                        });
-                    </script>
-                </div>
-                <div class="flex justify-center gap-4 mt-2">
-                    <button class="bg-white dark:bg-surface-dark shadow-md border w-12 h-12 flex items-center justify-center rounded-full" onclick="scrollCarousel('asociados-carousel', -1)"><span class="material-symbols-outlined">chevron_left</span></button>
-                    <button class="bg-white dark:bg-surface-dark shadow-md border w-12 h-12 flex items-center justify-center rounded-full" onclick="scrollCarousel('asociados-carousel', 1)"><span class="material-symbols-outlined">chevron_right</span></button>
-                </div>
+                                <h4 class="font-bold text-gray-900 dark:text-white text-[10px] uppercase text-center text-left text-left">${p.name}</h4>
+                            </div>
+                        `);
+                    });
+                </script>
             </div>
         </div>
     </section>
 
-    <!-- CTA Final -->
+    <!-- AFILIADOS INDIVIDUALES (Cards Simples) -->
+    <section class="py-16 bg-background-light dark:bg-background-dark text-left">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 uppercase">Afiliados Individuales</h2>
+                <div class="w-16 h-1 bg-primary mx-auto rounded-full mb-6"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <script>
+                    const individuales = ["Armando Olavarría", "Matías Egaña", "Cleber Castillo", "Patricio González", "Julio Zepeda", "Santiago Castro", "Mariano Sepúlveda", "Milenko Chaparro", "Claudio Caviedes", "Raúl Rojas", "Jaime Soto", "Pablo Gándara", "Giacomo Proia", "Manuel Bahamondes"];
+                    individuales.forEach(name => {
+                        const initial = name.charAt(0);
+                        document.write(`
+                            <div class="bg-white dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-800 flex items-center gap-4 hover:shadow-md transition-shadow text-left">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                    ${initial}
+                                </div>
+                                <div class="text-left">
+                                    <p class="font-bold text-gray-900 dark:text-white text-sm text-left">${name}</p>
+                                    <p class="text-gray-500 text-[10px] uppercase tracking-wider text-left">Profesional Afiliado</p>
+                                </div>
+                            </div>
+                        `);
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
     <section class="py-20 bg-gray-50 dark:bg-[#151515] border-t border-gray-200 dark:border-gray-800 text-center">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 uppercase">¿Quieres formar parte de nuestra red?</h2>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 uppercase">¿Quieres formar parte de nuestra red?</h2>
             <a class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-bold shadow-lg transform hover:-translate-y-1 transition-all inline-flex items-center" href="https://idigital2025.github.io/CTES/hazte-socio">
-                Hazte socio <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
+                Hazte socio <span class="material-symbols-outlined ml-2 text-lg font-bold">arrow_forward</span>
             </a>
         </div>
     </section>
 </main>
 
 <!-- FOOTER -->
-<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto">
+<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto text-left">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div>
-                <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-left">
+            <div class="text-left">
+                <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert dark:brightness-200 text-left" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
+                <p class="text-gray-600 dark:text-gray-400 text-sm text-left">Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.</p>
             </div>
-            <div>
-                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Navegación</h5>
-                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="index.html">Inicio</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="quienes-somos.html">Quiénes Somos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="noticias.html">Artículos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="hazte-socio.html">Hazte Socio</a></li>
+            <div class="text-left">
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left">Navegación</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 text-left">
+                    <li><a class="hover:text-primary transition-colors text-left" href="index.html">Inicio</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left" href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left" href="noticias.html">Artículos</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left" href="hazte-socio.html">Hazte Socio</a></li>
                 </ul>
             </div>
-            <div>
-                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
-                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="biblioteca.html">Biblioteca</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="eventos.html">Calendario</a></li>
+            <div class="text-left text-left">
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left text-left">Recursos</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 text-left text-left text-left">
+                    <li><a class="hover:text-primary transition-colors text-left" href="biblioteca.html">Biblioteca</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left" href="eventos.html">Calendario</a></li>
                 </ul>
             </div>
-            <div>
-                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Contacto</h5>
-                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">phone</span> +56 9 752 77109</li>
-                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">email</span> cteschile@ctes.cl</li>
-                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
-                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">location_on</span> 
-                        <span>Barcelona 2077, Providencia, Santiago de Chile</span>
+            <div class="text-left text-left">
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left text-left text-left">Contacto</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 text-left text-left text-left">
+                    <li class="flex items-center text-left"><span class="material-symbols-outlined text-base mr-2 font-bold text-left">phone</span> +56 9 752 77109</li>
+                    <li class="flex items-center text-left"><span class="material-symbols-outlined text-base mr-2 font-bold text-left">email</span> cteschile@ctes.cl</li>
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight text-left text-left">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary font-bold text-left">location_on</span> 
+                        <span class="text-left text-left">Barcelona 2077, Providencia, Santiago de Chile</span>
                     </li>
-                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
-                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">schedule</span> 
-                        <span>Horario de atención: Lunes a Viernes 9:00 a 18:00hrs</span>
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight text-left text-left">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary font-bold text-left">schedule</span> 
+                        <span class="text-left text-left">Horario de atención: Lunes a Viernes 9:00 a 18:00hrs</span>
                     </li>
                 </ul>
             </div>
@@ -335,21 +387,14 @@
     </div>
 </footer>
 
-<script>
-    function scrollCarousel(containerId, direction) {
-        const container = document.getElementById(containerId);
-        if (!container) return;
-        const card = container.querySelector('.snap-start');
-        if (!card) return;
-        const scrollAmount = card.offsetWidth + 24; 
-        const currentScroll = container.scrollLeft;
-        const maxScroll = container.scrollWidth - container.clientWidth;
-        let targetScroll = currentScroll + (direction * scrollAmount);
-        if (direction > 0 && currentScroll >= maxScroll - 10) targetScroll = 0;
-        else if (direction < 0 && currentScroll <= 10) targetScroll = maxScroll;
-        container.scrollTo({ left: targetScroll, behavior: 'smooth' });
-    }
+<!-- Botón Subir -->
+<div class="fixed bottom-6 right-6 z-50">
+    <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center text-left" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+</div>
 
+<script>
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
     window.onscroll = function() {
         if (scrollToTopBtn) {
@@ -363,13 +408,6 @@
         }
     };
 </script>
-
-<!-- Botón Subir -->
-<div class="fixed bottom-6 right-6 z-50">
-    <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        <span class="material-symbols-outlined">arrow_upward</span>
-    </button>
-</div>
 
 </body>
 </html>
