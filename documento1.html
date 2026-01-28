@@ -7,13 +7,13 @@
     <meta content="Webinar sobre las oportunidades y desafíos del espacio subterráneo en el desarrollo urbano. Video exclusivo de CTES Chile." name="description"/>
     
     <!-- Fuentes e Iconos -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     
-    <!-- 1. Cargar Tailwind CSS CDN -->
+    <!-- 1. Cargar Tailwind CSS CDN primero -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     
-    <!-- 2. Configuración de Tailwind -->
+    <!-- 2. Configuración de Tailwind después -->
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -49,6 +49,7 @@
           @apply bg-primary hover:bg-primary-dark text-white rounded-full px-6 py-2.5 font-medium transition-all shadow-sm text-sm inline-flex items-center justify-center;
         }
       }
+      body { font-family: "Inter", sans-serif }
     </style>
 </head>
 <body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200 flex flex-col min-h-screen">
@@ -70,7 +71,7 @@
         </div>
     </div>
 
-    <!-- NAVEGACIÓN -->
+    <!-- NAVEGACIÓN (CAMBIO A "ARTÍCULOS") -->
     <header class="bg-surface-light dark:bg-surface-dark shadow-sm">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
@@ -80,7 +81,7 @@
                     </a>
                 </div>
                 <nav class="hidden lg:flex items-center space-x-8">
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/">Inicio</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/index">Inicio</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios">Socios</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a>
@@ -94,7 +95,7 @@
                     </a>
                 </div>
                 <div class="lg:hidden">
-                    <button class="text-gray-700 dark:text-gray-300 hover:text-primary">
+                    <button class="text-gray-700 dark:text-gray-300 hover:text-primary focus:outline-none">
                         <span class="material-symbols-outlined text-2xl">menu</span>
                     </button>
                 </div>
@@ -103,8 +104,9 @@
     </header>
 </div>
 
-<!-- Main Content (ORIGINAL PRESERVADO) -->
+<!-- Main Content -->
 <main class="flex-grow">
+    <!-- Breadcrumbs Section -->
     <div class="bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <nav aria-label="Breadcrumb" class="flex mb-4">
@@ -136,8 +138,9 @@
         </div>
     </div>
 
+    <!-- Contenido Detalle -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 text-left">
             
             <!-- Columna Izquierda: Contenido Principal -->
             <div class="lg:col-span-2 space-y-8">
@@ -157,10 +160,12 @@
                     </div>
                 </div>
 
+                <!-- Reproductor de Video -->
                 <div class="w-full bg-black rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-900/5 aspect-video relative group">
                     <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="w-full h-full" frameborder="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=7B5j2x9_1" title="YouTube video player"></iframe>
                 </div>
 
+                <!-- Descripción Detallada -->
                 <div class="prose prose-lg prose-green dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 leading-relaxed">
                     <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Sobre este webinar</h3>
                     <p class="mb-6">
@@ -169,7 +174,7 @@
                     <p class="mb-6">
                         Durante la sesión, expertos internacionales discuten los desafíos geotécnicos, las nuevas tecnologías de excavación (TBM y métodos convencionales), y la importancia de una planificación urbana integrada que considere el "urbanismo subterráneo" como un pilar fundamental para la sostenibilidad de las ciudades del futuro.
                     </p>
-                    <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Temas clave abordados:</h4>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3 text-left">Temas clave abordados:</h4>
                     <ul class="space-y-2 mb-8 list-disc list-inside">
                         <li>Innovación en diseño y construcción de túneles.</li>
                         <li>Gestión de riesgos en proyectos de gran envergadura.</li>
@@ -178,11 +183,11 @@
                     </ul>
                     
                     <div class="flex flex-col sm:flex-row gap-4 mt-8 pt-8 border-t border-gray-100 dark:border-gray-700">
-                        <a class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-primary hover:bg-primary-dark transition-all" href="#">
+                        <a class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-primary hover:bg-primary-dark transition-all focus:outline-none" href="#">
                             <span class="material-symbols-outlined mr-2">open_in_new</span>
                             Ver en YouTube
                         </a>
-                        <button class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-full text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+                        <button class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-full text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all focus:outline-none">
                             <span class="material-symbols-outlined mr-2">share</span>
                             Compartir
                         </button>
@@ -190,24 +195,25 @@
                 </div>
             </div>
 
-            <!-- Columna Derecha: Sidebar (ORIGINAL PRESERVADO) -->
+            <!-- Columna Derecha: Sidebar -->
             <aside class="space-y-8">
+                <!-- Buscador rápido -->
                 <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-soft border border-gray-100 dark:border-gray-700">
                     <div class="space-y-4">
                         <div class="relative">
-                            <input class="w-full pl-10 pr-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-800 text-sm focus:ring-primary focus:border-primary transition-colors placeholder-gray-400" placeholder="Buscar documentos, normas o videos..." type="text"/>
+                            <input class="w-full pl-10 pr-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-800 text-sm focus:ring-primary focus:border-primary transition-colors placeholder-gray-400" placeholder="Buscar en biblioteca..." type="text"/>
                             <span class="material-symbols-outlined absolute left-3 top-3.5 text-gray-400 text-lg">search</span>
                         </div>
-                        <button class="w-full bg-gradient-to-r from-primary to-green-600 text-white rounded-lg py-3 px-4 flex items-center justify-center transition-all shadow-md">
+                        <button class="w-full bg-gradient-to-r from-primary to-green-600 hover:from-primary-dark hover:to-green-700 text-white rounded-lg py-3 px-4 flex items-center justify-center transition-all shadow-md group">
                             <span class="material-symbols-outlined mr-2">smart_toy</span>
                             <span class="font-medium">Preguntar al Agente AI</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- Categorías Sidebar -->
+                <!-- Categorías -->
                 <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-soft border border-gray-100 dark:border-gray-700">
-                    <h3 class="font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b border-gray-100 dark:border-gray-700">Categorías</h3>
+                    <h3 class="font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b border-gray-100 dark:border-gray-700 text-left">Categorías</h3>
                     <ul class="space-y-3">
                         <li>
                             <a class="flex items-center justify-between group" href="#">
@@ -224,16 +230,18 @@
                     </ul>
                 </div>
 
-                <!-- Relacionado Sidebar -->
+                <!-- Contenido Relacionado -->
                 <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-soft border border-gray-100 dark:border-gray-700">
-                    <h3 class="font-bold text-gray-900 dark:text-white mb-6">Contenido Relacionado</h3>
+                    <h3 class="font-bold text-gray-900 dark:text-white mb-6 text-left">Contenido Relacionado</h3>
                     <div class="space-y-6">
-                        <div class="group flex gap-4">
+                        <div class="group flex gap-4 text-left">
                             <div class="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden relative">
-                                <img alt="Thumbnail" class="w-full h-full object-cover" src="https://placehold.co/100x100?text=Paper"/>
+                                <img alt="Paper" class="w-full h-full object-cover" src="https://placehold.co/100x100?text=Paper"/>
                             </div>
                             <div class="flex flex-col justify-center">
-                                <h4 class="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors line-clamp-2">Impermeabilización en Túneles</h4>
+                                <h4 class="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors line-clamp-2">
+                                    <a href="#">Impermeabilización en Túneles Submarinos</a>
+                                </h4>
                                 <span class="text-xs text-gray-500">20 Ene, 2025</span>
                             </div>
                         </div>
@@ -243,9 +251,11 @@
                 <!-- CTA Socios -->
                 <div class="bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-6 text-center text-white shadow-lg relative overflow-hidden">
                     <span class="material-symbols-outlined text-4xl mb-3 block mx-auto">card_membership</span>
-                    <h3 class="font-bold text-lg mb-2">Contenido exclusivo</h3>
-                    <p class="text-sm text-green-100 mb-4 text-xs">Hazte socio de CTES Chile y accede al archivo histórico.</p>
-                    <a class="inline-block w-full bg-white text-primary font-bold py-2 px-4 rounded-full text-sm hover:bg-green-50 transition-colors" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte Socio</a>
+                    <h3 class="font-bold text-lg mb-2 text-center">Contenido exclusivo</h3>
+                    <p class="text-sm text-green-100 mb-4 text-center">Hazte socio de CTES Chile y accede al archivo histórico completo.</p>
+                    <a class="inline-block w-full bg-white text-primary font-bold py-2 px-4 rounded-full text-sm hover:bg-green-50 transition-colors shadow-sm" href="https://idigital2025.github.io/CTES/hazte-socio">
+                        Hazte Socio
+                    </a>
                 </div>
             </aside>
         </div>
@@ -253,23 +263,29 @@
 </main>
 
 <!-- =========================================================================
-     FOOTER (ACTUALIZADO: BARCELONA 2077)
+     FOOTER (ACTUALIZADO CON DIRECCIÓN Y HORARIO)
      ========================================================================= -->
 <footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <!-- Info -->
-            <div>
+            <!-- Columna 1: Info Corporativa -->
+            <div class="text-left">
                 <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.</p>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.
+                </p>
                 <div class="flex space-x-4 mt-6">
-                    <a class="text-gray-400 hover:text-primary transition-colors" href="#"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
-                    <a class="text-gray-400 hover:text-primary transition-colors" href="#"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center" href="#">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center" href="#">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
                 </div>
             </div>
             
-            <!-- Navegación -->
-            <div>
+            <!-- Columna 2: Navegación -->
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Navegación</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                     <li><a class="hover:text-primary transition-colors" href="index.html">Inicio</a></li>
@@ -279,8 +295,8 @@
                 </ul>
             </div>
             
-            <!-- Recursos -->
-            <div>
+            <!-- Columna 3: Recursos -->
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                     <li><a class="hover:text-primary transition-colors" href="biblioteca.html">Biblioteca</a></li>
@@ -288,19 +304,31 @@
                 </ul>
             </div>
             
-            <!-- Contacto -->
-            <div>
+            <!-- Columna 4: Contacto y Dirección -->
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Contacto</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">phone</span> +56 9 752 77109</li>
-                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">email</span> cteschile@ctes.cl</li>
+                    <li class="flex items-center">
+                        <span class="material-symbols-outlined text-base mr-2">phone</span> 
+                        +56 9 752 77109
+                    </li>
+                    <li class="flex items-center">
+                        <span class="material-symbols-outlined text-base mr-2">email</span> 
+                        cteschile@ctes.cl
+                    </li>
                     <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
                         <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">location_on</span> 
                         <span>Barcelona 2077, Providencia, Santiago de Chile</span>
                     </li>
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">schedule</span> 
+                        <span>Horario de atención: Lunes a Viernes 9:00 a 18:00hrs</span>
+                    </li>
                 </ul>
             </div>
         </div>
+        
+        <!-- Barra Inferior de Copyright -->
         <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
             <div class="flex space-x-6 mb-4 md:mb-0">
                 <a class="hover:text-primary transition-colors" href="#">Política de privacidad</a>
@@ -313,16 +341,22 @@
 
 <!-- Botones flotantes -->
 <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+    <!-- Botón Subir (Scroll Top) -->
     <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center">
         <span class="material-symbols-outlined">arrow_upward</span>
     </button>
+
+    <!-- Botón WhatsApp -->
     <a href="https://wa.me/56975277109" target="_blank" class="bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-all w-12 h-12 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
     </a>
 </div>
 
 <script>
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
     window.onscroll = function() {
         if (scrollToTopBtn) {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -334,7 +368,11 @@
             }
         }
     };
-    scrollToTopBtn?.addEventListener("click", function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+    scrollToTopBtn?.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 </script>
+
 </body>
 </html>
