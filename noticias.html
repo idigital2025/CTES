@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Noticias CTES Chile | Actualidad en túneles y obras subterráneas</title>
-    <meta content="Revisa las noticias y actualidad de CTES Chile: proyectos, eventos, alianzas y avances en infraestructura subterránea." name="description"/>
+    <title>Artículos CTES Chile | Actualidad en túneles y obras subterráneas</title>
+    <meta content="Revisa los artículos y actualidad de CTES Chile: proyectos, eventos, alianzas y avances en infraestructura subterránea." name="description"/>
     
     <!-- Fuentes e Iconos -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
@@ -48,6 +48,7 @@
           @apply bg-primary hover:bg-primary-dark text-white rounded-full px-8 py-3 font-bold text-sm transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 inline-flex justify-center items-center;
         }
       }
+      body { font-family: "Inter", sans-serif }
     </style>
 </head>
 <body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200 flex flex-col min-h-screen">
@@ -56,13 +57,13 @@
 <div class="sticky top-0 z-50 w-full">
     <!-- CINTILLO -->
     <div class="bg-background-light dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-xs py-2">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <span class="text-gray-500 dark:text-gray-400 hidden md:inline">CTES Chile, representante oficial de la ITA-AITES</span>
+        <div class="container mx-auto px-4 flex justify-between items-center text-gray-500 dark:text-gray-400">
+            <span class="hidden md:inline">CTES Chile, representante oficial de la ITA-AITES</span>
             <div class="flex items-center space-x-6 ml-auto md:ml-0 text-gray-600 dark:text-gray-300">
-                <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">person</span> Mi cuenta</a>
-                <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">help</span> Ayuda</a>
+                <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px] mr-1">person</span> Mi cuenta</a>
+                <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px] mr-1">help</span> Ayuda</a>
                 <span class="cursor-pointer hover:text-primary transition-colors">ES / EN</span>
-                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1">phone</span> Contacto</a>
+                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-[18px] mr-1">phone</span> Contacto</a>
             </div>
         </div>
     </div>
@@ -77,21 +78,22 @@
                     </a>
                 </div>
                 <nav class="hidden lg:flex items-center space-x-8">
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/">Inicio</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios">Socios</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a>
-                    <a class="text-primary font-bold transition-colors text-sm" href="https://idigital2025.github.io/CTES/noticias">Noticias</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/eventos">Calendario</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="index.html">Inicio</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="quienes-somos.html">Quiénes Somos</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="socios.html">Socios</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="socios-jovenes.html">Socios Jóvenes</a>
+                    <a class="text-primary font-bold transition-colors text-sm" href="noticias.html">Artículos</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="biblioteca.html">Biblioteca</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="eventos.html">Calendario</a>
                 </nav>
                 <div class="hidden lg:block">
-                    <a class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-sm text-sm" href="https://idigital2025.github.io/CTES/hazte-socio">
+                    <a class="btn-primary" href="hazte-socio.html">
                         Hazte Socio
                     </a>
                 </div>
+                <!-- Botón Móvil -->
                 <div class="lg:hidden">
-                    <button class="text-gray-700 dark:text-gray-300 hover:text-primary">
+                    <button class="text-gray-700 dark:text-gray-300 hover:text-primary focus:outline-none">
                         <span class="material-symbols-outlined text-2xl">menu</span>
                     </button>
                 </div>
@@ -107,17 +109,17 @@
     <section class="relative bg-surface-light dark:bg-surface-dark pt-12 pb-16">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto">
-                <span class="uppercase tracking-wider text-primary text-sm font-bold mb-2 block">Actualidad</span>
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Noticias</h1>
+                <span class="uppercase tracking-wider text-primary text-sm font-bold mb-2 block text-center">Actualidad</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-center">Artículos</h1>
                 <div class="h-1 w-20 bg-primary mx-auto rounded-full mb-8"></div>
-                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                    Aquí encontrarás noticias, artículos y actualizaciones sobre la agenda CTES Chile, proyectos relevantes, eventos y avances en la industria de túneles y espacios subterráneos.
+                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+                    Aquí encontrarás artículos y actualizaciones sobre la agenda CTES Chile, proyectos relevantes, eventos y avances en la industria de túneles y espacios subterráneos.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Listado de Noticias (Cards Grid) -->
+    <!-- Listado de Artículos (Cards Grid) -->
     <section class="py-12 bg-background-light dark:bg-background-dark">
         <div class="container mx-auto px-4">
             
@@ -132,9 +134,8 @@
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- Noticia 1: Evento -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="eventos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="eventos">
                     <div class="relative h-52 overflow-hidden">
-                        <!-- FIX: Added this.onerror=null to prevent infinite loop -->
                         <img alt="Encuentro de Camaradería" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/camaraderia.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
                             <span class="bg-white text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-sm">Evento</span>
@@ -147,7 +148,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Encuentro de Camaradería CTES Chile 2025
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Un espacio para compartir y celebrar los logros del año junto a nuestros socios y colaboradores estratégicos.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -157,7 +158,7 @@
                 </article>
 
                 <!-- Noticia 2: Proyectos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Minería Subterránea" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/codelco.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -171,7 +172,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Codelco y Anglo American consolidan alianza para explotar Andina y Los Bronces
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Acuerdo estratégico busca optimizar operaciones y sostenibilidad en yacimientos contiguos.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -181,7 +182,7 @@
                 </article>
 
                 <!-- Noticia 3: Actualidad -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="actualidad">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="actualidad">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Túnel Panamá" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/panama.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1590496793929-3647c60a29d2?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -195,7 +196,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Avanza la excavación del túnel de la Línea 3 bajo el Canal de Panamá
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Hito ingenieril en Centroamérica marca nuevos estándares en construcción subterránea bajo cuerpos de agua.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -205,7 +206,7 @@
                 </article>
 
                 <!-- Noticia 4: Proyectos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Autopista Orbital" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/autopista.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -219,7 +220,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Autopista Orbital Norponiente se integra al anillo vial exterior de Santiago
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Proyecto clave para descongestionar la capital contempla importantes tramos soterrados.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -229,7 +230,7 @@
                 </article>
 
                 <!-- Noticia 5: Actualidad -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="actualidad">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="actualidad">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Visita Técnica Sandvik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/sandvik.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -243,7 +244,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Socios CTES-Chile recorren las operaciones de Sandvik en Santiago
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Visita técnica permitió conocer las últimas tecnologías en maquinaria para minería subterránea.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -253,7 +254,7 @@
                 </article>
 
                 <!-- Noticia 6: Proyectos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Metro Línea 9" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/linea9.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -267,7 +268,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Inician las obras de la Línea 9 del Metro de Santiago
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Nuevo trazado conectará el centro con la zona sur de la capital, beneficiando a millones de usuarios.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -277,7 +278,7 @@
                 </article>
 
                 <!-- Noticia 7: Eventos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="eventos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="eventos">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Jornada Megaproyectos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/megaproyectos.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -291,7 +292,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Revive la jornada sobre megaproyectos subterráneos organizada por CTES-Chile
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Expertos debatieron sobre los desafíos y soluciones innovadoras en las grandes obras del país.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -301,7 +302,7 @@
                 </article>
 
                 <!-- Noticia 8: Proyectos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Tren Alameda Melipilla" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/tren.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -315,7 +316,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Avanza licitación del tramo subterráneo del Tren Alameda–Melipilla
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Proyecto ferroviario clave para la conectividad de la zona poniente entra en fase decisiva.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -325,7 +326,7 @@
                 </article>
 
                 <!-- Noticia 9: Actualidad -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="actualidad">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="actualidad">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Diálogo Técnico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/dialogo.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -339,7 +340,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             CTES-Chile impulsa el diálogo técnico en megaproyectos subterráneos
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Iniciativa busca compartir lecciones aprendidas y mejores prácticas entre mandantes y ejecutores.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -349,7 +350,7 @@
                 </article>
 
                 <!-- Noticia 10: Proyectos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Túneles Lo Prado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/ruta68.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -363,7 +364,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Nuevos túneles Lo Prado III y Zapata III modernizarán la Ruta 68
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Ampliación de capacidad y mejoras de seguridad para una de las rutas más transitadas del país.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -373,7 +374,7 @@
                 </article>
 
                 <!-- Noticia 11: Proyectos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="proyectos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="proyectos">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Túnel CMP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/cmp.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1579547621113-e4bb2a19bdd6?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -387,7 +388,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             CMP inaugura túnel subterráneo en El Romeral
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Obra de ingeniería permite optimizar la extracción y transporte de mineral.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -397,7 +398,7 @@
                 </article>
 
                 <!-- Noticia 12: Eventos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="eventos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="eventos">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Summit 2025" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/summit2025.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -411,7 +412,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Summit 2025: Avances de los Megaproyectos Subterráneos en Chile
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Las principales autoridades y empresas del sector se reúnen para analizar el futuro de la infraestructura.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -421,7 +422,7 @@
                 </article>
 
                 <!-- Noticia 13: Eventos -->
-                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full" data-category="eventos">
+                <article class="news-card group bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-soft hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 flex flex-col h-full text-left" data-category="eventos">
                     <div class="relative h-52 overflow-hidden">
                         <img alt="Summit Asistentes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/news/summit-publico.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 left-4">
@@ -435,7 +436,7 @@
                         <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                             Summit CTES-Chile reunió a más de 130 profesionales
                         </h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                             Exitosa convocatoria demuestra el interés y dinamismo del sector tunelero nacional.
                         </p>
                         <a class="inline-flex items-center text-primary font-bold text-sm hover:underline mt-auto" href="#">
@@ -451,18 +452,19 @@
 </main>
 
 
-<!-- FOOTER -->
-<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+<!-- =========================================================================
+     FOOTER (ACTUALIZADO CON DIRECCIÓN Y HORARIO)
+     ========================================================================= -->
+<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div>
-                <div class="w-32 mb-6">
-                    <img alt="CTES Chile Logo" class="h-10 w-auto object-contain dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
-                </div>
-                <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">
+            <!-- Columna 1: Info Corporativa -->
+            <div class="text-left">
+                <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
                     Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.
                 </p>
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 mt-6">
                     <a class="text-gray-400 hover:text-primary transition-colors" href="#">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     </a>
@@ -471,45 +473,55 @@
                     </a>
                 </div>
             </div>
-            <div>
+            
+            <!-- Columna 2: Navegación -->
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Navegación</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/">Inicio</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/socios">Socios</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte Socio</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html">Inicio</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="noticias.html">Artículos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="hazte-socio.html">Hazte Socio</a></li>
                 </ul>
             </div>
-            <div>
+            
+            <!-- Columna 3: Recursos -->
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/noticias">Noticias</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/eventos">Calendario</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="biblioteca.html">Biblioteca</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="eventos.html">Calendario</a></li>
                 </ul>
             </div>
-            <div>
+            
+            <!-- Columna 4: Contacto y Dirección -->
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Contacto</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li class="flex items-start">
-                        <a href="tel:+56975277109" class="hover:text-primary flex items-center">
-                            <span class="material-symbols-outlined text-base mr-2 mt-0.5">phone</span> +56 9 752 77109
-                        </a>
+                    <li class="flex items-center">
+                        <span class="material-symbols-outlined text-base mr-2">phone</span> 
+                        +56 9 752 77109
                     </li>
-                    <li class="flex items-start">
-                        <a href="mailto:cteschile@ctes.cl" class="hover:text-primary flex items-center">
-                            <span class="material-symbols-outlined text-base mr-2 mt-0.5">email</span> cteschile@ctes.cl
-                        </a>
+                    <li class="flex items-center">
+                        <span class="material-symbols-outlined text-base mr-2">email</span> 
+                        cteschile@ctes.cl
                     </li>
-                    <li class="flex items-start"><span class="material-symbols-outlined text-base mr-2 mt-0.5">language</span> ES / EN</li>
+                    <li class="flex items-start leading-tight pt-2 border-t border-gray-200 dark:border-gray-700 mt-2">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">location_on</span> 
+                        <span>Barcelona 2077, Providencia, Santiago de Chile</span>
+                    </li>
+                    <li class="flex items-start leading-tight pt-2 border-t border-gray-200 dark:border-gray-700 mt-2">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">schedule</span> 
+                        <span>Horario de atención: Lunes a Viernes 9:00 a 18:00hrs</span>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 dark:text-gray-500">
+        
+        <!-- Barra Inferior de Copyright -->
+        <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
             <div class="flex space-x-6 mb-4 md:mb-0">
                 <a class="hover:text-primary transition-colors" href="#">Política de privacidad</a>
-                <span class="border-l border-gray-300 dark:border-gray-700 h-3 my-auto"></span>
                 <a class="hover:text-primary transition-colors" href="#">Términos y condiciones</a>
             </div>
             <p>© 2025 CTES Chile. Todos los derechos reservados.</p>
@@ -533,37 +545,33 @@
 </div>
 
 <script>
-    // Script para botón "Volver arriba"
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    
     window.onscroll = function() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            scrollToTopBtn.classList.remove("hidden");
-            scrollToTopBtn.classList.add("flex");
-        } else {
-            scrollToTopBtn.classList.add("hidden");
-            scrollToTopBtn.classList.remove("flex");
+        if (scrollToTopBtn) {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.classList.remove("hidden");
+                scrollToTopBtn.classList.add("flex");
+            } else {
+                scrollToTopBtn.classList.add("hidden");
+                scrollToTopBtn.classList.remove("flex");
+            }
         }
     };
-
-    scrollToTopBtn.addEventListener("click", function() {
+    scrollToTopBtn?.addEventListener("click", function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Script para Filtro de Noticias
+    // Script para Filtro de Artículos
     function filterNews(category, btn) {
-        // Reset botones
         const buttons = document.querySelectorAll('.filter-btn');
         buttons.forEach(b => {
             b.classList.remove('bg-primary', 'text-white', 'shadow-md');
             b.classList.add('bg-white', 'text-gray-600', 'border', 'border-gray-200');
         });
         
-        // Activar botón actual
         btn.classList.remove('bg-white', 'text-gray-600', 'border', 'border-gray-200');
         btn.classList.add('bg-primary', 'text-white', 'shadow-md');
 
-        // Filtrar cards
         const articles = document.querySelectorAll('.news-card');
         articles.forEach(article => {
             if (category === 'all' || article.dataset.category === category) {
