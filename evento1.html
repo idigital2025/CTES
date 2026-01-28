@@ -7,13 +7,13 @@
     <meta content="Participa en el Seminario BIM en túneles organizado por CTES Chile. Descubre los desafíos y oportunidades de la digitalización subterránea." name="description"/>
     
     <!-- Fuentes e Iconos -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     
-    <!-- 1. Cargar Tailwind CSS CDN primero -->
+    <!-- 1. Cargar Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     
-    <!-- 2. Configuración de Tailwind después -->
+    <!-- 2. Configuración de Tailwind -->
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -46,7 +46,7 @@
     <style type="text/tailwindcss">
       @layer utilities {
         .btn-primary {
-          @apply bg-primary hover:bg-primary-dark text-white rounded-full px-8 py-3 font-bold text-sm transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 inline-flex justify-center items-center;
+          @apply bg-primary hover:bg-primary-dark text-white rounded-full px-6 py-2.5 font-medium transition-all shadow-sm text-sm inline-flex items-center justify-center;
         }
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
@@ -56,11 +56,14 @@
             scrollbar-width: none;
         }
       }
+      body { font-family: "Inter", sans-serif }
     </style>
 </head>
 <body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200 flex flex-col min-h-screen">
 
-<!-- CONTENEDOR STICKY PARA CINTILLO Y HEADER -->
+<!-- =========================================================================
+     HEADER (ESTANDARIZADO)
+     ========================================================================= -->
 <div class="sticky top-0 z-50 w-full">
     <!-- CINTILLO -->
     <div class="bg-background-light dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-xs py-2">
@@ -75,7 +78,7 @@
         </div>
     </div>
 
-    <!-- HEADER -->
+    <!-- NAVEGACIÓN -->
     <header class="bg-surface-light dark:bg-surface-dark shadow-sm">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
@@ -85,22 +88,21 @@
                     </a>
                 </div>
                 <nav class="hidden lg:flex items-center space-x-8">
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/">Inicio</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/index">Inicio</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios">Socios</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a>
-                    <!-- CAMBIO: Noticias -> Artículos -->
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/noticias">Artículos</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a>
                     <a class="text-primary font-bold transition-colors text-sm" href="https://idigital2025.github.io/CTES/calendario">Calendario</a>
                 </nav>
                 <div class="hidden lg:block">
-                    <a class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-sm text-sm" href="https://idigital2025.github.io/CTES/hazte-socio">
+                    <a class="btn-primary" href="https://idigital2025.github.io/CTES/hazte-socio">
                         Hazte Socio
                     </a>
                 </div>
                 <div class="lg:hidden">
-                    <button class="text-gray-700 dark:text-gray-300 hover:text-primary">
+                    <button class="text-gray-700 dark:text-gray-300 hover:text-primary focus:outline-none">
                         <span class="material-symbols-outlined text-2xl">menu</span>
                     </button>
                 </div>
@@ -110,8 +112,7 @@
 </div>
 
 <!-- Main Content -->
-<main>
-    
+<main class="flex-grow">
     <section class="py-12 bg-background-light dark:bg-background-dark min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -138,7 +139,7 @@
                 </ol>
             </nav>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 text-left">
                 
                 <!-- Columna Izquierda: Contenido Principal -->
                 <div class="lg:col-span-2">
@@ -146,16 +147,16 @@
                         <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3 inline-block">Seminario</span>
                         <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">Seminario BIM en túneles: Desafíos y oportunidades</h1>
                         
-                        <!-- NUEVO: Iconos de compartir -->
+                        <!-- Iconos de compartir -->
                         <div class="flex items-center gap-3 pt-2">
                             <span class="text-xs text-gray-500 uppercase font-bold tracking-wider">Compartir:</span>
-                            <a href="#" class="text-gray-400 hover:text-[#0077b5] transition-colors" title="Compartir en LinkedIn">
+                            <a href="#" class="text-gray-400 hover:text-[#0077b5] transition-colors" title="LinkedIn">
                                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                             </a>
-                            <a href="#" class="text-gray-400 hover:text-[#1877F2] transition-colors" title="Compartir en Facebook">
+                            <a href="#" class="text-gray-400 hover:text-[#1877F2] transition-colors" title="Facebook">
                                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
                             </a>
-                            <button onclick="document.execCommand('copy')" class="text-gray-400 hover:text-primary transition-colors" title="Copiar enlace">
+                            <button class="text-gray-400 hover:text-primary transition-colors" title="Copiar enlace">
                                 <span class="material-symbols-outlined text-2xl">link</span>
                             </button>
                         </div>
@@ -164,7 +165,7 @@
                     <div class="relative w-full h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden mb-8 shadow-soft">
                         <img alt="Seminario BIM" class="w-full h-full object-cover" src="img/eventos/bim.jpg" onerror="this.src='https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop'"/>
                         <div class="absolute top-4 right-4">
-                            <span class="bg-white/90 backdrop-blur-sm text-primary text-xs font-bold px-3 py-1.5 rounded-full shadow-md uppercase tracking-wide flex items-center">
+                            <span class="bg-white/90 backdrop-blur-sm text-primary text-[10px] font-bold px-3 py-1.5 rounded-full shadow-md uppercase tracking-wide flex items-center">
                                 <span class="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></span>
                                 Cupos Limitados
                             </span>
@@ -174,6 +175,7 @@
                     <div class="w-16 h-1 bg-primary rounded-full mb-8"></div>
                     <p class="text-gray-500 dark:text-gray-400 text-lg mb-10 leading-relaxed">Un encuentro técnico especializado para analizar el estado del arte y la implementación de metodologías digitales en proyectos subterráneos.</p>
 
+                    <!-- Secciones Informativas -->
                     <div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 mb-12">
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                             <span class="material-symbols-outlined mr-2 text-primary">description</span>
@@ -184,165 +186,132 @@
                         </p>
                     </div>
 
-                    <!-- NUEVO: Sección de Video -->
+                    <!-- Video -->
                     <div class="mb-12">
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
                             <span class="material-symbols-outlined mr-2 text-primary">smart_display</span>
                             Video Promocional
                         </h3>
-                        <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 bg-black">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video del evento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video del evento" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
 
-                    <!-- NUEVO: Galería de Imágenes (Carrusel 1 foto) -->
+                    <!-- Galería -->
                     <div class="mb-12">
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
                             <span class="material-symbols-outlined mr-2 text-primary">photo_library</span>
                             Galería del Evento
                         </h3>
-                        
                         <div class="relative group/gallery">
-                            <!-- Botón Anterior -->
                             <button onclick="scrollGallery(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-black/50 hover:bg-white text-gray-800 dark:text-white p-3 rounded-full shadow-lg z-10 backdrop-blur-sm transition-all hover:scale-110">
                                 <span class="material-symbols-outlined">chevron_left</span>
                             </button>
-
-                            <!-- Contenedor Scroll -->
                             <div id="gallery-container" class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar rounded-2xl shadow-lg h-96">
-                                <!-- Foto 1 -->
                                 <div class="snap-center min-w-full h-full relative">
-                                    <img src="img/gallery/galeria1.jpg" alt="Foto evento 1" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1600&auto=format&fit=crop'">
+                                    <img src="img/gallery/galeria1.jpg" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1600&auto=format&fit=crop'">
                                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                                         <p class="text-white text-sm">Auditorio principal durante la charla inaugural</p>
                                     </div>
                                 </div>
-                                <!-- Foto 2 -->
                                 <div class="snap-center min-w-full h-full relative">
-                                    <img src="img/gallery/galeria2.jpg" alt="Foto evento 2" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1600&auto=format&fit=crop'">
+                                    <img src="img/gallery/galeria2.jpg" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1600&auto=format&fit=crop'">
                                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                                         <p class="text-white text-sm">Networking entre socios y expositores</p>
                                     </div>
                                 </div>
-                                <!-- Foto 3 -->
-                                <div class="snap-center min-w-full h-full relative">
-                                    <img src="img/gallery/galeria3.jpg" alt="Foto evento 3" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1558008258-3256797b43f3?q=80&w=1600&auto=format&fit=crop'">
-                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                                        <p class="text-white text-sm">Visita técnica a las obras de la Línea 7</p>
-                                    </div>
-                                </div>
                             </div>
-
-                            <!-- Botón Siguiente -->
                             <button onclick="scrollGallery(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-black/50 hover:bg-white text-gray-800 dark:text-white p-3 rounded-full shadow-lg z-10 backdrop-blur-sm transition-all hover:scale-110">
                                 <span class="material-symbols-outlined">chevron_right</span>
                             </button>
                         </div>
                     </div>
 
+                    <!-- Programa -->
                     <div class="mb-12">
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
                             <span class="material-symbols-outlined mr-2 text-primary">format_list_bulleted</span>
                             Programa Preliminar
                         </h3>
-                        <div class="space-y-0">
-                            <!-- Item Programa -->
+                        <div class="space-y-6">
                             <div class="flex flex-col md:flex-row gap-3 md:gap-8 border-b border-gray-100 dark:border-gray-700 pb-6">
-                                <div class="shrink-0 md:w-36">
-                                    <span class="inline-block bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold px-3 py-1 rounded-md">09:00 - 09:30</span>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">Acreditación y Café de Bienvenida</h4>
-                                </div>
+                                <span class="inline-block bg-primary/10 text-primary text-sm font-bold px-3 py-1 rounded-md h-fit">09:00 - 09:30</span>
+                                <h4 class="text-lg font-bold text-gray-900 dark:text-white">Acreditación y Café de Bienvenida</h4>
                             </div>
-                            <!-- Item Programa -->
-                            <div class="flex flex-col md:flex-row gap-3 md:gap-8 border-b border-gray-100 dark:border-gray-700 py-6">
-                                <div class="shrink-0 md:w-36">
-                                    <span class="inline-block bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold px-3 py-1 rounded-md">09:30 - 10:15</span>
-                                </div>
+                            <div class="flex flex-col md:flex-row gap-3 md:gap-8 border-b border-gray-100 dark:border-gray-700 pb-6">
+                                <span class="inline-block bg-primary/10 text-primary text-sm font-bold px-3 py-1 rounded-md h-fit">09:30 - 10:15</span>
                                 <div>
                                     <h4 class="text-lg font-bold text-gray-900 dark:text-white">Estado del arte BIM en Chile</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Presentación a cargo de Planbim Corfo sobre los avances normativos.</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Presentación a cargo de Planbim Corfo.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Expositores -->
                     <div>
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
                             <span class="material-symbols-outlined mr-2 text-primary">record_voice_over</span>
                             Expositores
                         </h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                            <!-- Expositor 1 -->
-                            <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-700 text-center group hover:shadow-md transition-shadow">
+                            <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-700 text-center group hover:shadow-md transition-all">
                                 <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-3 border-2 border-primary/20 group-hover:border-primary transition-colors">
-                                    <img src="img/speakers/ana.jpg" alt="Ana María López" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150x150?text=AM'"/>
+                                    <img src="img/speakers/ana.jpg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150x150?text=AM'"/>
                                 </div>
                                 <h5 class="font-bold text-gray-900 dark:text-white text-sm">Ana María López</h5>
-                                <p class="text-xs text-gray-500 mt-1">Directora Ejecutiva, Planbim</p>
+                                <p class="text-xs text-gray-500 mt-1 uppercase tracking-tight">Planbim Corfo</p>
                             </div>
-                            <!-- Expositor 2 -->
-                            <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-700 text-center group hover:shadow-md transition-shadow">
+                            <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-700 text-center group hover:shadow-md transition-all">
                                 <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-3 border-2 border-primary/20 group-hover:border-primary transition-colors">
-                                    <img src="img/speakers/carlos.jpg" alt="Carlos Rodriguez" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150x150?text=CR'"/>
+                                    <img src="img/speakers/carlos.jpg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150x150?text=CR'"/>
                                 </div>
                                 <h5 class="font-bold text-gray-900 dark:text-white text-sm">Carlos Rodriguez</h5>
-                                <p class="text-xs text-gray-500 mt-1">Jefe de Ingeniería, Metro S.A.</p>
+                                <p class="text-xs text-gray-500 mt-1 uppercase tracking-tight">Metro S.A.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Columna Derecha: Sidebar (Sticky) -->
+                <!-- Columna Derecha: Sidebar -->
                 <div class="lg:col-span-1">
                     <div class="bg-surface-light dark:bg-surface-dark p-6 lg:p-8 rounded-xl shadow-soft border border-gray-100 dark:border-gray-700 sticky top-24">
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-6 border-b border-gray-100 dark:border-gray-700 pb-4">Información Clave</h3>
+                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-6 border-b border-gray-100 dark:border-gray-700 pb-4 uppercase tracking-wider">Información Clave</h3>
                         
                         <div class="space-y-6 mb-8">
-                            <div class="flex items-start group">
-                                <div class="bg-green-50 dark:bg-green-900/20 p-2.5 rounded-lg mr-4 shrink-0 group-hover:bg-primary/20 transition-colors">
-                                    <span class="material-symbols-outlined text-primary">calendar_month</span>
-                                </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-50 dark:bg-green-900/20 p-2.5 rounded-lg mr-4 shrink-0"><span class="material-symbols-outlined text-primary">calendar_month</span></div>
                                 <div>
-                                    <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Fecha</p>
+                                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Fecha</p>
                                     <p class="text-sm font-semibold text-gray-900 dark:text-white mt-0.5">Miércoles, 19 Feb 2025</p>
                                 </div>
                             </div>
-                            
-                            <div class="flex items-start group">
-                                <div class="bg-green-50 dark:bg-green-900/20 p-2.5 rounded-lg mr-4 shrink-0 group-hover:bg-primary/20 transition-colors">
-                                    <span class="material-symbols-outlined text-primary">place</span>
-                                </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-50 dark:bg-green-900/20 p-2.5 rounded-lg mr-4 shrink-0"><span class="material-symbols-outlined text-primary">place</span></div>
                                 <div>
-                                    <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Ubicación</p>
+                                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Ubicación</p>
                                     <p class="text-sm font-semibold text-gray-900 dark:text-white mt-0.5">Hotel Intercontinental</p>
                                     <p class="text-xs text-gray-500">Av. Vitacura 2885, Santiago</p>
                                 </div>
                             </div>
-
-                            <div class="flex items-start group">
-                                <div class="bg-green-50 dark:bg-green-900/20 p-2.5 rounded-lg mr-4 shrink-0 group-hover:bg-primary/20 transition-colors">
-                                    <span class="material-symbols-outlined text-primary">payments</span>
-                                </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-50 dark:bg-green-900/20 p-2.5 rounded-lg mr-4 shrink-0"><span class="material-symbols-outlined text-primary">payments</span></div>
                                 <div>
-                                    <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Valor</p>
+                                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Valor</p>
                                     <p class="text-sm font-semibold text-gray-900 dark:text-white mt-0.5">Socios CTES: Gratuito</p>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">Público General: $45.000</p>
+                                    <p class="text-xs text-gray-500">Público General: $45.000</p>
                                 </div>
                             </div>
                         </div>
 
-                        <button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 mb-4 text-sm flex justify-center items-center">
-                            Inscribirse Ahora
-                            <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+                        <button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 mb-6 text-sm flex justify-center items-center">
+                            Inscribirse Ahora <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
                         </button>
                         
-                        <div class="text-center pt-2 border-t border-gray-100 dark:border-gray-700 mt-6">
-                            <p class="text-xs text-gray-400 mb-1">¿Tienes dudas sobre el evento?</p>
-                            <a class="text-sm font-medium text-primary hover:underline flex items-center justify-center" href="mailto:contacto@ctes.cl">
-                                <span class="material-symbols-outlined text-sm mr-1">mail</span>
-                                Contactar al organizador
+                        <div class="text-center pt-6 border-t border-gray-100 dark:border-gray-700">
+                            <p class="text-xs text-gray-400 mb-2 italic">¿Tienes dudas sobre el evento?</p>
+                            <a class="text-sm font-bold text-primary hover:underline flex items-center justify-center gap-1" href="mailto:cteschile@ctes.cl">
+                                <span class="material-symbols-outlined text-sm">mail</span> Contactar
                             </a>
                         </div>
                     </div>
@@ -350,118 +319,100 @@
             </div>
         </div>
     </section>
-
 </main>
 
-
-<!-- FOOTER -->
-<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+<!-- =========================================================================
+     FOOTER (DIRECCIÓN + HORARIO ACTUALIZADOS)
+     ========================================================================= -->
+<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div>
-                <div class="w-32 mb-6">
-                    <img alt="CTES Chile Logo" class="h-10 w-auto object-contain dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
-                </div>
-                <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">
-                    Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.
-                </p>
-                <div class="flex space-x-4">
-                    <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+            <!-- Columna 1 -->
+            <div class="text-left">
+                <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.</p>
+                <div class="flex space-x-4 mt-6">
+                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center" href="#">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     </a>
-                    <a class="text-gray-400 hover:text-primary transition-colors" href="#">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </a>
                 </div>
             </div>
-            <div>
+            
+            <!-- Columna 2 -->
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Navegación</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/">Inicio</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/quienes-somos">Quiénes Somos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/socios">Socios</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/socios-jovenes">Socios Jóvenes</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/hazte-socio">Hazte Socio</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html">Inicio</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="noticias.html">Artículos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="hazte-socio.html">Hazte Socio</a></li>
                 </ul>
             </div>
-            <div>
+            
+            <!-- Columna 3 -->
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <!-- CAMBIO: Noticias -> Artículos -->
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/noticias">Artículos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/biblioteca">Biblioteca</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/eventos">Calendario</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="biblioteca.html">Biblioteca</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="eventos.html">Calendario</a></li>
                 </ul>
             </div>
-            <div>
+            
+            <!-- Columna 4 -->
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Contacto</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li class="flex items-start">
-                        <a href="tel:+56975277109" class="hover:text-primary flex items-center">
-                            <span class="material-symbols-outlined text-base mr-2 mt-0.5">phone</span> +56 9 752 77109
-                        </a>
+                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">phone</span> +56 9 752 77109</li>
+                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2">email</span> cteschile@ctes.cl</li>
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">location_on</span> 
+                        <span>Barcelona 2077, Providencia, Santiago de Chile</span>
                     </li>
-                    <li class="flex items-start">
-                        <a href="mailto:cteschile@ctes.cl" class="hover:text-primary flex items-center">
-                            <span class="material-symbols-outlined text-base mr-2 mt-0.5">email</span> cteschile@ctes.cl
-                        </a>
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">schedule</span> 
+                        <span>Horario de atención: Lunes a Viernes 9:00 a 18:00hrs</span>
                     </li>
-                    <li class="flex items-start"><span class="material-symbols-outlined text-base mr-2 mt-0.5">language</span> ES / EN</li>
                 </ul>
             </div>
         </div>
-        <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 dark:text-gray-500">
-            <div class="flex space-x-6 mb-4 md:mb-0">
-                <a class="hover:text-primary transition-colors" href="#">Política de privacidad</a>
-                <span class="border-l border-gray-300 dark:border-gray-700 h-3 my-auto"></span>
-                <a class="hover:text-primary transition-colors" href="#">Términos y condiciones</a>
-            </div>
+        <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
             <p>© 2025 CTES Chile. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
 
-<!-- Botones flotantes -->
-<div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
-    <!-- Botón Subir (Scroll Top) -->
+<!-- Botón Subir -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
     <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center">
         <span class="material-symbols-outlined">arrow_upward</span>
     </button>
-
-    <!-- Botón WhatsApp -->
     <a href="https://wa.me/56975277109" target="_blank" class="bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-all w-12 h-12 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
     </a>
 </div>
 
 <script>
-    // Script para botón "Volver arriba"
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    
     window.onscroll = function() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            scrollToTopBtn.classList.remove("hidden");
-            scrollToTopBtn.classList.add("flex");
-        } else {
-            scrollToTopBtn.classList.add("hidden");
-            scrollToTopBtn.classList.remove("flex");
+        if (scrollToTopBtn) {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.classList.remove("hidden");
+                scrollToTopBtn.classList.add("flex");
+            } else {
+                scrollToTopBtn.classList.add("hidden");
+                scrollToTopBtn.classList.remove("flex");
+            }
         }
     };
+    scrollToTopBtn?.addEventListener("click", function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-    scrollToTopBtn.addEventListener("click", function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Script para Galería (Scroll 1 item a la vez)
     function scrollGallery(direction) {
         const container = document.getElementById('gallery-container');
         if (!container) return;
-        const itemWidth = container.offsetWidth; // 1 foto toma el 100% del ancho
+        const itemWidth = container.offsetWidth;
         container.scrollBy({ left: direction * itemWidth, behavior: 'smooth' });
     }
 </script>
-
 </body>
 </html>
