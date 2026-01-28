@@ -83,13 +83,13 @@
                     </a>
                 </div>
                 <nav class="hidden lg:flex items-center space-x-8">
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="#">Inicio</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="#">Quiénes Somos</a>
-                    <a class="text-primary font-bold transition-colors text-sm" href="#">Socios</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="#">Socios Jóvenes</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="#">Artículos</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="#">Biblioteca</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="#">Calendario</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="index.html">Inicio</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="quienes-somos.html">Quiénes Somos</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="socios.html">Socios</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="socios-jovenes.html">Socios Jóvenes</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="noticias.html">Artículos</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="biblioteca.html">Biblioteca</a>
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="eventos.html">Calendario</a>
                 </nav>
                 <div class="hidden lg:block">
                     <a class="btn-primary" href="hazte-socio.html">
@@ -385,7 +385,7 @@
     <section id="postulacion" class="py-16 bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800">
         <div class="container mx-auto px-4">
             <div class="grid lg:grid-cols-12 gap-12 items-start">
-                <div class="lg:col-span-4">
+                <div class="lg:col-span-4 text-left">
                     <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-primary after:rounded-full">
                         Postula a CTES Chile
                     </h2>
@@ -402,7 +402,7 @@
                 </div>
                 
                 <!-- Formulario -->
-                <div class="lg:col-span-8 bg-white dark:bg-surface-dark p-8 md:p-10 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm">
+                <div class="lg:col-span-8 bg-white dark:bg-surface-dark p-8 md:p-10 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm text-left">
                     <form class="space-y-5">
                         <div class="grid md:grid-cols-2 gap-5">
                             <div>
@@ -466,42 +466,49 @@
 </main>
 
 <!-- =========================================================================
-     COMPONENTE: FOOTER (DIRECCIÓN BARCELONA 2077)
+     FOOTER (DIRECCIÓN + HORARIO ACTUALIZADOS)
      ========================================================================= -->
 <footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <!-- Columna 1: Info Corporativa -->
-            <div>
+            <div class="text-left">
                 <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
                 <p class="text-gray-600 dark:text-gray-400 text-sm">
                     Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.
                 </p>
+                <div class="flex space-x-4 mt-6">
+                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center" href="#">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center" href="#">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
             </div>
             
             <!-- Columna 2: Navegación -->
-            <div>
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Navegación</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="#">Inicio</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Quiénes Somos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Artículos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Hazte Socio</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html">Inicio</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="noticias.html">Artículos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="hazte-socio.html">Hazte Socio</a></li>
                 </ul>
             </div>
             
             <!-- Columna 3: Recursos -->
-            <div>
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="#">Biblioteca</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Calendario</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Eventos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="biblioteca.html">Biblioteca</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="eventos.html">Calendario</a></li>
                 </ul>
             </div>
             
             <!-- Columna 4: Contacto y Dirección -->
-            <div>
+            <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Contacto</h5>
                 <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                     <li class="flex items-center">
@@ -515,6 +522,10 @@
                     <li class="flex items-start leading-tight pt-2 border-t border-gray-200 dark:border-gray-700 mt-2">
                         <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">location_on</span> 
                         <span>Barcelona 2077, Providencia, Santiago de Chile</span>
+                    </li>
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">schedule</span> 
+                        <span>Horario de atención: Lunes a Viernes 9:00 a 18:00hrs</span>
                     </li>
                 </ul>
             </div>
