@@ -42,7 +42,7 @@
                 @apply bg-primary hover:bg-primary-dark text-white rounded-full px-6 py-2.5 font-medium transition-all shadow-sm text-sm inline-flex items-center justify-center;
             }
             .bio-overlay {
-                @apply absolute inset-0 bg-black/90 backdrop-blur-sm translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out p-6 flex flex-col;
+                @apply absolute inset-0 bg-black/90 backdrop-blur-sm translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out p-6 flex flex-col pt-16;
             }
             .custom-scroll::-webkit-scrollbar { width: 4px; }
             .custom-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
@@ -54,28 +54,30 @@
 <body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased flex flex-col min-h-screen text-left">
 
 <!-- HEADER -->
-<div class="sticky top-0 z-50 w-full">
-    <div class="bg-background-light dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-xs py-2 text-left">
+<div class="sticky top-0 z-50 w-full text-left border-b border-gray-100 dark:border-gray-800">
+    <!-- CINTILLO -->
+    <div class="bg-background-light dark:bg-gray-900 text-xs py-2 text-left">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <span class="text-gray-500 dark:text-gray-400 hidden md:inline">CTES Chile, representante oficial de la ITA-AITES</span>
             <div class="flex items-center space-x-6 ml-auto md:ml-0 text-gray-600 dark:text-gray-300">
                 <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">person</span> Mi cuenta</a>
                 <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">help</span> Ayuda</a>
-                <span class="cursor-pointer hover:text-primary transition-colors">ES / EN</span>
-                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1">phone</span> Contacto</a>
+                <span class="cursor-pointer hover:text-primary transition-colors uppercase">ES / EN</span>
+                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1 font-bold">phone</span> Contacto</a>
             </div>
         </div>
     </div>
 
+    <!-- NAVEGACIÓN -->
     <header class="bg-surface-light dark:bg-surface-dark shadow-sm">
         <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between text-left">
                 <div class="flex-shrink-0">
-                    <a href="https://idigital2025.github.io/CTES/">
+                    <a href="index.html">
                         <img alt="CTES Chile Logo" class="h-12 w-auto object-contain dark:bg-white dark:rounded-md dark:p-1" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
                     </a>
                 </div>
-                <nav class="hidden lg:flex items-center space-x-8">
+                <nav class="hidden lg:flex items-center space-x-8 text-left">
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="index.html">Inicio</a>
                     <a class="text-primary font-bold transition-colors text-sm" href="quienes-somos.html">Quiénes Somos</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="socios.html">Socios</a>
@@ -95,7 +97,7 @@
     </header>
 </div>
 
-<main>
+<main class="text-left">
     <!-- 1. Hero Section -->
     <section class="relative bg-surface-light dark:bg-surface-dark pt-12 pb-16 text-center">
         <div class="container mx-auto px-4 max-w-3xl text-center">
@@ -117,7 +119,7 @@
                     <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300"></div>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2 text-left">
+            <div class="w-full lg:w-1/2 text-left text-left">
                 <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-primary after:rounded-full">¿Qué es CTES Chile?</h2>
                 <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                     CTES Chile es la Corporación de Túneles y Espacios Subterráneos de Chile, una entidad de carácter técnica y permanente que reúne a empresas, instituciones y profesionales vinculados a la ingeniería de túneles y obras subterráneas.
@@ -135,22 +137,19 @@
     </section>
 
     <!-- 3. Representación Internacional -->
-    <section class="py-16 bg-primary text-white relative overflow-hidden">
+    <section class="py-16 bg-primary text-white relative overflow-hidden text-left">
         <div class="absolute inset-0 bg-black opacity-10"></div>
         <div class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 text-left">
-            <div class="max-w-3xl">
-                <div class="flex items-center gap-3 mb-4">
+            <div class="max-w-3xl text-left">
+                <div class="flex items-center gap-3 mb-4 text-left">
                     <span class="material-symbols-outlined text-3xl">public</span>
-                    <h2 class="text-3xl font-bold text-white">Representación internacional ITA–AITES</h2>
+                    <h2 class="text-3xl font-bold text-white text-left uppercase">Representación internacional ITA–AITES</h2>
                 </div>
                 <p class="text-white/90 mb-6 leading-relaxed text-lg text-left">
                     CTES Chile representa oficialmente a Chile ante la International Tunnelling and Underground Space Association (ITA–AITES), organización internacional que reúne a más de 70 países y a las principales empresas e instituciones de la industria tunelera a nivel mundial.
                 </p>
-                <p class="text-white/80 mb-8 leading-relaxed text-left">
-                    Esta representación permite a CTES Chile y a sus socios acceder a información técnica de primer nivel, documentos especializados, actividades de difusión, conferencias internacionales y redes de colaboración global.
-                </p>
                 <a class="inline-flex items-center bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg" href="https://ita-aites.org" target="_blank" rel="noopener noreferrer">
-                    Conoce más sobre ITA–AITES <span class="material-symbols-outlined ml-2 text-sm">open_in_new</span>
+                    Conoce más sobre ITA–AITES <span class="material-symbols-outlined ml-2 text-sm font-bold">open_in_new</span>
                 </a>
             </div>
             <div class="bg-white p-6 rounded-xl shadow-2xl w-full max-w-sm flex items-center justify-center transform rotate-1 hover:rotate-0 transition-transform">
@@ -162,18 +161,18 @@
     <!-- 4. Misión, Visión y Objetivos -->
     <section class="py-16 bg-background-light dark:bg-background-dark text-left">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full">Misión, Visión y Objetivos</h2>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full uppercase">Misión, Visión y Objetivos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 text-left">
-                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 transition-all group">
+                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all group">
                     <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">flag</span>
+                        <span class="material-symbols-outlined font-bold">flag</span>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Misión</h3>
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Promover el desarrollo de la industria de túneles y espacios subterráneos en Chile, vinculando a todos los grupos de interés del sector.</p>
                 </div>
-                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 transition-all group">
+                <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all group">
                     <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined font-bold">visibility</span>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Visión</h3>
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Constituirse en el principal referente técnico y punto de encuentro de la industria de túneles y espacios subterráneos en Chile.</p>
@@ -190,7 +189,6 @@
                             <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm"><span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5 font-bold">check_circle</span> Difundir la innovación, el conocimiento y las buenas prácticas del sector.</li>
                             <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm"><span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5 font-bold">check_circle</span> Promover la vinculación con entidades nacionales e internacionales relacionadas con la industria.</li>
                             <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm"><span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5 font-bold">check_circle</span> Participar activamente en la Asociación Internacional de Túneles y Espacios Subterráneos ITA–AITES.</li>
-                            <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm"><span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5 font-bold">check_circle</span> Fomentar el desarrollo permanente y sustentable del país mediante infraestructura subterránea, en armonía con el medio ambiente.</li>
                             <li class="flex items-start text-gray-600 dark:text-gray-400 text-sm md:col-span-2"><span class="material-symbols-outlined text-primary text-base mr-2 mt-0.5 font-bold">check_circle</span> Colaborar con universidades, centros tecnológicos y de investigación, mandantes y otras organizaciones para mejorar la ingeniería, construcción, operación, mantención y seguridad de las obras subterráneas.</li>
                         </div>
                     </div>
@@ -201,16 +199,15 @@
 
     <!-- 5. Carta del Director -->
     <section class="py-16 bg-white dark:bg-[#1A1A1A]">
-        <div class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-12">
+        <div class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-12 text-left">
             <div class="w-full lg:w-1/2 text-left">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Carta del Director</h2>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 uppercase">Carta del Director</h2>
                 <div class="prose dark:prose-invert text-gray-600 dark:text-gray-300">
                     <p class="mb-4">Estimados socios y colegas,</p>
-                    <p class="mb-4 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p class="mb-4 text-left">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p class="mb-4 text-left leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-800 text-left">
                         <h4 class="font-bold text-gray-900 dark:text-white uppercase">GUSTAVO ADOLFO RAMÓN ESTAY CABALLERO</h4>
-                        <p class="text-primary text-sm font-semibold">Presidente CTES Chile</p>
+                        <p class="text-primary text-sm font-semibold uppercase">Presidente CTES Chile</p>
                     </div>
                 </div>
             </div>
@@ -222,265 +219,217 @@
         </div>
     </section>
 
-    <!-- 6. Directorio (9 MIEMBROS) -->
+    <!-- 6. Directorio (ACTUALIZADO CON DEGRADADO CORTO E ICONOS FIJOS) -->
     <section class="py-20 bg-background-light dark:bg-background-dark">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full text-center">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full uppercase">
                     Directorio CTES Chile 2023 – 2026
                 </h2>
-                <p class="text-gray-600 dark:text-gray-300 text-center">Conoce a los profesionales que lideran nuestra corporación.</p>
+                <p class="text-gray-600 dark:text-gray-400">Conoce a los profesionales que lideran nuestra corporación.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Miembros con Bio Overlay -->
-                <!-- 1. Gustavo Estay -->
-                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800">
+                
+                <!-- 1. GUSTAVO ESTAY -->
+                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800 text-left">
                     <img src="img/director-gustavo-estay.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800?text=Gustavo+Estay'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
+                    
+                    <!-- Capa de degradado ajustada (Empieza más abajo) -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent via-70% flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300">
                         <span class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2">Presidente</span>
                         <h4 class="text-lg font-bold text-white uppercase leading-tight">GUSTAVO ADOLFO RAMÓN ESTAY CABALLERO</h4>
                     </div>
-                    <div class="bio-overlay text-left">
-                        <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-4">
-                            <div class="flex-grow pr-2">
-                                <span class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Presidente</span>
-                                <h4 class="text-lg font-bold text-white mt-1 uppercase">Gustavo Estay</h4>
-                            </div>
-                            <div class="flex gap-2 flex-shrink-0">
-                                <a href="mailto:presidente@ctes.cl" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full">
-                                    <svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                </a>
-                            </div>
+
+                    <!-- Iconos fijos (Visibles siempre) -->
+                    <div class="absolute top-4 right-4 z-20 flex gap-2">
+                        <a href="mailto:presidente@ctes.cl" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors flex items-center justify-center p-2 rounded-full shadow-md">
+                            <span class="material-symbols-outlined text-[18px]">email</span>
+                        </a>
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors flex items-center justify-center p-2 rounded-full shadow-md">
+                            <svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="bio-overlay z-10">
+                        <div class="mb-4 border-b border-white/10 pb-4">
+                            <span class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Presidente</span>
+                            <h4 class="text-lg font-bold text-white mt-1 uppercase">Gustavo Estay</h4>
                         </div>
                         <div class="flex-grow custom-scroll overflow-y-auto pr-2">
                             <p class="text-sm text-gray-200 leading-relaxed mb-4">Presidente CTES Chile.</p>
-                            <p class="text-sm text-gray-200 leading-relaxed">Ingeniero Civil de Minas Consultor Senior Independiente en Minería, Túneles y Obras Subterráneas.</p>
+                            <p class="text-sm text-gray-200 leading-relaxed">Representante ante la ITA-AITES.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. Armando Olavarría -->
-                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800">
+                <!-- 2. ARMANDO OLAVARRÍA -->
+                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800 text-left">
                     <img src="img/director-armando-olavarria.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800?text=Armando+Olavarria'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent via-70% flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300">
                         <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2">Vicepresidente</span>
                         <h4 class="text-lg font-bold text-white uppercase leading-tight">ARMANDO ALEJANDRO OLAVARRÍA COUCHOT</h4>
                     </div>
-                    <div class="bio-overlay text-left">
-                        <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-4">
-                            <div class="flex-grow pr-2">
-                                <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Vicepresidente</span>
-                                <h4 class="text-lg font-bold text-white mt-1 uppercase">Armando Olavarría</h4>
-                            </div>
-                            <div class="flex gap-2 flex-shrink-0">
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full">
-                                    <svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                </a>
-                            </div>
+                    <div class="absolute top-4 right-4 z-20 flex gap-2">
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                    <div class="bio-overlay z-10">
+                        <div class="mb-4 border-b border-white/10 pb-4">
+                            <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Vicepresidente</span>
+                            <h4 class="text-lg font-bold text-white mt-1 uppercase">Armando Olavarría</h4>
                         </div>
                         <div class="flex-grow custom-scroll overflow-y-auto pr-2">
-                            <p class="text-sm text-gray-200 leading-relaxed italic mb-4">Vicepresidente CTES</p>
+                            <p class="text-sm text-gray-200 leading-relaxed font-bold mb-4 uppercase">Vicepresidente CTES</p>
                             <p class="text-sm text-gray-200 leading-relaxed">Ingeniero Civil de Minas Consultor Senior Independiente en Minería, Túneles y Obras Subterráneas.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. Luis Uribe -->
-                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800">
+                <!-- 3. LUIS URIBE -->
+                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800 text-left">
                     <img src="img/director-luis-uribe.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800?text=Luis+Uribe'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent via-70% flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300">
                         <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2">Director</span>
                         <h4 class="text-lg font-bold text-white uppercase leading-tight">LUIS ANTONIO URIBE CRISÓSTOMO</h4>
                     </div>
-                    <div class="bio-overlay text-left">
-                        <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-4">
-                            <div class="flex-grow pr-2 text-left">
-                                <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Director</span>
-                                <h4 class="text-lg font-bold text-white mt-1 uppercase">Luis Uribe</h4>
-                            </div>
-                            <div class="flex gap-2 flex-shrink-0">
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full">
-                                    <svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                </a>
-                            </div>
+                    <div class="absolute top-4 right-4 z-20 flex gap-2">
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                    <div class="bio-overlay z-10 text-left">
+                        <div class="mb-4 border-b border-white/10 pb-4">
+                            <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Director</span>
+                            <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Luis Uribe</h4>
                         </div>
                         <div class="flex-grow custom-scroll overflow-y-auto pr-2 text-left">
-                            <p class="text-sm text-gray-200 leading-relaxed italic mb-4">Director CTES</p>
-                            <p class="text-sm text-gray-200 leading-relaxed mb-4">Ingeniero Civil, Magíster en Ciencias, con 28 años de experiencia profesional. Desde febrero de 2018 se desempeña como Gerente Técnico del Grupo Costanera, liderando el desarrollo de proyectos estratégicos de infraestructura vial concesionada.</p>
-                            <p class="text-sm text-gray-200 leading-relaxed mb-4 text-left">Destaca el proyecto Autopista Américo Vespucio Oriente II (AVO II), que considera la construcción de dos túneles mineros de 5,2 km bajo el eje de Av. Américo Vespucio.</p>
-                            <p class="text-sm text-gray-200 leading-relaxed text-left">Asimismo, lidera el proyecto Conexión Vial Ruta 78 – Ruta 68, de aproximadamente 9 km de longitud.</p>
+                            <p class="text-sm text-gray-200 leading-relaxed font-bold mb-4 uppercase text-left">Director CTES</p>
+                            <p class="text-sm text-gray-200 leading-relaxed mb-4 text-left">Ingeniero Civil, Magíster en Ciencias, con 28 años de experiencia profesional. Desde febrero de 2018 se desempeña como Gerente Técnico del Grupo Costanera.</p>
+                            <p class="text-sm text-gray-200 leading-relaxed mb-4 text-left text-left text-left">Lidera el desarrollo de proyectos estratégicos de infraestructura vial concesionada, como el proyecto Autopista Américo Vespucio Oriente II (AVO II), que considera dos túneles mineros de 5,2 km.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 4. Pablo Gándara -->
-                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800">
-                    <img src="img/director-pablo-gandara.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800?text=Pablo+Gandara'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
+                <!-- 4. PABLO GÁNDARA -->
+                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800 text-left">
+                    <img src="img/director-pablo-gandara.jpg" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://placehold.co/600x800?text=Pablo+Gandara'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent via-70% flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300">
                         <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2">Director</span>
                         <h4 class="text-lg font-bold text-white uppercase leading-tight">PABLO ENRIQUE GANDARA MORENO</h4>
                     </div>
-                    <div class="bio-overlay text-left">
-                        <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-4">
-                            <div class="flex-grow pr-2 text-left">
-                                <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Director</span>
-                                <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Pablo Gándara</h4>
-                            </div>
-                            <div class="flex gap-2 flex-shrink-0">
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left"><span class="material-symbols-outlined text-[18px]">email</span></a>
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left">
-                                    <svg class="w-[18px] h-[18px] fill-current text-left" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                </a>
-                            </div>
+                    <div class="absolute top-4 right-4 z-20 flex gap-2 text-left">
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full text-left"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                    <div class="bio-overlay z-10 text-left">
+                        <div class="mb-4 border-b border-white/10 pb-4 text-left">
+                            <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Director</span>
+                            <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Pablo Gándara</h4>
                         </div>
                         <div class="flex-grow custom-scroll overflow-y-auto pr-2 text-left">
                             <p class="text-sm text-gray-200 leading-relaxed italic mb-4 text-left">Director CTES</p>
-                            <p class="text-sm text-gray-200 leading-relaxed mb-4 text-left">Ingeniero Civil de Minas de la Universidad de Chile, con más de 20 años en la industria. Actualmente se desempeña como Gerente de Recursos Mineros y Desarrollo en la División El Teniente de Codelco.</p>
-                            <p class="text-sm text-gray-200 leading-relaxed mb-4 text-left">Es Magíster en Minería por la Universidad de Chile y Master of Philosophy por The University of Queensland, Australia. Ha liderado la planificación de proyectos como Nuevo Nivel Mina.</p>
+                            <p class="text-sm text-gray-200 leading-relaxed text-left">Ingeniero Civil de Minas (U. de Chile), con más de 20 años en la industria. Actualmente se desempeña como Gerente de Recursos Mineros y Desarrollo en la División El Teniente de Codelco.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 5. René Álvarez -->
-                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800">
-                    <img src="img/director-rene-alvarez.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800?text=Rene+Alvarez'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
-                        <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2 text-left">Director</span>
-                        <h4 class="text-lg font-bold text-white uppercase leading-tight text-left">RENÉ MARCELO ALVAREZ SALGADO</h4>
+                <!-- 5. RENÉ ÁLVAREZ -->
+                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800 text-left text-left">
+                    <img src="img/director-rene-alvarez.jpg" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://placehold.co/600x800?text=Rene+Alvarez'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent via-70% flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2">Director</span>
+                        <h4 class="text-lg font-bold text-white uppercase leading-tight">RENÉ MARCELO ALVAREZ SALGADO</h4>
                     </div>
-                    <div class="bio-overlay text-left">
-                        <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-4">
-                            <div class="flex-grow pr-2 text-left">
-                                <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Director</span>
-                                <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">René Álvarez</h4>
-                            </div>
-                            <div class="flex gap-2 flex-shrink-0 text-left">
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left"><span class="material-symbols-outlined text-[18px]">email</span></a>
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left">
-                                    <svg class="w-[18px] h-[18px] fill-current text-left" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                </a>
-                            </div>
+                    <div class="absolute top-4 right-4 z-20 flex gap-2">
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                    <div class="bio-overlay z-10 text-left">
+                        <div class="mb-4 border-b border-white/10 pb-4 text-left">
+                            <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Director</span>
+                            <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">René Álvarez</h4>
                         </div>
-                        <div class="flex-grow custom-scroll overflow-y-auto pr-2 text-left">
-                            <p class="text-sm text-gray-200 leading-relaxed italic mb-4 text-left">Director CTES</p>
-                            <p class="text-sm text-gray-200 leading-relaxed text-left">Ingeniero con 19 años de experiencia, principalmente en minería subterránea. Ha liderado equipos de alto desempeño e implementado nuevas metodologías para el desarrollo de ingeniería en Chile.</p>
-                        </div>
+                        <p class="text-sm text-gray-200 leading-relaxed text-left">Ingeniero con 19 años de experiencia, principalmente en minería subterránea. Ha liderado equipos de alto desempeño e implementado nuevas metodologías de ingeniería.</p>
                     </div>
                 </div>
 
-                <!-- 6. Matías Egaña -->
-                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800">
-                    <img src="img/director-matias-egana.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800?text=Matias+Egaña'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
-                        <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2 text-left">Director</span>
-                        <h4 class="text-lg font-bold text-white uppercase leading-tight text-left">MATÍAS JOSÉ EGAÑA ERAZO</h4>
-                    </div>
-                    <div class="bio-overlay text-left">
-                        <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-4">
-                            <div class="flex-grow pr-2 text-left">
-                                <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Director</span>
-                                <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Matías Egaña</h4>
-                            </div>
-                            <div class="flex gap-2 flex-shrink-0 text-left">
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left"><span class="material-symbols-outlined text-[18px]">email</span></a>
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left">
-                                    <svg class="w-[18px] h-[18px] fill-current text-left" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="flex-grow custom-scroll overflow-y-auto pr-2 text-left">
-                            <p class="text-sm text-gray-200 leading-relaxed italic mb-4 text-left">Director CTES</p>
-                            <p class="text-sm text-gray-200 leading-relaxed mb-4 text-left">Ingeniero Civil en Minas y Licenciado en Geofísica (U. de Chile). Magíster en Ingeniería Geológica (Leeds).</p>
-                            <p class="text-sm text-gray-200 leading-relaxed text-left">Consultor con más de 15 años de experiencia en proyectos mineros, viales y de energía desarrollados en Chile y el extranjero.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 7. Henry Martínez -->
+                <!-- 6. MATÍAS EGAÑA -->
                 <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800 text-left">
-                    <img src="img/director-henry-martinez.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800?text=Henry+Martinez'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
-                        <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2 text-left">Director</span>
-                        <h4 class="text-lg font-bold text-white uppercase leading-tight text-left">HENRY SANDRO MARTINEZ MARTINEZ</h4>
+                    <img src="img/director-matias-egana.jpg" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://placehold.co/600x800?text=Matias+Egaña'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent via-70% flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2">Director</span>
+                        <h4 class="text-lg font-bold text-white uppercase leading-tight">MATÍAS JOSÉ EGAÑA ERAZO</h4>
                     </div>
-                    <div class="bio-overlay text-left">
-                        <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-4 text-left">
-                            <div class="flex-grow pr-2 text-left">
-                                <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Director</span>
-                                <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Henry Martínez</h4>
-                            </div>
-                            <div class="flex gap-2 flex-shrink-0 text-left">
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left"><span class="material-symbols-outlined text-[18px]">email</span></a>
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left">
-                                    <svg class="w-[18px] h-[18px] fill-current text-left" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                </a>
-                            </div>
+                    <div class="absolute top-4 right-4 z-20 flex gap-2">
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                    <div class="bio-overlay z-10 text-left">
+                        <div class="mb-4 border-b border-white/10 pb-4 text-left">
+                            <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Director</span>
+                            <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Matías Egaña</h4>
                         </div>
-                        <div class="flex-grow custom-scroll overflow-y-auto pr-2 text-left">
-                            <p class="text-sm text-gray-200 leading-relaxed italic mb-4 text-left">Director CTES</p>
-                            <p class="text-sm text-gray-200 leading-relaxed mb-4 text-left">Ingeniero Civil Industrial e Ingeniero en Minas con 35 años de trayectoria. Trabajó en compañías como Codelco, Barrick y Freeport.</p>
-                            <p class="text-sm text-gray-200 leading-relaxed text-left">Desde hace 14 años en Sandvik, actualmente como Technical Sales VP & R&D LATAM y Territory Manager Chile.</p>
-                        </div>
+                        <p class="text-sm text-gray-200 leading-relaxed text-left">Ingeniero Civil en Minas y Licenciado en Geofísica (U. de Chile). Magíster en Ingeniería Geológica. Consultor con más de 15 años de experiencia en proyectos mineros y energéticos.</p>
                     </div>
                 </div>
 
-                <!-- 8. Ana Cooper -->
+                <!-- 7. HENRY MARTÍNEZ -->
                 <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800 text-left">
-                    <img src="img/director-ana-cooper.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800?text=Ana+Cooper'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
+                    <img src="img/director-henry-martinez.jpg" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://placehold.co/600x800?text=Henry+Martinez'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent via-70% flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2">Director</span>
+                        <h4 class="text-lg font-bold text-white uppercase leading-tight">HENRY SANDRO MARTINEZ MARTINEZ</h4>
+                    </div>
+                    <div class="absolute top-4 right-4 z-20 flex gap-2">
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                    <div class="bio-overlay z-10 text-left">
+                        <div class="mb-4 border-b border-white/10 pb-4 text-left">
+                            <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Director</span>
+                            <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Henry Martínez</h4>
+                        </div>
+                        <p class="text-sm text-gray-200 leading-relaxed text-left">Ingeniero Civil Industrial e Ingeniero en Minas con 35 años de trayectoria. Trabajó en Codelco, Barrick y Freeport. Actualmente en DSI Underground (hoy Sandvik).</p>
+                    </div>
+                </div>
+
+                <!-- 8. ANA COOPER -->
+                <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800 text-left">
+                    <img src="img/director-ana-cooper.jpg" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://placehold.co/600x800?text=Ana+Cooper'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent via-70% flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300">
                         <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2 text-left">Directora</span>
-                        <h4 class="text-lg font-bold text-white uppercase leading-tight text-left">ANA BEATRIZ COOPER MARZAL</h4>
+                        <h4 class="text-lg font-bold text-white uppercase leading-tight">ANA BEATRIZ COOPER MARZAL</h4>
                     </div>
-                    <div class="bio-overlay text-left">
-                        <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-4 text-left">
-                            <div class="flex-grow pr-2 text-left">
-                                <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Directora</span>
-                                <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Ana Cooper</h4>
-                            </div>
-                            <div class="flex gap-2 flex-shrink-0 text-left">
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left"><span class="material-symbols-outlined text-[18px]">email</span></a>
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left">
-                                    <svg class="w-[18px] h-[18px] fill-current text-left" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                </a>
-                            </div>
+                    <div class="absolute top-4 right-4 z-20 flex gap-2">
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><span class="material-symbols-outlined text-[18px]">email</span></a>
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                    <div class="bio-overlay z-10 text-left">
+                        <div class="mb-4 border-b border-white/10 pb-4 text-left text-left">
+                            <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Directora</span>
+                            <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Ana Cooper</h4>
                         </div>
-                        <div class="flex-grow custom-scroll overflow-y-auto pr-2 text-left">
-                            <p class="text-sm text-gray-200 leading-relaxed italic mb-4 text-left">Directora CTES</p>
-                            <p class="text-sm text-gray-200 leading-relaxed mb-4 text-left">Ingeniera Civil con más de 30 años en diseño y dirección de proyectos (viales, ferroviarios, Metro y minería).</p>
-                            <p class="text-sm text-gray-200 leading-relaxed text-left">En los últimos 11 años ha formado parte de Geoconsult, desarrollando soluciones técnicas para infraestructura subterránea.</p>
-                        </div>
+                        <p class="text-sm text-gray-200 leading-relaxed text-left text-left">Ingeniera Civil con más de 30 años en diseño y dirección de proyectos subterráneos viales, ferroviarios, Metro y minería.</p>
                     </div>
                 </div>
 
-                <!-- 9. Leonardo Bustamante -->
+                <!-- 9. LEONARDO BUSTAMANTE -->
                 <div class="relative group rounded-2xl overflow-hidden h-[500px] shadow-lg bg-gray-900 border border-gray-200 dark:border-gray-800 text-left">
                     <img src="img/director-leonardo-bustamante.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800?text=Leonardo+Bustamante'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent via-70% flex flex-col justify-end p-6 group-hover:opacity-0 transition-opacity duration-300 text-left">
                         <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-fit mb-2 text-left">Director</span>
                         <h4 class="text-lg font-bold text-white uppercase leading-tight text-left">LEONARDO JAVIER BUSTAMANTE VEGA</h4>
                     </div>
-                    <div class="bio-overlay text-left">
-                        <div class="flex justify-between items-start mb-4 border-b border-white/10 pb-4 text-left">
-                            <div class="flex-grow pr-2 text-left">
-                                <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left">Director</span>
-                                <h4 class="text-lg font-bold text-white mt-1 uppercase text-left">Leonardo Bustamante</h4>
-                            </div>
-                            <div class="flex gap-2 flex-shrink-0 text-left">
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left"><span class="material-symbols-outlined text-[18px]">email</span></a>
-                                <a href="#" class="text-white hover:text-primary transition-colors flex items-center justify-center bg-white/10 p-1.5 rounded-full text-left">
-                                    <svg class="w-[18px] h-[18px] fill-current text-left" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                </a>
-                            </div>
+                    <div class="absolute top-4 right-4 z-20 flex gap-2">
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full text-left"><span class="material-symbols-outlined text-[18px]">email</span></a>
+                        <a href="#" class="bg-white/10 backdrop-blur-md text-white hover:bg-primary transition-colors p-2 rounded-full text-left"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                    <div class="bio-overlay z-10 text-left">
+                        <div class="mb-4 border-b border-white/10 pb-4 text-left">
+                            <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase text-left text-left">Director</span>
+                            <h4 class="text-lg font-bold text-white mt-1 uppercase text-left text-left">Leonardo Bustamante</h4>
                         </div>
-                        <div class="flex-grow custom-scroll overflow-y-auto pr-2 text-left">
-                            <p class="text-sm text-gray-200 leading-relaxed italic mb-4 text-left">Director CTES</p>
-                            <p class="text-sm text-gray-200 leading-relaxed mb-4 text-left">Ingeniero Civil con 33 años de experiencia en diseño y supervisión en minería, infraestructura e hidráulica en Chile y el extranjero.</p>
-                            <p class="text-sm text-gray-200 leading-relaxed text-left italic border-l-2 border-primary pl-3">"Hacer del trabajo algo colaborativo y que se disfrute".</p>
-                        </div>
+                        <p class="text-sm text-gray-200 leading-relaxed text-left text-left">Ingeniero Civil con 33 años de experiencia en diseño y supervisión en minería, infraestructura e hidráulica en Chile y el extranjero.</p>
                     </div>
                 </div>
 
@@ -490,22 +439,22 @@
 
     <!-- 7. Documentos Fundacionales -->
     <section class="py-16 bg-white dark:bg-[#1A1A1A]">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 text-left">
             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 border-l-4 border-primary pl-4 text-left">Documentos fundacionales y transparencia</h2>
-            <div class="flex flex-col lg:flex-row gap-12 bg-gray-50 dark:bg-[#252525] p-8 rounded-2xl border border-gray-200 dark:border-gray-800">
+            <div class="flex flex-col lg:flex-row gap-12 bg-gray-50 dark:bg-[#252525] p-8 rounded-2xl border border-gray-200 dark:border-gray-800 text-left">
                 <div class="w-full lg:w-1/2 text-left">
-                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">CTES Chile pone a disposición documentos clave que respaldan su funcionamiento institucional y compromiso con la transparencia.</p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-center text-sm text-gray-600 dark:text-gray-400"><span class="material-symbols-outlined text-primary mr-2 text-lg font-bold">description</span> Estatutos de la Corporación</li>
-                        <li class="flex items-center text-sm text-gray-600 dark:text-gray-400"><span class="material-symbols-outlined text-primary mr-2 text-lg font-bold">gavel</span> Reglamentos internos</li>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-left">CTES Chile pone a disposición documentos clave que respaldan su funcionamiento institucional y compromiso con la transparencia.</p>
+                    <ul class="space-y-2 mb-6 text-left">
+                        <li class="flex items-center text-sm text-gray-600 dark:text-gray-400 text-left"><span class="material-symbols-outlined text-primary mr-2 text-lg font-bold">description</span> Estatutos de la Corporación</li>
+                        <li class="flex items-center text-sm text-gray-600 dark:text-gray-400 text-left"><span class="material-symbols-outlined text-primary mr-2 text-lg font-bold">gavel</span> Reglamentos internos</li>
                     </ul>
                 </div>
-                <div class="w-full lg:w-1/2 flex flex-col justify-center gap-4">
-                    <a class="group flex items-center p-4 bg-white dark:bg-surface-dark rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-200 dark:border-gray-700 hover:border-primary/50" href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://drive.usercontent.com/download?id=1xYn3AwU5EEjVagNqXfpesYFOw1mBJo2S&authuser=0&acrobatPromotionSource=gdrive_chrome-grid" target="_blank">
+                <div class="w-full lg:w-1/2 flex flex-col justify-center gap-4 text-left">
+                    <a class="group flex items-center p-4 bg-white dark:bg-surface-dark rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-200 dark:border-gray-700 hover:border-primary/50 text-left" href="https://drive.google.com/open?id=1xYn3AwU5EEjVagNqXfpesYFOw1mBJo2S" target="_blank">
                         <div class="w-10 h-10 rounded-lg bg-red-100 dark:bg-red-900/20 text-red-600 flex items-center justify-center mr-4"><span class="material-symbols-outlined font-bold">picture_as_pdf</span></div>
                         <div class="flex-grow text-left">
-                            <h4 class="font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors">Estatuto CTE: Protocolo de Funcionamiento Directorio y Elección</h4>
-                            <p class="text-xs text-gray-500">Documento PDF Oficial</p>
+                            <h4 class="font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors text-left">Estatuto CTE: Protocolo de Funcionamiento Directorio y Elección</h4>
+                            <p class="text-xs text-gray-500 text-left">Documento PDF Oficial</p>
                         </div>
                         <span class="material-symbols-outlined text-gray-400 group-hover:text-primary">open_in_new</span>
                     </a>
@@ -515,7 +464,7 @@
     </section>
 
     <!-- 8. CTA Final -->
-    <section class="py-20 bg-gray-50 dark:bg-[#151515] border-t border-gray-200 dark:border-gray-800">
+    <section class="py-20 bg-gray-50 dark:bg-[#151515] border-t border-gray-200 dark:border-gray-800 text-center">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 uppercase">Sé parte de CTES Chile</h2>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -527,39 +476,39 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto">
+<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto text-left">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-left text-left">
             <div class="text-left">
                 <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
                 <p class="text-gray-600 dark:text-gray-400 text-sm">Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.</p>
             </div>
             <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left">Navegación</h5>
-                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="index.html">Inicio</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="quienes-somos.html">Quiénes Somos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="noticias.html">Artículos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="hazte-socio.html">Hazte Socio</a></li>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 text-left text-left">
+                    <li><a class="hover:text-primary transition-colors text-left" href="index.html">Inicio</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left" href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left" href="noticias.html">Artículos</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left" href="hazte-socio.html">Hazte Socio</a></li>
                 </ul>
             </div>
             <div class="text-left">
                 <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left">Recursos</h5>
-                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="biblioteca.html">Biblioteca</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="eventos.html">Calendario</a></li>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 text-left text-left">
+                    <li><a class="hover:text-primary transition-colors text-left" href="biblioteca.html">Biblioteca</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left" href="eventos.html">Calendario</a></li>
                 </ul>
             </div>
             <div class="text-left">
-                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left">Contacto</h5>
-                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2 font-bold">phone</span> +56 9 752 77109</li>
-                    <li class="flex items-center"><span class="material-symbols-outlined text-base mr-2 font-bold">email</span> cteschile@ctes.cl</li>
-                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left text-left">Contacto</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 text-left text-left text-left">
+                    <li class="flex items-center text-left"><span class="material-symbols-outlined text-base mr-2 font-bold">phone</span> +56 9 752 77109</li>
+                    <li class="flex items-center text-left"><span class="material-symbols-outlined text-base mr-2 font-bold">email</span> cteschile@ctes.cl</li>
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight text-left">
                         <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary font-bold">location_on</span> 
                         <span>Barcelona 2077, Providencia, Santiago de Chile</span>
                     </li>
-                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight text-left">
                         <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary font-bold">schedule</span> 
                         <span>Horario de atención: Lunes a Viernes 9:00 a 18:00hrs</span>
                     </li>
@@ -567,10 +516,21 @@
             </div>
         </div>
         <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <div class="flex space-x-6 mb-4 md:mb-0">
+                <a class="hover:text-primary transition-colors" href="#">Política de privacidad</a>
+                <a class="hover:text-primary transition-colors" href="#">Términos y condiciones</a>
+            </div>
             <p>© 2025 CTES Chile. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
+
+<!-- Botones flotantes -->
+<div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50 text-left">
+    <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center text-left">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+</div>
 
 <script>
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
