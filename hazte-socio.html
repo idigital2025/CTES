@@ -54,7 +54,7 @@
       }
     </style>
 </head>
-<body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200 flex flex-col min-h-screen">
+<body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-200 flex flex-col min-h-screen text-left">
 
 <!-- =========================================================================
      COMPONENTE: HEADER (ACTUALIZADO)
@@ -67,17 +67,17 @@
             <div class="flex items-center space-x-6 ml-auto md:ml-0 text-gray-600 dark:text-gray-300">
                 <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">person</span> Mi cuenta</a>
                 <a class="flex items-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm mr-1">help</span> Ayuda</a>
-                <span class="cursor-pointer hover:text-primary transition-colors">ES / EN</span>
-                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1">phone</span> Contacto</a>
+                <span class="cursor-pointer hover:text-primary transition-colors uppercase">ES / EN</span>
+                <a class="flex items-center hover:text-primary transition-colors" href="https://idigital2025.github.io/CTES/contacto"><span class="material-symbols-outlined text-sm mr-1 font-bold">phone</span> Contacto</a>
             </div>
         </div>
     </div>
 
     <!-- NAVEGACIÓN PRINCIPAL -->
     <header class="bg-surface-light dark:bg-surface-dark shadow-sm">
-        <div class="container mx-auto px-4 py-4">
+        <div class="container mx-auto px-4 py-4 text-left">
             <div class="flex items-center justify-between">
-                <div class="flex-shrink-0">
+                <div class="flex-shrink-0 text-left">
                     <a href="index.html">
                         <img alt="CTES Chile Logo" class="h-12 w-auto object-contain dark:bg-white dark:rounded-md dark:p-1" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
                     </a>
@@ -89,9 +89,10 @@
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="socios-jovenes.html">Socios Jóvenes</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="noticias.html">Artículos</a>
                     <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="biblioteca.html">Biblioteca</a>
-                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="eventos.html">Calendario</a>
+                    <!-- LINK ACTUALIZADO REDIRECCIÓN SOLICITADA -->
+                    <a class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors text-sm" href="https://idigital2025.github.io/CTES/calendario">Calendario</a>
                 </nav>
-                <div class="hidden lg:block">
+                <div class="hidden lg:block text-left">
                     <a class="btn-primary" href="hazte-socio.html">
                         Hazte Socio
                     </a>
@@ -110,53 +111,52 @@
 <main>
         
     <!-- Hero Section -->
-    <section class="relative bg-surface-light dark:bg-surface-dark pt-12 pb-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto">
-                <span class="uppercase tracking-wider text-primary text-sm font-bold mb-2 block">Membresía</span>
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Hazte socio CTES Chile</h1>
-                <div class="h-1 w-20 bg-primary mx-auto rounded-full mb-8"></div>
-                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                    Únete a la comunidad técnica líder en infraestructura subterránea y sé parte activa del desarrollo del país, conectando con expertos y accediendo a beneficios exclusivos.
-                </p>
-            </div>
+    <section class="relative bg-surface-light dark:bg-surface-dark pt-12 pb-16 text-center text-left">
+        <div class="container mx-auto px-4 text-center max-w-3xl mx-auto">
+            <span class="uppercase tracking-wider text-primary text-sm font-bold mb-2 block">Membresía</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 uppercase">Hazte socio CTES Chile</h1>
+            <div class="h-1 w-20 bg-primary mx-auto rounded-full mb-8"></div>
+            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+                Únete a la comunidad técnica líder en infraestructura subterránea y sé parte activa del desarrollo del país, conectando con expertos y accediendo a beneficios exclusivos.
+            </p>
         </div>
     </section>
 
     <!-- Beneficios -->
-    <section class="py-16 bg-white dark:bg-[#1A1A1A]">
+    <section class="py-16 bg-white dark:bg-[#1A1A1A] text-left">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="w-full lg:w-1/2 order-2 lg:order-1">
-                    <h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Por qué unirse</h2>
-                    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-primary after:rounded-full">
+            <div class="flex flex-col lg:flex-row items-center gap-16 text-left">
+                <div class="w-full lg:w-1/2 order-2 lg:order-1 text-left text-left">
+                    <h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-2 text-left text-left">Por qué unirse</h2>
+                    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-primary after:rounded-full text-left">
                         Beneficios clave de ser socio CTES
                     </h3>
                     <p class="text-gray-600 dark:text-gray-300 text-lg mb-8 leading-relaxed">
                         Ser parte de CTES Chile permite integrarse a una red técnica activa y especializada en túneles y obras subterráneas.
                     </p>
-                    <ul class="space-y-4">
+                    <ul class="space-y-4 text-left">
                         <li class="flex items-start gap-4">
                             <div class="bg-primary/10 p-1 rounded-full text-primary mt-1">
                                 <span class="material-symbols-outlined text-sm font-bold">check</span>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-200 text-base">Herramientas de posicionamiento y visibilidad para empresas y profesionales.</span>
+                            <span class="text-gray-700 dark:text-gray-200 text-base text-left">Herramientas de posicionamiento y visibilidad para empresas y profesionales.</span>
                         </li>
-                        <li class="flex items-start gap-4">
+                        <li class="flex items-start gap-4 text-left text-left">
                             <div class="bg-primary/10 p-1 rounded-full text-primary mt-1">
                                 <span class="material-symbols-outlined text-sm font-bold">check</span>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-200 text-base">Participación en grupos de trabajo técnico y mesas de discusión.</span>
+                            <span class="text-gray-700 dark:text-gray-200 text-base text-left">Participación en grupos de trabajo técnico y mesas de discusión.</span>
                         </li>
-                        <li class="flex items-start gap-4">
+                        <li class="flex items-start gap-4 text-left text-left">
                             <div class="bg-primary/10 p-1 rounded-full text-primary mt-1">
                                 <span class="material-symbols-outlined text-sm font-bold">check</span>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-200 text-base">Acceso a documentación técnica especializada y publicaciones.</span>
+                            <span class="text-gray-700 dark:text-gray-200 text-base text-left">Acceso a documentación técnica especializada y publicaciones.</span>
                         </li>
                     </ul>
                 </div>
                 <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                    <!-- PUNTA RECTAS: Se ha eliminado cualquier clase rounded para cumplir lo solicitado -->
                     <div class="relative overflow-hidden aspect-[4/3] group">
                         <img 
                             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop" 
@@ -171,158 +171,158 @@
     </section>
 
     <!-- PLAN DE ACTIVIDADES -->
-    <section class="py-16 bg-background-light dark:bg-background-dark">
+    <section class="py-16 bg-background-light dark:bg-background-dark text-left text-left">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center mb-12">
                 <h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Nuestra Misión en Acción</h2>
-                <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Plan de Actividades</h3>
+                <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 uppercase text-center">Plan de Actividades</h3>
                 <div class="w-16 h-1 bg-primary mx-auto rounded-full mb-6"></div>
-                <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-center">
                     De modo de llevar a cabo la misión de CTES-CHILE, se ha definido un robusto Plan de Actividades e iniciativas para nuestros socios:
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
                 <!-- Item: Catastro -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left">
                     <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined">map</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Catastro de Túneles</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Información detallada y fichas técnicas georeferenciadas de los túneles del país.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Catastro de Túneles</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Información detallada y fichas técnicas georeferenciadas de los túneles del país.</p>
                     </div>
                 </div>
 
                 <!-- Item: Camaradería -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
-                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-left text-left">
                         <span class="material-symbols-outlined">diversity_3</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Encuentro Camaradería</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Evento anual para fortalecer lazos entre todos los asociados de La Corporación.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Encuentro Camaradería</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Evento anual para fortalecer lazos entre todos los asociados de La Corporación.</p>
                     </div>
                 </div>
 
                 <!-- Item: Papers -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left">
                     <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined">article</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Publicación de Papers</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Sistema para que asociados presenten y difundan investigaciones internacionalmente.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Publicación de Papers</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Sistema para que asociados presenten y difundan investigaciones internacionalmente.</p>
                     </div>
                 </div>
 
                 <!-- Item: Difusión -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
-                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-left text-left">
                         <span class="material-symbols-outlined">campaign</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Difusión de Proyectos</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Promoción de iniciativas de empresas socias en los canales oficiales de CTES.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Difusión de Proyectos</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Promoción de iniciativas de empresas socias en los canales oficiales de CTES.</p>
                     </div>
                 </div>
 
                 <!-- Item: Vinculación Internacional -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left text-left">
                     <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined">language</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Vinculación Internacional</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Participación activa en grupos de trabajo de la ITA-AITES y otras entidades.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Vinculación Internacional</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Participación activa en grupos de trabajo de la ITA-AITES y otras entidades.</p>
                     </div>
                 </div>
 
                 <!-- Item: Seminarios -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left">
                     <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined">podium</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Seminarios Internacionales</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Organización de charlas globales sobre avances e innovaciones del sector.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Seminarios Internacionales</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Organización de charlas globales sobre avances e innovaciones del sector.</p>
                     </div>
                 </div>
 
                 <!-- Item: Charlas -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left">
                     <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined">forum</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Charlas Técnicas</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Reuniones sobre soluciones específicas y metodologías constructivas de interés.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Charlas Técnicas</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Reuniones sobre soluciones específicas y metodologías constructivas de interés.</p>
                     </div>
                 </div>
 
                 <!-- Item: Academia -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
-                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left text-left">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-left text-left">
                         <span class="material-symbols-outlined">school</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Relación con Academia</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Vinculación con centros de investigación para el desarrollo de nuevos estudios.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Relación con Academia</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Vinculación con centros de investigación para el desarrollo de nuevos estudios.</p>
                     </div>
                 </div>
 
                 <!-- Item: ITA-AITES -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left text-left text-left">
                     <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined">public</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Participación ITA-AITES</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Representación en comités internacionales y generación de conocimiento.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Participación ITA-AITES</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Representación en comités internacionales y generación de conocimiento.</p>
                     </div>
                 </div>
 
                 <!-- Item: Networking -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left">
                     <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined">hub</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Networking Internacional</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Cooperación técnica e intercambio de experiencias con entidades de otros países.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Networking Internacional</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Cooperación técnica e intercambio de experiencias con entidades de otros países.</p>
                     </div>
                 </div>
 
                 <!-- Item: Capacitación -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
-                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-left text-left">
                         <span class="material-symbols-outlined">model_training</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Capacitación</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Desarrollo de cursos reconocidos por ITA-AITES para el perfeccionamiento continuo.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Capacitación</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Desarrollo de cursos reconocidos por ITA-AITES para el perfeccionamiento continuo.</p>
                     </div>
                 </div>
 
                 <!-- Item: Directorio -->
-                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group">
-                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                <div class="flex items-start gap-4 p-6 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl hover:shadow-md transition-all group text-left text-left text-left">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex-shrink-0 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-left text-left">
                         <span class="material-symbols-outlined">business_center</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Directorio de Empresas</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">Publicación donde socios destacan sus servicios sin costo adicional.</p>
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-1 uppercase text-sm">Directorio de Empresas</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-left">Publicación donde socios destacan sus servicios sin costo adicional.</p>
                     </div>
                 </div>
 
                 <!-- Item Destacado: Misiones Tecnológicas -->
-                <div class="flex items-start gap-5 p-8 bg-primary/5 dark:bg-surface-dark border border-primary/20 dark:border-gray-800 rounded-2xl hover:shadow-lg hover:border-primary transition-all duration-300 group md:col-span-2 lg:col-span-3">
+                <div class="flex items-start gap-5 p-8 bg-primary/5 dark:bg-surface-dark border border-primary/20 dark:border-gray-800 rounded-2xl hover:shadow-lg hover:border-primary transition-all duration-300 group md:col-span-2 lg:col-span-3 text-left text-left">
                     <div class="w-14 h-14 bg-primary text-white rounded-xl flex-shrink-0 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined text-3xl">flight_takeoff</span>
                     </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Misiones Tecnológicas</h4>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Visitas a empresas extranjeras, centros de investigación y fábricas de insumos en Europa u otros continentes para conocer tecnología de punta en terreno.</p>
+                    <div class="text-left">
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2 uppercase text-left text-left">Misiones Tecnológicas</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed text-left text-left text-left">Visitas a empresas extranjeras, centros de investigación y fábricas de insumos en Europa u otros continentes para conocer tecnología de punta en terreno.</p>
                     </div>
                 </div>
             </div>
@@ -330,71 +330,71 @@
     </section>
 
     <!-- Categorías -->
-    <section class="py-16 bg-white dark:bg-[#1A1A1A]">
+    <section class="py-16 bg-white dark:bg-[#1A1A1A] text-left text-left text-left">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Categorías de membresía</h2>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4 uppercase">Categorías de membresía</h2>
                 <div class="w-16 h-1 bg-primary mx-auto rounded-full mb-6"></div>
-                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto italic">
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto italic text-center">
                     Las membresías tienen vigencia anual (marzo a marzo). Valores expresados en UF + IVA.
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left text-left">
                 <!-- Premium -->
-                <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border-2 border-primary relative overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border-2 border-primary relative overflow-hidden flex flex-col hover:shadow-lg transition-shadow text-left text-left">
                     <div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase">Recomendado</div>
-                    <div class="bg-primary/10 w-fit px-3 py-1 rounded-full text-primary text-xs font-bold uppercase mb-4">Empresas</div>
-                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Premium</h4>
-                    <p class="text-3xl font-extrabold text-primary mb-4">UF 90 <span class="text-xs font-normal text-gray-500">+ IVA / anual</span></p>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8 flex-1">Máximos beneficios y visibilidad para empresas líderes del sector.</p>
-                    <a class="w-full block text-center bg-primary hover:bg-primary-dark text-white font-bold py-2.5 rounded-full transition-colors" href="#postulacion">Elegir Premium</a>
+                    <div class="bg-primary/10 w-fit px-3 py-1 rounded-full text-primary text-xs font-bold uppercase mb-4 text-left text-left">Empresas</div>
+                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase text-left">Premium</h4>
+                    <p class="text-3xl font-extrabold text-primary mb-4 italic text-left">UF 90 <span class="text-xs font-normal text-gray-500 italic">+ IVA / anual</span></p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8 flex-1 leading-relaxed text-left text-left">Máximos beneficios y visibilidad para empresas líderes del sector.</p>
+                    <a class="w-full block text-center bg-primary hover:bg-primary-dark text-white font-bold py-2.5 rounded-full transition-colors text-sm" href="#postulacion">Elegir Premium</a>
                 </div>
                 
                 <!-- Gold -->
-                <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-200 dark:border-gray-700 flex flex-col hover:border-primary/50 transition-colors">
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-200 dark:border-gray-700 flex flex-col hover:border-primary/50 transition-colors text-left text-left">
                      <div class="bg-primary/10 w-fit px-3 py-1 rounded-full text-primary text-xs font-bold uppercase mb-4">Empresas</div>
-                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Gold</h4>
-                    <p class="text-3xl font-extrabold text-primary mb-4">UF 55 <span class="text-xs font-normal text-gray-500">+ IVA / anual</span></p>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8 flex-1">Presencia destacada en la industria técnica nacional.</p>
-                    <a class="w-full block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-2.5 rounded-full transition-colors" href="#postulacion">Elegir Gold</a>
+                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase text-left">Gold</h4>
+                    <p class="text-3xl font-extrabold text-primary mb-4 italic">UF 55 <span class="text-xs font-normal text-gray-500 italic">+ IVA / anual</span></p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8 flex-1 leading-relaxed text-left">Presencia destacada en la industria técnica nacional.</p>
+                    <a class="w-full block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-2.5 rounded-full transition-colors text-sm" href="#postulacion">Elegir Gold</a>
                 </div>
 
                 <!-- Asociado -->
-                <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-200 dark:border-gray-700 flex flex-col hover:border-primary/50 transition-colors">
-                     <div class="bg-primary/10 w-fit px-3 py-1 rounded-full text-primary text-xs font-bold uppercase mb-4">Empresas</div>
-                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Asociado</h4>
-                    <p class="text-3xl font-extrabold text-primary mb-4">UF 30 <span class="text-xs font-normal text-gray-500">+ IVA / anual</span></p>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8 flex-1">Para universidades, entidades públicas y organizaciones afines.</p>
-                    <a class="w-full block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-2.5 rounded-full transition-colors" href="#postulacion">Elegir Asociado</a>
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-200 dark:border-gray-700 flex flex-col hover:border-primary/50 transition-colors text-left">
+                     <div class="bg-primary/10 w-fit px-3 py-1 rounded-full text-primary text-xs font-bold uppercase mb-4 text-left">Empresas</div>
+                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase text-left">Asociado</h4>
+                    <p class="text-3xl font-extrabold text-primary mb-4 italic">UF 30 <span class="text-xs font-normal text-gray-500 italic">+ IVA / anual</span></p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8 flex-1 leading-relaxed text-left">Para universidades, entidades públicas y organizaciones afines.</p>
+                    <a class="w-full block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-2.5 rounded-full transition-colors text-sm" href="#postulacion">Elegir Asociado</a>
                 </div>
 
                 <!-- Individual -->
-                <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-200 dark:border-gray-700 flex flex-col hover:border-primary/50 transition-colors">
-                     <div class="bg-gray-100 dark:bg-gray-700 w-fit px-3 py-1 rounded-full text-gray-600 dark:text-gray-300 text-xs font-bold uppercase mb-4">Profesionales</div>
-                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Individual</h4>
-                    <p class="text-3xl font-extrabold text-primary mb-4">UF 4 <span class="text-xs font-normal text-gray-500">+ IVA / anual</span></p>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8 flex-1">Para ingenieros y profesionales independientes del sector.</p>
-                    <a class="w-full block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-2.5 rounded-full transition-colors" href="#postulacion">Elegir Individual</a>
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-200 dark:border-gray-700 flex flex-col hover:border-primary/50 transition-colors text-left text-left text-left">
+                     <div class="bg-gray-100 dark:bg-gray-700 w-fit px-3 py-1 rounded-full text-gray-600 dark:text-gray-300 text-xs font-bold uppercase mb-4 text-left text-left">Profesionales</div>
+                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1 uppercase text-left text-left">Individual</h4>
+                    <p class="text-3xl font-extrabold text-primary mb-4 italic">UF 4 <span class="text-xs font-normal text-gray-500 italic">+ IVA / anual</span></p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8 flex-1 leading-relaxed text-left text-left">Para ingenieros y profesionales independientes del sector.</p>
+                    <a class="w-full block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-2.5 rounded-full transition-colors text-sm" href="#postulacion">Elegir Individual</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Formulario de Postulación -->
-    <section id="postulacion" class="py-16 bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800">
+    <section id="postulacion" class="py-16 bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 text-left text-left">
         <div class="container mx-auto px-4">
-            <div class="grid lg:grid-cols-12 gap-12 items-start">
-                <div class="lg:col-span-4 text-left">
-                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-primary after:rounded-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-start text-left text-left">
+                <div class="lg:col-span-4 text-left text-left text-left text-left">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-primary after:rounded-full uppercase">
                         Postula a CTES Chile
                     </h2>
-                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed text-left text-left">
                         Completa el formulario y da el primer paso para integrarte a la red técnica de túneles y espacios subterráneos de Chile.
                     </p>
                     
-                    <div class="p-8 bg-primary rounded-2xl text-white shadow-lg relative overflow-hidden">
-                        <span class="material-symbols-outlined text-4xl mb-4 relative z-10">contact_support</span>
+                    <div class="p-8 bg-primary rounded-2xl text-white shadow-lg relative overflow-hidden text-left text-left">
+                        <span class="material-symbols-outlined text-4xl mb-4 relative z-10 font-bold">contact_support</span>
                         <h4 class="text-xl font-bold mb-2 relative z-10">¿Tienes dudas?</h4>
                         <p class="text-white/90 mb-6 text-sm relative z-10">Escríbenos directamente para orientación personalizada.</p>
                         <a class="relative z-10 inline-flex items-center gap-2 underline font-bold" href="mailto:cteschile@ctes.cl">cteschile@ctes.cl</a>
@@ -403,8 +403,8 @@
                 
                 <!-- Formulario -->
                 <div class="lg:col-span-8 bg-white dark:bg-surface-dark p-8 md:p-10 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm text-left">
-                    <form class="space-y-5">
-                        <div class="grid md:grid-cols-2 gap-5">
+                    <form class="space-y-5 text-left text-left text-left text-left">
+                        <div class="grid md:grid-cols-2 gap-5 text-left text-left">
                             <div>
                                 <label class="label-style">Nombre y apellido del representante</label>
                                 <input class="input-field" placeholder="Nombre completo" type="text"/>
@@ -415,7 +415,7 @@
                             </div>
                         </div>
 
-                        <div class="grid md:grid-cols-2 gap-5">
+                        <div class="grid md:grid-cols-2 gap-5 text-left text-left text-left">
                             <div>
                                 <label class="label-style">Razón Social</label>
                                 <input class="input-field" placeholder="Nombre legal de la empresa" type="text"/>
@@ -425,8 +425,20 @@
                                 <input class="input-field" placeholder="12.345.678-K" type="text"/>
                             </div>
                         </div>
+
+                        <!-- NUEVOS CAMPOS SOLICITADOS -->
+                        <div class="grid md:grid-cols-2 gap-5 text-left text-left text-left">
+                            <div>
+                                <label class="label-style">Dirección</label>
+                                <input class="input-field" placeholder="Dirección comercial" type="text"/>
+                            </div>
+                            <div>
+                                <label class="label-style text-left text-left">Giro comercial</label>
+                                <input class="input-field" placeholder="Giro de la empresa" type="text"/>
+                            </div>
+                        </div>
                         
-                        <div class="grid md:grid-cols-2 gap-5">
+                        <div class="grid md:grid-cols-2 gap-5 text-left text-left text-left text-left">
                             <div>
                                 <label class="label-style">Email profesional</label>
                                 <input class="input-field" placeholder="tu@empresa.com" type="email"/>
@@ -437,7 +449,7 @@
                             </div>
                         </div>
 
-                        <div class="space-y-2">
+                        <div class="space-y-2 text-left text-left text-left text-left text-left text-left">
                             <label class="label-style">Selecciona una categoría</label>
                             <select class="input-field">
                                 <option disabled selected>Selecciona una opción...</option>
@@ -448,12 +460,12 @@
                             </select>
                         </div>
                         
-                        <div class="space-y-2">
+                        <div class="space-y-2 text-left text-left text-left text-left text-left text-left text-left text-left text-left">
                             <label class="label-style">Mensaje opcional</label>
                             <textarea class="input-field min-h-[100px]" placeholder="Consultas o comentarios adicionales..."></textarea>
                         </div>
                         
-                        <div class="pt-4">
+                        <div class="pt-4 text-left text-left text-left text-left">
                             <button type="button" class="bg-primary hover:bg-primary-dark text-white rounded-full px-12 py-4 font-bold shadow-md hover:shadow-lg transition-all w-full">
                                 Enviar postulación
                             </button>
@@ -468,63 +480,57 @@
 <!-- =========================================================================
      FOOTER (DIRECCIÓN + HORARIO ACTUALIZADOS)
      ========================================================================= -->
-<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto">
-    <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<footer class="bg-background-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto text-left text-left">
+    <div class="container mx-auto px-4 text-left text-left">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-left text-left text-left text-left text-left">
             <!-- Columna 1: Info Corporativa -->
-            <div class="text-left">
-                <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert dark:brightness-200" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">
+            <div class="text-left text-left text-left text-left text-left text-left">
+                <img alt="CTES Chile Logo" class="h-10 w-auto mb-6 dark:invert dark:brightness-200 text-left text-left text-left text-left" src="img/logos-ctes.png" onerror="this.src='https://placehold.co/200x80?text=CTES+Logo'"/>
+                <p class="text-gray-600 dark:text-gray-400 text-sm text-left text-left text-left text-left text-left">
                     Representante ITA-AITES en Chile. Promoviendo el desarrollo sustentable del espacio subterráneo.
                 </p>
-                <div class="flex space-x-4 mt-6">
-                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center" href="#">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <div class="flex space-x-4 mt-6 text-left text-left text-left text-left text-left">
+                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center text-left text-left text-left" href="#">
+                        <svg class="w-5 h-5 fill-current text-left text-left" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     </a>
-                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center" href="#">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center text-left text-left text-left" href="#">
+                        <svg class="w-5 h-5 fill-current text-left text-left" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
                 </div>
             </div>
             
             <!-- Columna 2: Navegación -->
-            <div class="text-left">
-                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Navegación</h5>
-                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="index.html">Inicio</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="quienes-somos.html">Quiénes Somos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="noticias.html">Artículos</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="hazte-socio.html">Hazte Socio</a></li>
+            <div class="text-left text-left text-left">
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left text-left">Navegación</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 text-left text-left">
+                    <li><a class="hover:text-primary transition-colors text-left text-left" href="index.html">Inicio</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left text-left" href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left text-left" href="noticias.html">Artículos</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left text-left" href="hazte-socio.html">Hazte Socio</a></li>
                 </ul>
             </div>
             
             <!-- Columna 3: Recursos -->
-            <div class="text-left">
-                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Recursos</h5>
-                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="biblioteca.html">Biblioteca</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="eventos.html">Calendario</a></li>
+            <div class="text-left text-left text-left text-left">
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left text-left">Recursos</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 text-left text-left text-left">
+                    <li><a class="hover:text-primary transition-colors text-left text-left" href="biblioteca.html">Biblioteca</a></li>
+                    <li><a class="hover:text-primary transition-colors text-left text-left" href="eventos.html">Calendario</a></li>
                 </ul>
             </div>
             
             <!-- Columna 4: Contacto y Dirección -->
-            <div class="text-left">
-                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg">Contacto</h5>
-                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <li class="flex items-center">
-                        <span class="material-symbols-outlined text-base mr-2">phone</span> 
-                        +56 9 752 77109
-                    </li>
-                    <li class="flex items-center">
-                        <span class="material-symbols-outlined text-base mr-2">email</span> 
-                        cteschile@ctes.cl
-                    </li>
-                    <li class="flex items-start leading-tight pt-2 border-t border-gray-200 dark:border-gray-700 mt-2">
-                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">location_on</span> 
+            <div class="text-left text-left text-left text-left text-left">
+                <h5 class="text-gray-900 dark:text-white font-bold mb-6 text-lg text-left text-left">Contacto</h5>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 text-left text-left text-left text-left">
+                    <li class="flex items-center text-left text-left text-left text-left"><span class="material-symbols-outlined text-base mr-2 font-bold text-left text-left">phone</span> +56 9 752 77109</li>
+                    <li class="flex items-center text-left text-left text-left text-left"><span class="material-symbols-outlined text-base mr-2 font-bold text-left text-left">email</span> cteschile@ctes.cl</li>
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight text-left text-left text-left text-left">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary font-bold text-left text-left text-left">location_on</span> 
                         <span>Barcelona 2077, Providencia, Santiago de Chile</span>
                     </li>
-                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight">
-                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary">schedule</span> 
+                    <li class="flex items-start pt-2 border-t border-gray-200 dark:border-gray-700 mt-2 leading-tight text-left text-left text-left text-left text-left">
+                        <span class="material-symbols-outlined text-base mr-2 mt-0.5 text-primary font-bold text-left text-left text-left">schedule</span> 
                         <span>Horario de atención: Lunes a Viernes 9:00 a 18:00hrs</span>
                     </li>
                 </ul>
@@ -532,22 +538,22 @@
         </div>
         
         <!-- Barra Inferior de Copyright -->
-        <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-            <div class="flex space-x-6 mb-4 md:mb-0">
-                <a class="hover:text-primary transition-colors" href="#">Política de privacidad</a>
-                <a class="hover:text-primary transition-colors" href="#">Términos y condiciones</a>
+        <div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 text-left text-left text-left">
+            <div class="flex space-x-6 mb-4 md:mb-0 text-left text-left">
+                <a class="hover:text-primary transition-colors text-left text-left" href="#">Política de privacidad</a>
+                <a class="hover:text-primary transition-colors text-left text-left" href="#">Términos y condiciones</a>
             </div>
-            <p>© 2025 CTES Chile. Todos los derechos reservados.</p>
+            <p class="text-left text-left text-left">© 2025 CTES Chile. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
 
 <!-- Botones flotantes -->
-<div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
-    <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center">
+<div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50 text-left text-left text-left">
+    <button id="scrollToTopBtn" class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-all hidden w-12 h-12 items-center justify-center text-left text-left text-left">
         <span class="material-symbols-outlined">arrow_upward</span>
     </button>
-    <a href="https://wa.me/56975277109" target="_blank" class="bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-all w-12 h-12 flex items-center justify-center">
+    <a href="https://wa.me/56975277109" target="_blank" class="bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-all w-12 h-12 flex items-center justify-center text-left text-left">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
     </a>
 </div>
